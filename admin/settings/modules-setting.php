@@ -554,11 +554,7 @@ class Modules_Settings {
                     <input type="submit" value="<?php echo __('Save Settings', 'pixerex-addons-for-elementor'); ?>" class="button pa-btn pa-save-button">
                     
                 </div>
-                <?php if( ! Helper_Functions::is_hide_rate()) : ?>
-                    <div>
-                        <p><?php echo __('Did you like Pixerex Addons for Elementor Plugin? Please ', 'pixerex-addons-for-elementor'); ?><a href="https://wordpress.org/support/plugin/pixerex-addons-for-elementor/reviews/#new-post" target="_blank"><?php echo __('Click Here to Rate it ★★★★★', 'pixerex-addons-for-elementor'); ?></a></p>
-                    </div>
-                <?php endif; ?>
+                
             </div>
             </form>
         </div>
