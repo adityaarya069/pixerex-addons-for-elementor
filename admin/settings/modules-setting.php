@@ -10,7 +10,7 @@ class Modules_Settings {
     
     protected $page_slug = 'pixerex-addons';
 
-    public static $pa_elements_keys = ['pixerex-blog', 'pixerex-carousel', 'pixerex-countdown', 'pixerex-counter', 'pixerex-dual-header', 'pixerex-fancytext', 'pixerex-image-separator', 'pixerex-lottie', 'pixerex-maps', 'pixerex-modalbox', 'pixerex-person', 'pixerex-progressbar', 'pixerex-testimonials', 'pixerex-title', 'pixerex-videobox', 'pixerex-pricing-table', 'pixerex-contactform',  'pixerex-image-button', 'pixerex-grid', 'pixerex-vscroll', 'pixerex-image-scroll', 'pixerex-templates', 'pixerex-duplicator'];
+    public static $pa_elements_keys = ['pixerex-dual-header', 'pixerex-fancytext', 'pixerex-image-separator', 'pixerex-person', 'pixerex-testimonials', 'pixerex-title'];
     
     private $pa_default_settings;
     
@@ -180,52 +180,11 @@ class Modules_Settings {
                     </div>
                     <table class="pa-elements-table">
                         <tbody>
-                            <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Blog', 'pixerex-addons-for-elementor') ); ?></th>
-                                <td>
-                                    <label class="switch">
-                                            <input type="checkbox" id="pixerex-blog" name="pixerex-blog" <?php checked(1, $this->pa_get_settings['pixerex-blog'], true) ?>>
-                                            <span class="slider round"></span>
-                                    </label>
-                                </td>
-                            </tr>
+                            
+                            
                             
                             <tr>
                                 
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Carousel', 'pixerex-addons-for-elementor') ); ?></th>
-                                <td>
-                                    <label class="switch">
-                                            <input type="checkbox" id="pixerex-carousel" name="pixerex-carousel" <?php checked(1, $this->pa_get_settings['pixerex-carousel'], true) ?>>
-                                            <span class="slider round"></span>
-                                    </label>
-                                </td>
-                            </tr>
-                            
-                            <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Contact Form7', 'pixerex-addons-for-elementor') ); ?></th>
-                                <td>
-                                    <label class="switch">
-                                            <input type="checkbox" id="pixerex-contactform" name="pixerex-contactform" <?php checked(1, $this->pa_get_settings['pixerex-contactform'], true) ?>>
-                                            <span class="slider round"></span>
-                                    </label>
-                                </td>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Countdown', 'pixerex-addons-for-elementor') ); ?></th>
-                                <td>
-                                    <label class="switch">
-                                            <input type="checkbox" id="pixerex-countdown" name="pixerex-countdown" <?php checked(1, $this->pa_get_settings['pixerex-countdown'], true) ?>>
-                                            <span class="slider round"></span>
-                                    </label>
-                                </td>
-                            </tr>
-                            
-                            <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Counter', 'pixerex-addons-for-elementor') ); ?></th>
-                                <td>
-                                    <label class="switch">
-                                            <input type="checkbox" id="pixerex-counter" name="pixerex-counter" <?php checked(1, $this->pa_get_settings['pixerex-counter'], true) ?>>
-                                            <span class="slider round"></span>
-                                    </label>
-                                </td>
                                 <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Dual Heading', 'pixerex-addons-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
@@ -244,32 +203,10 @@ class Modules_Settings {
                                     </label>
                                 </td>
                                 
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Media Grid', 'pixerex-addons-for-elementor') ); ?></th>
-                                <td>
-                                    <label class="switch">
-                                            <input type="checkbox" id="pixerex-grid" name="pixerex-grid" <?php checked(1, $this->pa_get_settings['pixerex-grid'], true) ?>>
-                                            <span class="slider round"></span>
-                                    </label>
-                                </td>
+                                
                             </tr>
                             
-                            <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Image Button', 'pixerex-addons-for-elementor') ); ?></th>
-                                <td>
-                                    <label class="switch">
-                                            <input type="checkbox" id="pixerex-image-button" name="pixerex-image-button" <?php checked(1, $this->pa_get_settings['pixerex-image-button'], true) ?>>
-                                            <span class="slider round"></span>
-                                    </label>
-                                </td>
-                                
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Image Scroll', 'pixerex-addons-for-elementor') ); ?></th>
-                                <td>
-                                    <label class="switch">
-                                            <input type="checkbox" id="pixerex-image-scroll" name="pixerex-image-scroll" <?php checked(1, $this->pa_get_settings['pixerex-image-scroll'], true) ?>>
-                                            <span class="slider round"></span>
-                                    </label>
-                                </td>
-                            </tr>
+                          
                             
                             <tr>
                                 <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Image Separator', 'pixerex-addons-for-elementor') ); ?></th>
@@ -279,31 +216,10 @@ class Modules_Settings {
                                             <span class="slider round"></span>
                                     </label>
                                 </td>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Lottie Animations', 'pixerex-addons-for-elementor') ); ?></th>
-                                <td>
-                                    <label class="switch">
-                                            <input type="checkbox" id="pixerex-lottie" name="pixerex-lottie" <?php checked(1, $this->pa_get_settings['pixerex-lottie'], true) ?>>
-                                            <span class="slider round"></span>
-                                    </label>
-                                </td>
+                                
                             </tr>
                             
-                            <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Maps', 'pixerex-addons-for-elementor') ); ?></th>
-                                <td>
-                                    <label class="switch">
-                                            <input type="checkbox" id="pixerex-maps" name="pixerex-maps" <?php checked(1, $this->pa_get_settings['pixerex-maps'], true) ?>>
-                                            <span class="slider round"></span>
-                                    </label>
-                                </td>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Modal Box', 'pixerex-addons-for-elementor') ); ?></th>
-                                <td>
-                                    <label class="switch">
-                                            <input type="checkbox" id="pixerex-modalbox" name="pixerex-modalbox" <?php checked(1, $this->pa_get_settings['pixerex-modalbox'], true) ?>>
-                                            <span class="slider round"></span>
-                                    </label>
-                                </td>
-                            </tr>
+                           
                             
                             <tr>
                                 <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Team Members', 'pixerex-addons-for-elementor') ); ?></th>
@@ -314,23 +230,11 @@ class Modules_Settings {
                                     </label>
                                 </td>
 
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Progress Bar', 'pixerex-addons-for-elementor') ); ?></th>
-                                <td>
-                                    <label class="switch">
-                                            <input type="checkbox" id="pixerex-progressbar" name="pixerex-progressbar" <?php checked(1, $this->pa_get_settings['pixerex-progressbar'], true) ?>>
-                                            <span class="slider round"></span>
-                                    </label>
-                                </td>                                
+                                                             
                             </tr>
                             
                             <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Pricing Table', 'pixerex-addons-for-elementor') ); ?></th>
-                                <td>
-                                    <label class="switch">
-                                            <input type="checkbox" id="pixerex-pricing-table" name="pixerex-pricing-table" <?php checked(1, $this->pa_get_settings['pixerex-pricing-table'], true) ?>>
-                                            <span class="slider round"></span>
-                                    </label>
-                                </td>
+                                
 
                                 <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Testimonials', 'pixerex-addons-for-elementor') ); ?></th>
                                 <td>
@@ -350,44 +254,10 @@ class Modules_Settings {
                                     </label>
                                 </td>
 
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Video Box', 'pixerex-addons-for-elementor') ); ?></th>
-                                <td>
-                                    <label class="switch">
-                                            <input type="checkbox" id="pixerex-videobox" name="pixerex-videobox" <?php checked(1, $this->pa_get_settings['pixerex-videobox'], true) ?>>
-                                            <span class="slider round"></span>
-                                        </label>
-                                </td>
+                                
                             </tr>
 
-                            <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Vertical Scroll', 'pixerex-addons-for-elementor') ); ?></th>
-                                <td>
-                                    <label class="switch">
-                                            <input type="checkbox" id="pixerex-vscroll" name="pixerex-vscroll" <?php checked(1, $this->pa_get_settings['pixerex-vscroll'], true) ?>>
-                                            <span class="slider round"></span>
-                                    </label>
-                                </td>
-                            </tr>
                             
-                            <tr>
-                                
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Duplicator', 'pixerex-addons-for-elementor') ); ?></th>
-                                <td>
-                                    <label class="switch">
-                                            <input type="checkbox" id="pixerex-duplicator" name="pixerex-duplicator" <?php checked(1, $this->pa_get_settings['pixerex-duplicator'], true) ?>>
-                                            <span class="slider round"></span>
-                                    </label>
-                                </td>
-                                
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Templates', 'pixerex-addons-for-elementor') ); ?></th>
-                                <td>
-                                    <label class="switch">
-                                            <input type="checkbox" id="pixerex-templates" name="pixerex-templates" <?php checked(1, $this->pa_get_settings['pixerex-templates'], true) ?>>
-                                            <span class="slider round"></span>
-                                    </label>
-                                </td>
-                                
-                            </tr>
 
                             <?php if( ! defined( 'pixerex_PRO_ADDONS_VERSION' ) ) : ?> 
                             <tr class="pa-sec-elems-tr"><th><h1>PRO Elements</h1></th></tr>
@@ -488,13 +358,7 @@ class Modules_Settings {
                             </tr>
                             
                             <tr>
-                                <th><?php echo __('Pixerex Horizontal Scroll', 'pixerex-addons-for-elementor'); ?></th>
-                                <td>
-                                    <label class="switch">
-                                            <input type="checkbox">
-                                            <span class="pro-slider round"></span>
-                                    </label>
-                                </td>
+                               
 
                                 <th><?php echo __('Pixerex Icon Box', 'pixerex-addons-for-elementor'); ?></th>
                                 <td>
@@ -578,13 +442,7 @@ class Modules_Settings {
                             </tr>
                             
                             <tr>
-                                <th><?php echo __('Pixerex Multi Scroll', 'pixerex-addons-for-elementor'); ?></th>
-                                <td>
-                                    <label class="switch">
-                                            <input type="checkbox">
-                                            <span class="pro-slider round"></span>
-                                    </label>
-                                </td>
+                                
                                 <th><?php echo __('Pixerex Preview Window', 'pixerex-addons-for-elementor'); ?></th>
                                 <td>
                                     <label class="switch">
@@ -779,22 +637,9 @@ class Modules_Settings {
             'pixerex-dual-header'       => intval( $settings['pixerex-dual-header'] ? 1 : 0 ),
             'pixerex-fancytext'         => intval( $settings['pixerex-fancytext'] ? 1 : 0 ),
             'pixerex-image-separator'   => intval( $settings['pixerex-image-separator'] ? 1 : 0 ),
-            'pixerex-lottie'            => intval( $settings['pixerex-lottie'] ? 1 : 0 ),
-            'pixerex-maps'              => intval( $settings['pixerex-maps'] ? 1 : 0 ),
-            'pixerex-modalbox' 			=> intval( $settings['pixerex-modalbox'] ? 1 : 0 ),
             'pixerex-person' 			=> intval( $settings['pixerex-person'] ? 1 : 0 ),
-            'pixerex-progressbar' 		=> intval( $settings['pixerex-progressbar'] ? 1 : 0 ),
             'pixerex-testimonials' 		=> intval( $settings['pixerex-testimonials'] ? 1 : 0 ),
             'pixerex-title'             => intval( $settings['pixerex-title'] ? 1 : 0 ),
-            'pixerex-videobox'          => intval( $settings['pixerex-videobox'] ? 1 : 0 ),
-            'pixerex-pricing-table'     => intval( $settings['pixerex-pricing-table'] ? 1 : 0 ),
-            'pixerex-contactform'       => intval( $settings['pixerex-contactform'] ? 1 : 0 ),
-            'pixerex-image-button'      => intval( $settings['pixerex-image-button'] ? 1 : 0 ),
-            'pixerex-grid'              => intval( $settings['pixerex-grid'] ? 1 : 0 ),
-            'pixerex-vscroll'           => intval( $settings['pixerex-vscroll'] ? 1 : 0 ),
-            'pixerex-image-scroll'      => intval( $settings['pixerex-image-scroll'] ? 1 : 0 ),
-            'pixerex-templates'         => intval( $settings['pixerex-templates'] ? 1 : 0 ),
-            'pixerex-duplicator'        => intval( $settings['pixerex-duplicator'] ? 1 : 0 ),
         );
 
         update_option( 'pa_save_settings', $this->pa_settings );
