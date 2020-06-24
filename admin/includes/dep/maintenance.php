@@ -25,7 +25,7 @@ function post_pixerex_addons_rollback() {
     $pa_rollback->run();
 
     wp_die(
-        '', __( 'Rollback to Previous Version', 'pixerex-addons-for-elementor' ), [
+        '', __( 'Rollback to Previous Version', 'pixerex-elementor-elements' ), [
         'response' => 200,
         ]
     );

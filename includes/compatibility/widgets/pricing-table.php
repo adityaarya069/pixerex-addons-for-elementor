@@ -47,7 +47,7 @@ class Pricing_Table extends WPML_Elementor_Module_With_Items {
 	 */
 	protected function get_title( $field ) {
 		
-        return __( 'Pricing Table: Item Text', 'pixerex-addons-for-elementor' );
+        return __( 'Pricing Table: Item Text', 'pixerex-elementor-elements' );
 		
 	}
 

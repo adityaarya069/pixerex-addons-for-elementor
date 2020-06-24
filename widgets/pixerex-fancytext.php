@@ -20,7 +20,7 @@ class Pixerex_Fancytext extends Widget_Base {
     }
 
     public function get_title() {
-        return sprintf( '%1$s %2$s', Helper_Functions::get_prefix(), __('Fancy Text', 'pixerex-addons-for-elementor') );
+        return sprintf( '%1$s %2$s', Helper_Functions::get_prefix(), __('Fancy Text', 'pixerex-elementor-elements') );
 	}
 
     public function get_icon() {
@@ -56,18 +56,18 @@ class Pixerex_Fancytext extends Widget_Base {
         /*Start Text Content Section*/
         $this->start_controls_section('pixerex_fancy_text_content',
                 [
-                    'label'         => __('Fancy Text', 'pixerex-addons-for-elementor'),
+                    'label'         => __('Fancy Text', 'pixerex-elementor-elements'),
                     ]
                 );
         
         /*Prefix Text*/ 
         $this->add_control('pixerex_fancy_prefix_text',
                 [
-                    'label'         => __('Prefix', 'pixerex-addons-for-elementor'),
+                    'label'         => __('Prefix', 'pixerex-elementor-elements'),
                     'type'          => Controls_Manager::TEXT,
                     'dynamic'       => [ 'active' => true ],
-                    'default'       => __('This is', 'pixerex-addons-for-elementor'),
-                    'description'   => __( 'Text before Fancy text', 'pixerex-addons-for-elementor' ),
+                    'default'       => __('This is', 'pixerex-elementor-elements'),
+                    'description'   => __( 'Text before Fancy text', 'pixerex-elementor-elements' ),
                     'label_block'   => true,
                 ]
                 );
@@ -76,7 +76,7 @@ class Pixerex_Fancytext extends Widget_Base {
         
         $repeater->add_control('pixerex_text_strings_text_field',
             [
-                'label'       => __( 'Fancy String', 'pixerex-addons-for-elementor' ),
+                'label'       => __( 'Fancy String', 'pixerex-elementor-elements' ),
                 'dynamic'     => [ 'active' => true ],
                 'type'        => Controls_Manager::TEXT,
                 'label_block' => true,
@@ -86,17 +86,17 @@ class Pixerex_Fancytext extends Widget_Base {
         /*Fancy Text Strings*/
         $this->add_control('pixerex_fancy_text_strings',
             [
-                'label'         => __( 'Fancy Text', 'pixerex-addons-for-elementor' ),
+                'label'         => __( 'Fancy Text', 'pixerex-elementor-elements' ),
                 'type'          => Controls_Manager::REPEATER,
                 'default'       => [
                     [
-                        'pixerex_text_strings_text_field' => __( 'Designer', 'pixerex-addons-for-elementor' ),
+                        'pixerex_text_strings_text_field' => __( 'Designer', 'pixerex-elementor-elements' ),
                         ],
                     [
-                        'pixerex_text_strings_text_field' => __( 'Developer', 'pixerex-addons-for-elementor' ),
+                        'pixerex_text_strings_text_field' => __( 'Developer', 'pixerex-elementor-elements' ),
                         ],
                     [
-                        'pixerex_text_strings_text_field' => __( 'Awesome', 'pixerex-addons-for-elementor' ),
+                        'pixerex_text_strings_text_field' => __( 'Awesome', 'pixerex-elementor-elements' ),
                         ],
                     ],
                 'fields'        => array_values( $repeater->get_controls() ),
@@ -107,11 +107,11 @@ class Pixerex_Fancytext extends Widget_Base {
 		/*Prefix Text*/ 
         $this->add_control('pixerex_fancy_suffix_text',
                 [
-                    'label'         => __('Suffix', 'pixerex-addons-for-elementor'),
+                    'label'         => __('Suffix', 'pixerex-elementor-elements'),
                     'type'          => Controls_Manager::TEXT,
                     'dynamic'       => [ 'active' => true ],
-                    'default'       => __('Text', 'pixerex-addons-for-elementor'),
-                    'description'   => __( 'Text after Fancy text', 'pixerex-addons-for-elementor' ),
+                    'default'       => __('Text', 'pixerex-elementor-elements'),
+                    'description'   => __( 'Text after Fancy text', 'pixerex-elementor-elements' ),
                     'label_block'   => true,
                 ]
                 );
@@ -119,19 +119,19 @@ class Pixerex_Fancytext extends Widget_Base {
         /*Front Text Align*/
         $this->add_responsive_control('pixerex_fancy_text_align',
                 [
-                    'label'         => __( 'Alignment', 'pixerex-addons-for-elementor' ),
+                    'label'         => __( 'Alignment', 'pixerex-elementor-elements' ),
                     'type'          => Controls_Manager::CHOOSE,
                     'options'       => [
                         'left'      => [
-                            'title'=> __( 'Left', 'pixerex-addons-for-elementor' ),
+                            'title'=> __( 'Left', 'pixerex-elementor-elements' ),
                             'icon' => 'fa fa-align-left',
                             ],
                         'center'    => [
-                            'title'=> __( 'Center', 'pixerex-addons-for-elementor' ),
+                            'title'=> __( 'Center', 'pixerex-elementor-elements' ),
                             'icon' => 'fa fa-align-center',
                             ],
                         'right'     => [
-                            'title'=> __( 'Right', 'pixerex-addons-for-elementor' ),
+                            'title'=> __( 'Right', 'pixerex-elementor-elements' ),
                             'icon' => 'fa fa-align-right',
                             ],
                         ],
@@ -146,19 +146,19 @@ class Pixerex_Fancytext extends Widget_Base {
         
         $this->start_controls_section('pixerex_fancy_additional_settings',
             [
-                'label'         => __('Additional Settings', 'pixerex-addons-for-elementor'),
+                'label'         => __('Additional Settings', 'pixerex-elementor-elements'),
             ]
         );
         
         $this->add_control('pixerex_fancy_text_effect', 
             [
-                'label'         => __('Effect', 'pixerex-addons-for-elementor'),
+                'label'         => __('Effect', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SELECT,
                 'options'       => [
-                    'typing' => __('Typing', 'pixerex-addons-for-elementor'),
-                    'slide'  => __('Slide Up', 'pixerex-addons-for-elementor'),
-                    'zoomout'=> __('Zoom Out', 'pixerex-addons-for-elementor'),
-                    'rotate' => __('Rotate', 'pixerex-addons-for-elementor'),
+                    'typing' => __('Typing', 'pixerex-elementor-elements'),
+                    'slide'  => __('Slide Up', 'pixerex-elementor-elements'),
+                    'zoomout'=> __('Zoom Out', 'pixerex-elementor-elements'),
+                    'rotate' => __('Rotate', 'pixerex-elementor-elements'),
                 ],
                 'default'       => 'typing',
                 'render_type'   => 'template',
@@ -168,10 +168,10 @@ class Pixerex_Fancytext extends Widget_Base {
 
         $this->add_control('pixerex_fancy_text_type_speed',
             [
-                'label'         => __('Type Speed', 'pixerex-addons-for-elementor'),
+                'label'         => __('Type Speed', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::NUMBER,
                 'default'       => 30,
-                'description'   => __( 'Set typing effect speed in milliseconds.', 'pixerex-addons-for-elementor' ),
+                'description'   => __( 'Set typing effect speed in milliseconds.', 'pixerex-elementor-elements' ),
                 'condition'     => [
                     'pixerex_fancy_text_effect' => 'typing',
                 ],
@@ -180,9 +180,9 @@ class Pixerex_Fancytext extends Widget_Base {
         
         $this->add_control('pixerex_fancy_text_zoom_speed',
             [
-                'label'         => __('Animation Speed', 'pixerex-addons-for-elementor'),
+                'label'         => __('Animation Speed', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::NUMBER,
-                'description'   => __('Set animation speed in seconds.', 'pixerex-addons-for-elementor'),
+                'description'   => __('Set animation speed in seconds.', 'pixerex-elementor-elements'),
                 'condition'     => [
                     'pixerex_fancy_text_effect' => [ 'zoomout', 'rotate' ],
                 ],
@@ -194,9 +194,9 @@ class Pixerex_Fancytext extends Widget_Base {
         
         $this->add_control('pixerex_fancy_text_zoom_delay',
             [
-                'label'         => __('Animation Delay', 'pixerex-addons-for-elementor'),
+                'label'         => __('Animation Delay', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::NUMBER,
-                'description'   => __('Set animation speed in seconds.', 'pixerex-addons-for-elementor'),
+                'description'   => __('Set animation speed in seconds.', 'pixerex-elementor-elements'),
                 'condition'     => [
                     'pixerex_fancy_text_effect' => [ 'zoomout', 'rotate' ],
                 ]
@@ -205,10 +205,10 @@ class Pixerex_Fancytext extends Widget_Base {
         
         $this->add_control('pixerex_fancy_text_back_speed',
             [
-                'label'         => __('Back Speed', 'pixerex-addons-for-elementor'),
+                'label'         => __('Back Speed', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::NUMBER,
                 'default'       => 30,
-                'description'   => __( 'Set a speed for backspace effect in milliseconds.', 'pixerex-addons-for-elementor' ),
+                'description'   => __( 'Set a speed for backspace effect in milliseconds.', 'pixerex-elementor-elements' ),
                 'condition'     => [
                     'pixerex_fancy_text_effect' => 'typing',
                 ],
@@ -217,10 +217,10 @@ class Pixerex_Fancytext extends Widget_Base {
         
         $this->add_control('pixerex_fancy_text_start_delay',
             [
-                'label'         => __('Start Delay', 'pixerex-addons-for-elementor'),
+                'label'         => __('Start Delay', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::NUMBER,
                 'default'       => 30,
-                'description'   => __( 'If you set it on 5000 milliseconds, the first word/string will appear after 5 seconds.', 'pixerex-addons-for-elementor' ),
+                'description'   => __( 'If you set it on 5000 milliseconds, the first word/string will appear after 5 seconds.', 'pixerex-elementor-elements' ),
                 'condition'     => [
                     'pixerex_fancy_text_effect' => 'typing',
                 ],
@@ -230,10 +230,10 @@ class Pixerex_Fancytext extends Widget_Base {
         /*Back Delay*/
         $this->add_control('pixerex_fancy_text_back_delay',
                 [
-                    'label'         => __('Back Delay', 'pixerex-addons-for-elementor'),
+                    'label'         => __('Back Delay', 'pixerex-elementor-elements'),
                     'type'          => Controls_Manager::NUMBER,
                     'default'       => 30,
-                    'description'   => __( 'If you set it on 5000 milliseconds, the word/string will remain visible for 5 seconds before backspace effect.', 'pixerex-addons-for-elementor' ),
+                    'description'   => __( 'If you set it on 5000 milliseconds, the word/string will remain visible for 5 seconds before backspace effect.', 'pixerex-elementor-elements' ),
                     'condition'     => [
                         'pixerex_fancy_text_effect' => 'typing',
                         ],
@@ -243,7 +243,7 @@ class Pixerex_Fancytext extends Widget_Base {
         /*Type Loop*/
         $this->add_control('pixerex_fancy_text_type_loop',
                 [
-                    'label'         => __('Loop','pixerex-addons-for-elementor'),
+                    'label'         => __('Loop','pixerex-elementor-elements'),
                     'type'          => Controls_Manager::SWITCHER,
                     'default'       => 'yes',
                     'condition'     => [
@@ -255,7 +255,7 @@ class Pixerex_Fancytext extends Widget_Base {
         /*Show Cursor*/
         $this->add_control('pixerex_fancy_text_show_cursor',
                 [
-                    'label'         => __('Show Cursor','pixerex-addons-for-elementor'),
+                    'label'         => __('Show Cursor','pixerex-elementor-elements'),
                     'type'          => Controls_Manager::SWITCHER,
                     'default'       => 'yes',
                     'condition'     => [
@@ -267,7 +267,7 @@ class Pixerex_Fancytext extends Widget_Base {
         /*Cursor Text*/
         $this->add_control('pixerex_fancy_text_cursor_text',
                 [
-                    'label'         => __('Cursor Mark', 'pixerex-addons-for-elementor'),
+                    'label'         => __('Cursor Mark', 'pixerex-elementor-elements'),
                     'type'          => Controls_Manager::TEXT,
                     'dynamic'       => [ 'active' => true ],
                     'default'       => '|',
@@ -281,10 +281,10 @@ class Pixerex_Fancytext extends Widget_Base {
         /*Slide Up Speed*/
         $this->add_control('pixerex_slide_up_speed',
                 [
-                    'label'         => __('Animation Speed', 'pixerex-addons-for-elementor'),
+                    'label'         => __('Animation Speed', 'pixerex-elementor-elements'),
                     'type'          => Controls_Manager::NUMBER,
                     'default'       => 200,
-                    'description'   => __( 'Set a duration value in milliseconds for slide up effect.', 'pixerex-addons-for-elementor' ),
+                    'description'   => __( 'Set a duration value in milliseconds for slide up effect.', 'pixerex-elementor-elements' ),
                     'condition'     => [
                         'pixerex_fancy_text_effect' => 'slide',
                         ],
@@ -294,10 +294,10 @@ class Pixerex_Fancytext extends Widget_Base {
         /*Slide Up Pause Time*/
         $this->add_control('pixerex_slide_up_pause_time',
                 [
-                    'label'         => __('Pause Time (Milliseconds)', 'pixerex-addons-for-elementor'),
+                    'label'         => __('Pause Time (Milliseconds)', 'pixerex-elementor-elements'),
                     'type'          => Controls_Manager::NUMBER,
                     'default'       => 3000,
-                    'description'   => __( 'How long should the word/string stay visible? Set a value in milliseconds.', 'pixerex-addons-for-elementor' ),
+                    'description'   => __( 'How long should the word/string stay visible? Set a value in milliseconds.', 'pixerex-elementor-elements' ),
                     'condition'     => [
                         'pixerex_fancy_text_effect' => 'slide',
                         ],
@@ -307,10 +307,10 @@ class Pixerex_Fancytext extends Widget_Base {
         /*Slide Up Shown Items*/
         $this->add_control('pixerex_slide_up_shown_items',
                 [
-                    'label'         => __('Show Items', 'pixerex-addons-for-elementor'),
+                    'label'         => __('Show Items', 'pixerex-elementor-elements'),
                     'type'          => Controls_Manager::NUMBER,
                     'default'       => 1,
-                    'description'   => __( 'How many items should be visible at a time?', 'pixerex-addons-for-elementor' ),
+                    'description'   => __( 'How many items should be visible at a time?', 'pixerex-elementor-elements' ),
                     'condition'     => [
                         'pixerex_fancy_text_effect' => 'slide',
                         ],
@@ -320,9 +320,9 @@ class Pixerex_Fancytext extends Widget_Base {
         /*Pause on Hover*/
         $this->add_control('pixerex_slide_up_hover_pause',
             [
-                'label'         => __('Pause on Hover','pixerex-addons-for-elementor'),
+                'label'         => __('Pause on Hover','pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SWITCHER,
-                'description'   => __( 'If you enabled this option, the slide will be paused when mouseover.', 'pixerex-addons-for-elementor' ),
+                'description'   => __( 'If you enabled this option, the slide will be paused when mouseover.', 'pixerex-elementor-elements' ),
                 'condition'     => [
                     'pixerex_fancy_text_effect' => 'slide',
                 ],
@@ -331,19 +331,19 @@ class Pixerex_Fancytext extends Widget_Base {
         
         $this->add_responsive_control('pixerex_fancy_slide_align',
             [
-                'label'         => __( 'Fancy Text Alignment', 'pixerex-addons-for-elementor' ),
+                'label'         => __( 'Fancy Text Alignment', 'pixerex-elementor-elements' ),
                 'type'          => Controls_Manager::CHOOSE,
                 'options'       => [
                     'left'      => [
-                        'title'=> __( 'Left', 'pixerex-addons-for-elementor' ),
+                        'title'=> __( 'Left', 'pixerex-elementor-elements' ),
                         'icon' => 'fa fa-align-left',
                         ],
                     'center'    => [
-                        'title'=> __( 'Center', 'pixerex-addons-for-elementor' ),
+                        'title'=> __( 'Center', 'pixerex-elementor-elements' ),
                         'icon' => 'fa fa-align-center',
                         ],
                     'right'     => [
-                        'title'=> __( 'Right', 'pixerex-addons-for-elementor' ),
+                        'title'=> __( 'Right', 'pixerex-elementor-elements' ),
                         'icon' => 'fa fa-align-right',
                         ],
                     ],
@@ -363,7 +363,7 @@ class Pixerex_Fancytext extends Widget_Base {
         /*Start Fancy Text Settings Tab*/
         $this->start_controls_section('pixerex_fancy_text_style_tab',
                 [
-                    'label'         => __('Fancy Text', 'pixerex-addons-for-elementor'),
+                    'label'         => __('Fancy Text', 'pixerex-elementor-elements'),
                     'tab'           => Controls_Manager::TAB_STYLE,
                 ]
                 );
@@ -371,7 +371,7 @@ class Pixerex_Fancytext extends Widget_Base {
         /*Fancy Text Color*/
         $this->add_control('pixerex_fancy_text_color',
                 [
-                    'label'         => __('Color', 'pixerex-addons-for-elementor'),
+                    'label'         => __('Color', 'pixerex-elementor-elements'),
                     'type'          => Controls_Manager::COLOR,
                     'scheme'        => [
                         'type'  => Scheme_Color::get_type(),
@@ -396,7 +396,7 @@ class Pixerex_Fancytext extends Widget_Base {
         /*Fancy Text Background Color*/
         $this->add_control('pixerex_fancy_text_background_color',
                 [
-                    'label'         => __('Background Color', 'pixerex-addons-for-elementor'),
+                    'label'         => __('Background Color', 'pixerex-elementor-elements'),
                     'type'          => Controls_Manager::COLOR,
                     'selectors'     => [
                         '{{WRAPPER}} .pixerex-fancy-text' => 'background-color: {{VALUE}};',
@@ -418,7 +418,7 @@ class Pixerex_Fancytext extends Widget_Base {
         /*Start Cursor Settings Tab*/
         $this->start_controls_section('pixerex_fancy_cursor_text_style_tab',
                 [
-                    'label'         => __('Cursor Text', 'pixerex-addons-for-elementor'),
+                    'label'         => __('Cursor Text', 'pixerex-elementor-elements'),
                     'tab'           => Controls_Manager::TAB_STYLE,
                     'condition'     => [
                         'pixerex_fancy_text_cursor_text!'   => ''
@@ -429,7 +429,7 @@ class Pixerex_Fancytext extends Widget_Base {
         /*Cursor Color*/
         $this->add_control('pixerex_fancy_text_cursor_color',
                 [
-                    'label'         => __('Color', 'pixerex-addons-for-elementor'),
+                    'label'         => __('Color', 'pixerex-elementor-elements'),
                     'type'          => Controls_Manager::COLOR,
                     'scheme'        => [
                         'type'  => Scheme_Color::get_type(),
@@ -454,7 +454,7 @@ class Pixerex_Fancytext extends Widget_Base {
         /*Cursor Background Color*/
         $this->add_control('pixerex_fancy_text_cursor_background',
                 [
-                    'label'         => __('Background Color', 'pixerex-addons-for-elementor'),
+                    'label'         => __('Background Color', 'pixerex-elementor-elements'),
                     'type'          => Controls_Manager::COLOR,
                     'selectors'     => [
                         '{{WRAPPER}} .typed-cursor' => 'background-color: {{VALUE}};',
@@ -468,7 +468,7 @@ class Pixerex_Fancytext extends Widget_Base {
         /*Start Prefix Suffix Text Settings Tab*/
         $this->start_controls_section('pixerex_prefix_suffix_style_tab',
                 [
-                    'label'         => __('Prefix & Suffix', 'pixerex-addons-for-elementor'),
+                    'label'         => __('Prefix & Suffix', 'pixerex-elementor-elements'),
                     'tab'           => Controls_Manager::TAB_STYLE,
                 ]
                 );
@@ -476,7 +476,7 @@ class Pixerex_Fancytext extends Widget_Base {
         /*Prefix Suffix Text Color*/
         $this->add_control('pixerex_prefix_suffix_text_color',
                 [
-                    'label'         => __('Color', 'pixerex-addons-for-elementor'),
+                    'label'         => __('Color', 'pixerex-elementor-elements'),
                     'type'          => Controls_Manager::COLOR,
                     'scheme'        => [
                     'type'  => Scheme_Color::get_type(),
@@ -501,7 +501,7 @@ class Pixerex_Fancytext extends Widget_Base {
         /*Prefix Suffix Text Background Color*/
         $this->add_control('pixerex_prefix_suffix_text_background_color',
                 [
-                    'label'         => __('Background Color', 'pixerex-addons-for-elementor'),
+                    'label'         => __('Background Color', 'pixerex-elementor-elements'),
                     'type'          => Controls_Manager::COLOR,
                     'selectors'     => [
                         '{{WRAPPER}} .pixerex-prefix-text, {{WRAPPER}} .pixerex-suffix-text' => 'background-color: {{VALUE}};',

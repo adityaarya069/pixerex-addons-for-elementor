@@ -22,7 +22,7 @@ class Pixerex_Beta_Testers {
             
 			$beta_version = 'false';
 
-			$response = wp_remote_get( 'https://plugins.svn.wordpress.org/pixerex-addons-for-elementor/trunk/readme.txt' );
+			$response = wp_remote_get( 'https://plugins.svn.wordpress.org/pixerex-elementor-elements/trunk/readme.txt' );
             
 			if ( ! is_wp_error( $response ) && ! empty( $response['body'] ) ) {
 				preg_match( '/Beta tag: (.*)/i', $response['body'], $matches );
@@ -70,7 +70,7 @@ class Pixerex_Beta_Testers {
             
 			$response->url = 'https://pixerexaddons.com/';
             
-			$response->package = sprintf( 'https://downloads.wordpress.org/plugin/pixerex-addons-for-elementor.%s.zip', $beta_version );
+			$response->package = sprintf( 'https://downloads.wordpress.org/plugin/pixerex-elementor-elements.%s.zip', $beta_version );
             
             echo $response->package;
             

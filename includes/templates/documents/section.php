@@ -11,7 +11,7 @@ class Pixerex_Section_Document extends Pixerex_Document_Base {
 	}
 
 	public static function get_title() {
-		return __( 'Section', 'pixerex-addons-for-elementor' );
+		return __( 'Section', 'pixerex-elementor-elements' );
 	}
 
 	public function has_conditions() {

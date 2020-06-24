@@ -6,7 +6,7 @@ Plugin URI: https://Pixerexaddons.com
 Version: 3.20.6
 Author: Pixerex
 Author URI: https://leap13.com/
-Text Domain: Pixerex-addons-for-elementor
+Text Domain: Pixerex-elementor-elements
 Domain Path: /languages
 License: GNU General Public License v3.0
 */
@@ -134,7 +134,7 @@ if( ! class_exists('Pixerex_Addons_Elementor') ) {
          */
         public function load_domain() {
             
-            load_plugin_textdomain( 'pixerex-addons-for-elementor' );
+            load_plugin_textdomain( 'pixerex-elementor-elements' );
             
         }
         

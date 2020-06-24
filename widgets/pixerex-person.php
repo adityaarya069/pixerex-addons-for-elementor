@@ -26,7 +26,7 @@ class Pixerex_Person extends Widget_Base {
     }
 
     public function get_title() {
-		return sprintf( '%1$s %2$s', Helper_Functions::get_prefix(), __('Team Members', 'pixerex-addons-for-elementor') );
+		return sprintf( '%1$s %2$s', Helper_Functions::get_prefix(), __('Team Members', 'pixerex-elementor-elements') );
 	}
 
     public function get_icon() {
@@ -66,26 +66,26 @@ class Pixerex_Person extends Widget_Base {
         
         $this->start_controls_section('pixerex_person_general_settings',
             [
-                'label'         => __('General Settings', 'pixerex-addons-for-elementor')
+                'label'         => __('General Settings', 'pixerex-elementor-elements')
             ]
         );
 		
 		$this->add_control('multiple',
             [
-                'label'         => __( 'Multiple Member', 'pixerex-addons-for-elementor' ),
-                'description'   => __('Enable this option if you need to add multiple persons', 'pixerex-addons-for-elementor'),
+                'label'         => __( 'Multiple Member', 'pixerex-elementor-elements' ),
+                'description'   => __('Enable this option if you need to add multiple persons', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SWITCHER,
             ]
         );
         
         $this->add_control('pixerex_person_style',
             [
-                'label'         => __('Style', 'pixerex-addons-for-elementor'),
+                'label'         => __('Style', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SELECT,
                 'default'       => 'style1',
                 'options'       => [
-                    'style1'        => __('Style 1', 'pixerex-addons-for-elementor'),
-                    'style2'        => __('Style 2', 'pixerex-addons-for-elementor')
+                    'style1'        => __('Style 1', 'pixerex-elementor-elements'),
+                    'style2'        => __('Style 2', 'pixerex-elementor-elements')
                 ],
                 'label_block'   =>  true,
                 'render_type'   => 'template'
@@ -103,9 +103,9 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_responsive_control('pixerex_person_image_width',
             [
-                'label'         => __('Width', 'pixerex-addons-for-elementor'),
+                'label'         => __('Width', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SLIDER,
-                'description'   => __('Enter image width in (PX, EM, %), default is 100%', 'pixerex-addons-for-elementor'),
+                'description'   => __('Enter image width in (PX, EM, %), default is 100%', 'pixerex-elementor-elements'),
                 'size_units'    => ['px', 'em', '%'],
                 'range'         => [
                     'px'    => [
@@ -130,19 +130,19 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_responsive_control('pixerex_person_align',
             [
-                'label'         => __( 'Alignment', 'pixerex-addons-for-elementor' ),
+                'label'         => __( 'Alignment', 'pixerex-elementor-elements' ),
                 'type'          => Controls_Manager::CHOOSE,
                 'options'       => [
                     'flex-start'      => [
-                        'title'=> __( 'Left', 'pixerex-addons-for-elementor' ),
+                        'title'=> __( 'Left', 'pixerex-elementor-elements' ),
                         'icon' => 'fa fa-align-left',
                     ],
                     'center'    => [
-                        'title'=> __( 'Center', 'pixerex-addons-for-elementor' ),
+                        'title'=> __( 'Center', 'pixerex-elementor-elements' ),
                         'icon' => 'fa fa-align-center',
                     ],
                     'flex-end'     => [
-                        'title'=> __( 'Right', 'pixerex-addons-for-elementor' ),
+                        'title'=> __( 'Right', 'pixerex-elementor-elements' ),
                         'icon' => 'fa fa-align-right',
                     ],
                 ],
@@ -155,18 +155,18 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_control('pixerex_person_hover_image_effect',
             [
-                'label'         => __('Hover Effect', 'pixerex-addons-for-elementor'),
+                'label'         => __('Hover Effect', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SELECT,
                 'options'       => [
-                    'none'          => __('None', 'pixerex-addons-for-elementor'),
-                    'zoomin'        => __('Zoom In', 'pixerex-addons-for-elementor'),
-                    'zoomout'       => __('Zoom Out', 'pixerex-addons-for-elementor'),
-                    'scale'         => __('Scale', 'pixerex-addons-for-elementor'),
-                    'grayscale'     => __('Grayscale', 'pixerex-addons-for-elementor'),
-                    'blur'          => __('Blur', 'pixerex-addons-for-elementor'),
-                    'bright'        => __('Bright', 'pixerex-addons-for-elementor'),
-                    'sepia'         => __('Sepia', 'pixerex-addons-for-elementor'),
-                    'trans'         => __('Translate', 'pixerex-addons-for-elementor'),
+                    'none'          => __('None', 'pixerex-elementor-elements'),
+                    'zoomin'        => __('Zoom In', 'pixerex-elementor-elements'),
+                    'zoomout'       => __('Zoom Out', 'pixerex-elementor-elements'),
+                    'scale'         => __('Scale', 'pixerex-elementor-elements'),
+                    'grayscale'     => __('Grayscale', 'pixerex-elementor-elements'),
+                    'blur'          => __('Blur', 'pixerex-elementor-elements'),
+                    'bright'        => __('Bright', 'pixerex-elementor-elements'),
+                    'sepia'         => __('Sepia', 'pixerex-elementor-elements'),
+                    'trans'         => __('Translate', 'pixerex-elementor-elements'),
                 ],
                 'default'       => 'zoomin',
                 'label_block'   => true
@@ -175,19 +175,19 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_responsive_control('pixerex_person_text_align',
             [
-                'label'         => __( 'Content Alignment', 'pixerex-addons-for-elementor' ),
+                'label'         => __( 'Content Alignment', 'pixerex-elementor-elements' ),
                 'type'          => Controls_Manager::CHOOSE,
                 'options'       => [
                     'left'      => [
-                        'title'=> __( 'Left', 'pixerex-addons-for-elementor' ),
+                        'title'=> __( 'Left', 'pixerex-elementor-elements' ),
                         'icon' => 'fa fa-align-left',
                     ],
                     'center'    => [
-                        'title'=> __( 'Center', 'pixerex-addons-for-elementor' ),
+                        'title'=> __( 'Center', 'pixerex-elementor-elements' ),
                         'icon' => 'fa fa-align-center',
                     ],
                     'right'     => [
-                        'title'=> __( 'Right', 'pixerex-addons-for-elementor' ),
+                        'title'=> __( 'Right', 'pixerex-elementor-elements' ),
                         'icon' => 'fa fa-align-right',
                     ],
                 ],
@@ -200,7 +200,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_control('pixerex_person_name_heading',
             [
-                'label'         => __('Name Tag', 'pixerex-addons-for-elementor'),
+                'label'         => __('Name Tag', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SELECT,
                 'default'       => 'h2',
                 'options'       => [
@@ -220,7 +220,7 @@ class Pixerex_Person extends Widget_Base {
 
         $this->add_control('pixerex_person_title_heading',
             [
-                'label'         => __('Title Tag', 'pixerex-addons-for-elementor'),
+                'label'         => __('Title Tag', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SELECT,
                 'default'       => 'h4',
                 'options'       => [
@@ -240,15 +240,15 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_responsive_control('persons_per_row',
             [
-                'label'             => __('Members/Row', 'pixerex-addons-for-elementor'),
+                'label'             => __('Members/Row', 'pixerex-elementor-elements'),
                 'type'              => Controls_Manager::SELECT,
                 'options'           => [
-                    '100%'  => __('1 Column', 'pixerex-addons-for-elementor'),
-                    '50%'   => __('2 Columns', 'pixerex-addons-for-elementor'),
-                    '33.33%'=> __('3 Columns', 'pixerex-addons-for-elementor'),
-                    '25%'   => __('4 Columns', 'pixerex-addons-for-elementor'),
-                    '20%'   => __('5 Columns', 'pixerex-addons-for-elementor'),
-                    '16.667%'=> __('6 Columns', 'pixerex-addons-for-elementor'),
+                    '100%'  => __('1 Column', 'pixerex-elementor-elements'),
+                    '50%'   => __('2 Columns', 'pixerex-elementor-elements'),
+                    '33.33%'=> __('3 Columns', 'pixerex-elementor-elements'),
+                    '25%'   => __('4 Columns', 'pixerex-elementor-elements'),
+                    '20%'   => __('5 Columns', 'pixerex-elementor-elements'),
+                    '16.667%'=> __('6 Columns', 'pixerex-elementor-elements'),
                 ],
                 'default'           => '33.33%',
                 'render_type'       => 'template',
@@ -263,7 +263,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_responsive_control('spacing',
             [
-                'label'         => __('Spacing', 'pixerex-addons-for-elementor'),
+                'label'         => __('Spacing', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::DIMENSIONS,
                 'size_units'    => ['px', '%', "em"],
                 'default'       => [
@@ -284,7 +284,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_control('multiple_equal_height',
             [
-                'label'         => __( 'Equal Height', 'pixerex-addons-for-elementor' ),
+                'label'         => __( 'Equal Height', 'pixerex-elementor-elements' ),
                 'type'          => Controls_Manager::SWITCHER,
                 'default'       => 'yes',
                 'condition'     => [
@@ -297,7 +297,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->start_controls_section('pixerex_person_settings',
             [
-                'label'         => __('Single Member Settings', 'pixerex-addons-for-elementor'),
+                'label'         => __('Single Member Settings', 'pixerex-elementor-elements'),
                 'condition'     => [
                     'multiple!'   => 'yes'
                 ]
@@ -306,7 +306,7 @@ class Pixerex_Person extends Widget_Base {
 
         $this->add_control('pixerex_person_image',
             [
-                'label'         => __('Image', 'pixerex-addons-for-elementor'),
+                'label'         => __('Image', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::MEDIA,
                 'dynamic'       => [ 'active' => true ],
                 'default'       => [
@@ -318,7 +318,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_control('pixerex_person_name',
             [
-                'label'         => __('Name', 'pixerex-addons-for-elementor'),
+                'label'         => __('Name', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'default'       => 'John Frank',
@@ -329,26 +329,26 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_control('pixerex_person_title',
             [
-                'label'         => __('Title', 'pixerex-addons-for-elementor'),
+                'label'         => __('Title', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
-                'default'       => __('Senior Developer', 'pixerex-addons-for-elementor'),
+                'default'       => __('Senior Developer', 'pixerex-elementor-elements'),
                 'label_block'   => true,
             ]
         );
         
         $this->add_control('pixerex_person_content',
             [
-                'label'         => __('Description', 'pixerex-addons-for-elementor'),
+                'label'         => __('Description', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::WYSIWYG,
                 'dynamic'       => [ 'active' => true ],
-                'default'       => __('Lorem ipsum dolor sit amet, consectetur adipiscing elit','pixerex-addons-for-elementor'),
+                'default'       => __('Lorem ipsum dolor sit amet, consectetur adipiscing elit','pixerex-elementor-elements'),
             ]
         );
         
         $this->add_control('pixerex_person_social_enable',
             [
-                'label'         => __( 'Enable Social Icons', 'pixerex-addons-for-elementor' ),
+                'label'         => __( 'Enable Social Icons', 'pixerex-elementor-elements' ),
                 'type'          => Controls_Manager::SWITCHER,
                 'default'       => 'yes',
                 'separator'     => 'before'
@@ -357,7 +357,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_control('pixerex_person_facebook',
             [
-                'label'         => __('Facebook', 'pixerex-addons-for-elementor'),
+                'label'         => __('Facebook', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'default'       => '#',
@@ -370,7 +370,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_control('pixerex_person_twitter',
             [
-                'label'         => __('Twitter', 'pixerex-addons-for-elementor'),
+                'label'         => __('Twitter', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'default'       => '#',
@@ -383,7 +383,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_control('pixerex_person_linkedin',
             [
-                'label'         => __('LinkedIn', 'pixerex-addons-for-elementor'),
+                'label'         => __('LinkedIn', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'label_block'   => true,
@@ -395,7 +395,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_control('pixerex_person_google',
             [
-                'label'         => __('Google+', 'pixerex-addons-for-elementor'),
+                'label'         => __('Google+', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'label_block'   => true,
@@ -407,7 +407,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_control('pixerex_person_youtube',
             [
-                'label'         => __('YouTube', 'pixerex-addons-for-elementor'),
+                'label'         => __('YouTube', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'label_block'   => true,
@@ -419,7 +419,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_control('pixerex_person_instagram',
             [
-                'label'         => __('Instagram', 'pixerex-addons-for-elementor'),
+                'label'         => __('Instagram', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'default'       => '#',
@@ -432,7 +432,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_control('pixerex_person_skype',
             [
-                'label'         => __('Skype', 'pixerex-addons-for-elementor'),
+                'label'         => __('Skype', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'label_block'   => true,
@@ -444,7 +444,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_control('pixerex_person_pinterest',
             [
-                'label'         => __('Pinterest', 'pixerex-addons-for-elementor'),
+                'label'         => __('Pinterest', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'label_block'   => true,
@@ -456,7 +456,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_control('pixerex_person_dribbble',
             [
-                'label'         => __('Dribbble', 'pixerex-addons-for-elementor'),
+                'label'         => __('Dribbble', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'default'       => '#',
@@ -469,7 +469,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_control('pixerex_person_behance',
             [
-                'label'         => __('Behance', 'pixerex-addons-for-elementor'),
+                'label'         => __('Behance', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'label_block'   => true,
@@ -481,7 +481,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_control('pixerex_person_whatsapp',
             [
-                'label'         => __('WhatsApp', 'pixerex-addons-for-elementor'),
+                'label'         => __('WhatsApp', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'label_block'   => true,
@@ -493,7 +493,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_control('pixerex_person_telegram',
             [
-                'label'         => __('Telegram', 'pixerex-addons-for-elementor'),
+                'label'         => __('Telegram', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'label_block'   => true,
@@ -505,7 +505,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_control('pixerex_person_mail',
             [
-                'label'         => __('Email Address', 'pixerex-addons-for-elementor'),
+                'label'         => __('Email Address', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'label_block'   => true,
@@ -517,7 +517,7 @@ class Pixerex_Person extends Widget_Base {
 
         $this->add_control('pixerex_person_site',
             [
-                'label'         => __('Website', 'pixerex-addons-for-elementor'),
+                'label'         => __('Website', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'label_block'   => true,
@@ -532,7 +532,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->start_controls_section('multiple_settings',
             [
-                'label'         => __('Multiple Members Settings', 'pixerex-addons-for-elementor'),
+                'label'         => __('Multiple Members Settings', 'pixerex-elementor-elements'),
                 'condition'     => [
                     'multiple'   => 'yes'
                 ]
@@ -543,7 +543,7 @@ class Pixerex_Person extends Widget_Base {
         
         $repeater->add_control( 'multiple_image', 
             [
-                'label'         => __( 'Image', 'pixerex-addons-for-elementor' ),
+                'label'         => __( 'Image', 'pixerex-elementor-elements' ),
                 'type'          => Controls_Manager::MEDIA,
                 'dynamic'       => [ 'active' => true ],
                 'default'       => [
@@ -554,7 +554,7 @@ class Pixerex_Person extends Widget_Base {
         
         $repeater->add_control('multiple_name',
             [
-                'label'         => __('Name', 'pixerex-addons-for-elementor'),
+                'label'         => __('Name', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'default'       => 'John Frank',
@@ -565,26 +565,26 @@ class Pixerex_Person extends Widget_Base {
         
         $repeater->add_control('multiple_title',
             [
-                'label'         => __('Title', 'pixerex-addons-for-elementor'),
+                'label'         => __('Title', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
-                'default'       => __('Senior Developer', 'pixerex-addons-for-elementor'),
+                'default'       => __('Senior Developer', 'pixerex-elementor-elements'),
                 'label_block'   => true,
             ]
         );
         
         $repeater->add_control('multiple_description',
             [
-                'label'         => __('Description', 'pixerex-addons-for-elementor'),
+                'label'         => __('Description', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::WYSIWYG,
                 'dynamic'       => [ 'active' => true ],
-                'default'       => __('Lorem ipsum dolor sit amet, consectetur adipiscing elit','pixerex-addons-for-elementor'),
+                'default'       => __('Lorem ipsum dolor sit amet, consectetur adipiscing elit','pixerex-elementor-elements'),
             ]
         );
         
         $repeater->add_control('multiple_social_enable',
             [
-                'label'         => __( 'Enable Social Icons', 'pixerex-addons-for-elementor' ),
+                'label'         => __( 'Enable Social Icons', 'pixerex-elementor-elements' ),
                 'type'          => Controls_Manager::SWITCHER,
                 'default'       => 'yes',
                 'separator'     => 'before'
@@ -593,7 +593,7 @@ class Pixerex_Person extends Widget_Base {
         
         $repeater->add_control('multiple_facebook',
             [
-                'label'         => __('Facebook', 'pixerex-addons-for-elementor'),
+                'label'         => __('Facebook', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'default'       => '#',
@@ -606,7 +606,7 @@ class Pixerex_Person extends Widget_Base {
         
         $repeater->add_control('multiple_twitter',
             [
-                'label'         => __('Twitter', 'pixerex-addons-for-elementor'),
+                'label'         => __('Twitter', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'default'       => '#',
@@ -619,7 +619,7 @@ class Pixerex_Person extends Widget_Base {
         
         $repeater->add_control('multiple_linkedin',
             [
-                'label'         => __('LinkedIn', 'pixerex-addons-for-elementor'),
+                'label'         => __('LinkedIn', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'label_block'   => true,
@@ -631,7 +631,7 @@ class Pixerex_Person extends Widget_Base {
         
         $repeater->add_control('multiple_google',
             [
-                'label'         => __('Google+', 'pixerex-addons-for-elementor'),
+                'label'         => __('Google+', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'label_block'   => true,
@@ -643,7 +643,7 @@ class Pixerex_Person extends Widget_Base {
         
         $repeater->add_control('multiple_youtube',
             [
-                'label'         => __('YouTube', 'pixerex-addons-for-elementor'),
+                'label'         => __('YouTube', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'label_block'   => true,
@@ -655,7 +655,7 @@ class Pixerex_Person extends Widget_Base {
         
         $repeater->add_control('multiple_instagram',
             [
-                'label'         => __('Instagram', 'pixerex-addons-for-elementor'),
+                'label'         => __('Instagram', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'default'       => '#',
@@ -668,7 +668,7 @@ class Pixerex_Person extends Widget_Base {
         
         $repeater->add_control('multiple_skype',
             [
-                'label'         => __('Skype', 'pixerex-addons-for-elementor'),
+                'label'         => __('Skype', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'label_block'   => true,
@@ -680,7 +680,7 @@ class Pixerex_Person extends Widget_Base {
         
         $repeater->add_control('multiple_pinterest',
             [
-                'label'         => __('Pinterest', 'pixerex-addons-for-elementor'),
+                'label'         => __('Pinterest', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'label_block'   => true,
@@ -692,7 +692,7 @@ class Pixerex_Person extends Widget_Base {
         
         $repeater->add_control('multiple_dribbble',
             [
-                'label'         => __('Dribbble', 'pixerex-addons-for-elementor'),
+                'label'         => __('Dribbble', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'default'       => '#',
@@ -705,7 +705,7 @@ class Pixerex_Person extends Widget_Base {
         
         $repeater->add_control('multiple_behance',
             [
-                'label'         => __('Behance', 'pixerex-addons-for-elementor'),
+                'label'         => __('Behance', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'label_block'   => true,
@@ -717,7 +717,7 @@ class Pixerex_Person extends Widget_Base {
         
         $repeater->add_control('multiple_whatsapp',
             [
-                'label'         => __('WhatsApp', 'pixerex-addons-for-elementor'),
+                'label'         => __('WhatsApp', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'label_block'   => true,
@@ -729,7 +729,7 @@ class Pixerex_Person extends Widget_Base {
         
         $repeater->add_control('multiple_telegram',
             [
-                'label'         => __('Telegram', 'pixerex-addons-for-elementor'),
+                'label'         => __('Telegram', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'label_block'   => true,
@@ -741,7 +741,7 @@ class Pixerex_Person extends Widget_Base {
         
         $repeater->add_control('multiple_mail',
             [
-                'label'         => __('Email Address', 'pixerex-addons-for-elementor'),
+                'label'         => __('Email Address', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'label_block'   => true,
@@ -753,7 +753,7 @@ class Pixerex_Person extends Widget_Base {
 
         $repeater->add_control('multiple_site',
             [
-                'label'         => __('Website', 'pixerex-addons-for-elementor'),
+                'label'         => __('Website', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'label_block'   => true,
@@ -765,7 +765,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_control('multiple_persons',
            [
-               'label'          => __( 'Members', 'pixerex-addons-for-elementor' ),
+               'label'          => __( 'Members', 'pixerex-elementor-elements' ),
                'type'           => Controls_Manager::REPEATER,
                'default'       => [
                     [
@@ -786,14 +786,14 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_control('carousel',
             [
-                'label'         => __('Carousel', 'pixerex-addons-for-elementor'),
+                'label'         => __('Carousel', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SWITCHER
             ]
         );
         
         $this->add_control('carousel_play',
             [
-                'label'         => __('Auto Play', 'pixerex-addons-for-elementor'),
+                'label'         => __('Auto Play', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SWITCHER,
                 'condition'     => [
                     'carousel'  => 'yes'
@@ -803,8 +803,8 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_control('carousel_autoplay_speed',
 			[
-				'label'			=> __( 'Autoplay Speed', 'pixerex-addons-for-elementor' ),
-				'description'	=> __( 'Autoplay Speed means at which time the next slide should come. Set a value in milliseconds (ms)', 'pixerex-addons-for-elementor' ),
+				'label'			=> __( 'Autoplay Speed', 'pixerex-elementor-elements' ),
+				'description'	=> __( 'Autoplay Speed means at which time the next slide should come. Set a value in milliseconds (ms)', 'pixerex-elementor-elements' ),
 				'type'			=> Controls_Manager::NUMBER,
 				'default'		=> 5000,
 				'condition'		=> [
@@ -816,7 +816,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_responsive_control('carousel_arrows_pos',
             [
-                'label'         => __('Arrows Position', 'pixerex-addons-for-elementor'),
+                'label'         => __('Arrows Position', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SLIDER,
                 'size_units'    => ['px', "em"],
                 'range'         => [
@@ -859,7 +859,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->start_controls_section('pixerex_person_image_style', 
             [
-                'label'         => __('Image', 'pixerex-addons-for-elementor'),
+                'label'         => __('Image', 'pixerex-elementor-elements'),
                 'tab'           => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -876,7 +876,7 @@ class Pixerex_Person extends Widget_Base {
 			Group_Control_Css_Filter::get_type(),
 			[
 				'name'      => 'hover_css_filters',
-                'label'     => __('Hover CSS Filters', 'pixerex-addons-for-elementor'),
+                'label'     => __('Hover CSS Filters', 'pixerex-elementor-elements'),
 				'selector'  => '{{WRAPPER}} .pixerex-person-container:hover img'
 			]
 		);
@@ -919,14 +919,14 @@ class Pixerex_Person extends Widget_Base {
         
         $this->start_controls_section('pixerex_person_name_style', 
             [
-                'label'         => __('Name', 'pixerex-addons-for-elementor'),
+                'label'         => __('Name', 'pixerex-elementor-elements'),
                 'tab'           => Controls_Manager::TAB_STYLE,
             ]
         );
         
         $this->add_control('pixerex_person_name_color',
             [
-                'label'         => __('Color', 'pixerex-addons-for-elementor'),
+                'label'         => __('Color', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::COLOR,
                 'scheme'        => [
                     'type'  => Scheme_Color::get_type(),
@@ -957,7 +957,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_responsive_control('name_padding',
             [
-                'label'         => __('Padding', 'pixerex-addons-for-elementor'),
+                'label'         => __('Padding', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::DIMENSIONS,
                 'size_units'    => ['px', 'em', '%'],
                 'selectors'     => [
@@ -970,14 +970,14 @@ class Pixerex_Person extends Widget_Base {
         
         $this->start_controls_section('pixerex_person_title_style', 
             [
-                'label'         => __('Job Title', 'pixerex-addons-for-elementor'),
+                'label'         => __('Job Title', 'pixerex-elementor-elements'),
                 'tab'           => Controls_Manager::TAB_STYLE,
             ]
         );
         
         $this->add_control('pixerex_person_title_color',
             [
-                'label'         => __('Color', 'pixerex-addons-for-elementor'),
+                'label'         => __('Color', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::COLOR,
                 'scheme'        => [
                     'type'  => Scheme_Color::get_type(),
@@ -1008,7 +1008,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_responsive_control('title_padding',
             [
-                'label'         => __('Padding', 'pixerex-addons-for-elementor'),
+                'label'         => __('Padding', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::DIMENSIONS,
                 'size_units'    => ['px', 'em', '%'],
                 'selectors'     => [
@@ -1021,14 +1021,14 @@ class Pixerex_Person extends Widget_Base {
         
         $this->start_controls_section('pixerex_person_description_style', 
             [
-                'label'         => __('Description', 'pixerex-addons-for-elementor'),
+                'label'         => __('Description', 'pixerex-elementor-elements'),
                 'tab'           => Controls_Manager::TAB_STYLE,
             ]
         );
         
         $this->add_control('pixerex_person_description_color',
             [
-                'label'         => __('Color', 'pixerex-addons-for-elementor'),
+                'label'         => __('Color', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::COLOR,
                 'scheme'        => [
                     'type'  => Scheme_Color::get_type(),
@@ -1059,7 +1059,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_responsive_control('description_padding',
             [
-                'label'         => __('Padding', 'pixerex-addons-for-elementor'),
+                'label'         => __('Padding', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::DIMENSIONS,
                 'size_units'    => ['px', 'em', '%'],
                 'selectors'     => [
@@ -1072,7 +1072,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->start_controls_section('pixerex_person_social_icon_style', 
             [
-                'label'         => __('Social Icons', 'pixerex-addons-for-elementor'),
+                'label'         => __('Social Icons', 'pixerex-elementor-elements'),
                 'tab'           => Controls_Manager::TAB_STYLE,
                 'condition'     => [
                     'pixerex_person_social_enable'  => 'yes'
@@ -1082,7 +1082,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_responsive_control('pixerex_person_social_size',
             [
-                'label'         => __('Size', 'pixerex-addons-for-elementor'),
+                'label'         => __('Size', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SLIDER,
                 'size_units'    => ['px', 'em', '%'],
                 'label_block'   => true,
@@ -1094,7 +1094,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_control('pixerex_person_social_color',
             [
-                'label'         => __('Color', 'pixerex-addons-for-elementor'),
+                'label'         => __('Color', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::COLOR,
                 'scheme'        => [
                     'type'  => Scheme_Color::get_type(),
@@ -1108,7 +1108,7 @@ class Pixerex_Person extends Widget_Base {
 
         $this->add_control('pixerex_person_social_hover_color',
             [
-                'label'         => __('Hover Color', 'pixerex-addons-for-elementor'),
+                'label'         => __('Hover Color', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::COLOR,
                 'scheme'        => [
                     'type'  => Scheme_Color::get_type(),
@@ -1122,7 +1122,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_control('pixerex_person_social_background',
             [
-                'label'             => __('Background Color', 'pixerex-addons-for-elementor'),
+                'label'             => __('Background Color', 'pixerex-elementor-elements'),
                 'type'              => Controls_Manager::COLOR,
                 'selectors'      => [
                     '{{WRAPPER}} .pixerex-person-list-item a'  => 'background-color: {{VALUE}}',
@@ -1132,7 +1132,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_control('pixerex_person_social_default_colors',
             [
-                'label'         => __( 'Brands Default Colors', 'pixerex-addons-for-elementor' ),
+                'label'         => __( 'Brands Default Colors', 'pixerex-elementor-elements' ),
                 'type'          => Controls_Manager::SWITCHER,
                 'prefix_class'  => 'pixerex-person-defaults-'
             ]
@@ -1140,7 +1140,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_control('pixerex_person_social_hover_background',
             [
-                'label'             => __('Hover Background Color', 'pixerex-addons-for-elementor'),
+                'label'             => __('Hover Background Color', 'pixerex-elementor-elements'),
                 'type'              => Controls_Manager::COLOR,
                 'selectors'      => [
                     '{{WRAPPER}} li.pixerex-person-list-item:hover a'  => 'background-color: {{VALUE}}',
@@ -1161,7 +1161,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_responsive_control('pixerex_person_social_radius',
             [
-                'label'         => __('Border Radius', 'pixerex-addons-for-elementor'),
+                'label'         => __('Border Radius', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::DIMENSIONS,
                 'size_units'    => ['px', 'em', '%'],
                 'selectors'     => [
@@ -1172,7 +1172,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_responsive_control('pixerex_person_social_margin',
             [
-                'label'         => __('Margin', 'pixerex-addons-for-elementor'),
+                'label'         => __('Margin', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::DIMENSIONS,
                 'size_units'    => ['px', 'em', '%'],
                 'selectors'     => [
@@ -1183,7 +1183,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_responsive_control('pixerex_person_social_padding',
             [
-                'label'         => __('Padding', 'pixerex-addons-for-elementor'),
+                'label'         => __('Padding', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::DIMENSIONS,
                 'size_units'    => ['px', 'em', '%'],
                 'selectors'     => [
@@ -1196,14 +1196,14 @@ class Pixerex_Person extends Widget_Base {
         
         $this->start_controls_section('pixerex_person_general_style', 
             [
-                'label'         => __('Content', 'pixerex-addons-for-elementor'),
+                'label'         => __('Content', 'pixerex-elementor-elements'),
                 'tab'           => Controls_Manager::TAB_STYLE,
             ]
         );
         
         $this->add_control('pixerex_person_content_background_color',
             [
-                'label'         => __('Background Color', 'pixerex-addons-for-elementor'),
+                'label'         => __('Background Color', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::COLOR,
                 'default'       => 'rgba(245,245,245,0.97)',
                 'selectors'     => [
@@ -1214,7 +1214,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_responsive_control('pixerex_person_border_bottom_width',
             [
-                'label'         => __('Bottom Offset', 'pixerex-addons-for-elementor'),
+                'label'         => __('Bottom Offset', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SLIDER,
                 'size_units'    => ['px', 'em', '%'],
                 'range'         => [
@@ -1239,7 +1239,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_responsive_control('pixerex_person_content_speed',
             [
-                'label'			=> __( 'Transition Duration (sec)', 'pixerex-addons-for-elementor' ),
+                'label'			=> __( 'Transition Duration (sec)', 'pixerex-elementor-elements' ),
                 'type'			=> Controls_Manager::SLIDER,
                 'range'         => [
                     'px'    => [
@@ -1256,7 +1256,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_responsive_control('pixerex_person_content_padding',
             [
-                'label'         => __('Padding', 'pixerex-addons-for-elementor'),
+                'label'         => __('Padding', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::DIMENSIONS,
                 'size_units'    => ['px', 'em', '%'],
                 'selectors'     => [
@@ -1269,7 +1269,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->start_controls_section('carousel_style',
             [
-                'label'         => __('Carousel', 'pixerex-addons-for-elementor'),
+                'label'         => __('Carousel', 'pixerex-elementor-elements'),
                 'tab'           => Controls_Manager::TAB_STYLE,
                 'condition'     => [
                     'carousel'  => 'yes'
@@ -1279,7 +1279,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_control('arrow_color',
             [
-                'label'         => __('Color', 'pixerex-addons-for-elementor'),
+                'label'         => __('Color', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::COLOR,
                 'scheme'        => [
                     'type'  => Scheme_Color::get_type(),
@@ -1293,7 +1293,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_control('arrow_hover_color',
             [
-                'label'         => __('Hover Color', 'pixerex-addons-for-elementor'),
+                'label'         => __('Hover Color', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::COLOR,
                 'scheme'        => [
                     'type'  => Scheme_Color::get_type(),
@@ -1307,7 +1307,7 @@ class Pixerex_Person extends Widget_Base {
 
         $this->add_responsive_control('arrow_size',
             [
-                'label'         => __('Size', 'pixerex-addons-for-elementor'),
+                'label'         => __('Size', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SLIDER,
                 'size_units'    => ['px', '%' ,'em'],
                 'selectors'     => [
@@ -1318,7 +1318,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_control('arrow_background',
             [
-                'label'         => __('Background Color', 'pixerex-addons-for-elementor'),
+                'label'         => __('Background Color', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::COLOR,
                 'scheme'        => [
                     'type'  => Scheme_Color::get_type(),
@@ -1332,7 +1332,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_control('arrow_hover_background',
             [
-                'label'         => __('Background Hover Color', 'pixerex-addons-for-elementor'),
+                'label'         => __('Background Hover Color', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::COLOR,
                 'scheme'        => [
                     'type'  => Scheme_Color::get_type(),
@@ -1346,7 +1346,7 @@ class Pixerex_Person extends Widget_Base {
         
         $this->add_control('arrow_border_radius',
             [
-                'label'         => __('Border Radius', 'pixerex-addons-for-elementor'),
+                'label'         => __('Border Radius', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SLIDER,
                 'size_units'    => ['px', '%' ,'em'],
                 'selectors'     => [
@@ -1357,7 +1357,7 @@ class Pixerex_Person extends Widget_Base {
 
         $this->add_control('arrow_padding',
             [
-                'label'         => __('Padding', 'pixerex-addons-for-elementor'),
+                'label'         => __('Padding', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SLIDER,
                 'size_units'    => ['px', '%' ,'em'],
                 'selectors'     => [

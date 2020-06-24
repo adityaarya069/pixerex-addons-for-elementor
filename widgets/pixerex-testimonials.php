@@ -31,7 +31,7 @@ class Pixerex_Testimonials extends Widget_Base {
     }
 
     public function get_title() {
-		return sprintf( '%1$s %2$s', Helper_Functions::get_prefix(), __('Testimonial', 'pixerex-addons-for-elementor') );
+		return sprintf( '%1$s %2$s', Helper_Functions::get_prefix(), __('Testimonial', 'pixerex-elementor-elements') );
 	}
 
     public function get_icon() {
@@ -59,32 +59,32 @@ class Pixerex_Testimonials extends Widget_Base {
         
         $this->start_controls_section('pixerex_testimonial_person_settings',
             [
-                'label'             => __('Author', 'pixerex-addons-for-elementor'),
+                'label'             => __('Author', 'pixerex-elementor-elements'),
             ]
         );
         
         $this->add_control('pixerex_testimonial_person_image',
             [
-                'label'             => __('Image','pixerex-addons-for-elementor'),
+                'label'             => __('Image','pixerex-elementor-elements'),
                 'type'              => Controls_Manager::MEDIA,
                 'dynamic'       => [ 'active' => true ],
                 'default'      => [
                     'url'   => Utils::get_placeholder_image_src()
                 ],
-                'description'       => __( 'Choose an image for the author', 'pixerex-addons-for-elementor' ),
+                'description'       => __( 'Choose an image for the author', 'pixerex-elementor-elements' ),
                 'show_label'        => true,
             ]
         );
 
         $this->add_control('pixerex_testimonial_person_image_shape',
             [
-                'label'             => __('Image Style', 'pixerex-addons-for-elementor'),
+                'label'             => __('Image Style', 'pixerex-elementor-elements'),
                 'type'              => Controls_Manager::SELECT,
-                'description'       => __( 'Choose image style', 'pixerex-addons-for-elementor' ),
+                'description'       => __( 'Choose image style', 'pixerex-elementor-elements' ),
                 'options'           => [
-                    'square'  => __('Square','pixerex-addons-for-elementor'),
-                    'circle'  => __('Circle','pixerex-addons-for-elementor'),
-                    'rounded' => __('Rounded','pixerex-addons-for-elementor'),
+                    'square'  => __('Square','pixerex-elementor-elements'),
+                    'circle'  => __('Circle','pixerex-elementor-elements'),
+                    'rounded' => __('Rounded','pixerex-elementor-elements'),
                 ],
                 'default'           => 'circle',
             ]
@@ -92,7 +92,7 @@ class Pixerex_Testimonials extends Widget_Base {
         
         $this->add_control('pixerex_testimonial_person_name',
             [
-                'label'             => __('Name', 'pixerex-addons-for-elementor'),
+                'label'             => __('Name', 'pixerex-elementor-elements'),
                 'type'              => Controls_Manager::TEXT,
                 'default'           => 'John Doe',
                 'dynamic'           => [ 'active' => true ],
@@ -102,9 +102,9 @@ class Pixerex_Testimonials extends Widget_Base {
         
         $this->add_control('pixerex_testimonial_person_name_size',
             [
-                'label'             => __('HTML Tag', 'pixerex-addons-for-elementor'),
+                'label'             => __('HTML Tag', 'pixerex-elementor-elements'),
                 'type'              => Controls_Manager::SELECT,
-                'description'       => __( 'Select a heading tag for author name', 'pixerex-addons-for-elementor' ),
+                'description'       => __( 'Select a heading tag for author name', 'pixerex-elementor-elements' ),
                 'options'       => [
                     'h1'    => 'H1',
                     'h2'    => 'H2',
@@ -123,7 +123,7 @@ class Pixerex_Testimonials extends Widget_Base {
 
         $this->add_control('separator_text',
             [
-                'label'         => __('Separator', 'pixerex-addons-for-elementor'),
+                'label'         => __('Separator', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
                 'default'       => '-',
@@ -133,11 +133,11 @@ class Pixerex_Testimonials extends Widget_Base {
 
         $this->add_control('separator_align',
             [
-                'label'             => __('Align', 'pixerex-addons-for-elementor'),
+                'label'             => __('Align', 'pixerex-elementor-elements'),
                 'type'              => Controls_Manager::SELECT,
                 'options'           => [
-                    'row'  => __('Inline','pixerex-addons-for-elementor'),
-                    'column'  => __('Block','pixerex-addons-for-elementor'),
+                    'row'  => __('Inline','pixerex-elementor-elements'),
+                    'column'  => __('Block','pixerex-elementor-elements'),
                 ],
                 'default'           => 'row',
                 'prefix_class'      => 'pixerex-testimonial-separator-',
@@ -149,7 +149,7 @@ class Pixerex_Testimonials extends Widget_Base {
 
         $this->add_control('separator_spacing',
             [
-                'label'             => __('Spacing', 'pixerex-addons-for-elementor'),
+                'label'             => __('Spacing', 'pixerex-elementor-elements'),
                 'type'              => Controls_Manager::SLIDER,
                 'size_units'        => ['px', 'em'],
                 'default'           => [
@@ -167,13 +167,13 @@ class Pixerex_Testimonials extends Widget_Base {
 
         $this->start_controls_section('pixerex_testimonial_company_settings',
             [
-                'label'             => __('Company', 'pixerex-addons-for-elementor')
+                'label'             => __('Company', 'pixerex-elementor-elements')
             ]
         );
         
         $this->add_control('pixerex_testimonial_company_name',
             [
-                'label'             => __('Name', 'pixerex-addons-for-elementor'),
+                'label'             => __('Name', 'pixerex-elementor-elements'),
                 'type'              => Controls_Manager::TEXT,
                 'dynamic'           => [ 'active' => true ],
                 'default'           => 'Pixerex',
@@ -183,9 +183,9 @@ class Pixerex_Testimonials extends Widget_Base {
         
         $this->add_control('pixerex_testimonial_company_name_size',
             [
-                'label'             => __('HTML Tag', 'pixerex-addons-for-elementor'),
+                'label'             => __('HTML Tag', 'pixerex-elementor-elements'),
                 'type'              => Controls_Manager::SELECT,
-                'description'       => __( 'Select a heading tag for company name', 'pixerex-addons-for-elementor' ),
+                'description'       => __( 'Select a heading tag for company name', 'pixerex-elementor-elements' ),
                 'options'           => [
                     'h1' => 'H1',
                     'h2' => 'H2',
@@ -204,7 +204,7 @@ class Pixerex_Testimonials extends Widget_Base {
         
         $this->add_control('pixerex_testimonial_company_link_switcher',
             [
-                'label'         => __('Link', 'pixerex-addons-for-elementor'),
+                'label'         => __('Link', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SWITCHER,
                 'default'       => 'yes',
             ]
@@ -212,7 +212,7 @@ class Pixerex_Testimonials extends Widget_Base {
 
         $this->add_control('pixerex_testimonial_company_link',
             [
-                'label'             => __('Link', 'pixerex-addons-for-elementor'),
+                'label'             => __('Link', 'pixerex-elementor-elements'),
                 'type'              => Controls_Manager::TEXT,
                 'dynamic'           => [
                 'active'            => true,
@@ -221,7 +221,7 @@ class Pixerex_Testimonials extends Widget_Base {
                         TagsModule::URL_CATEGORY
                     ]
                 ],
-                'description'       => __( 'Add company URL', 'pixerex-addons-for-elementor' ),
+                'description'       => __( 'Add company URL', 'pixerex-elementor-elements' ),
                 'label_block'       => true,
                 'condition'         => [
                     'pixerex_testimonial_company_link_switcher' => 'yes'
@@ -231,16 +231,16 @@ class Pixerex_Testimonials extends Widget_Base {
         
         $this->add_control('pixerex_testimonial_link_target',
             [
-                'label'             => __('Link Target', 'pixerex-addons-for-elementor'),
+                'label'             => __('Link Target', 'pixerex-elementor-elements'),
                 'type'              => Controls_Manager::SELECT,
-                'description'       => __( 'Select link target', 'pixerex-addons-for-elementor' ),
+                'description'       => __( 'Select link target', 'pixerex-elementor-elements' ),
                 'options'           => [
                     'blank'  => __('Blank'),
                     'parent' => __('Parent'),
                     'self'   => __('Self'),
                     'top'    => __('Top'),
                 ],
-                'default'           => __('blank','pixerex-addons-for-elementor'),
+                'default'           => __('blank','pixerex-elementor-elements'),
                 'condition'         => [
                     'pixerex_testimonial_company_link_switcher' => 'yes'
                 ]
@@ -251,16 +251,16 @@ class Pixerex_Testimonials extends Widget_Base {
 
         $this->start_controls_section('pixerex_testimonial_settings',
             [
-                'label'                 => __('Content', 'pixerex-addons-for-elementor'),
+                'label'                 => __('Content', 'pixerex-elementor-elements'),
             ]
         );
 
         $this->add_control('pixerex_testimonial_content',
             [    
-                'label'             => __('Testimonial Content', 'pixerex-addons-for-elementor'),
+                'label'             => __('Testimonial Content', 'pixerex-elementor-elements'),
                 'type'              => Controls_Manager::WYSIWYG,
                 'dynamic'           => [ 'active' => true ],
-                'default'           => __('Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus.','pixerex-addons-for-elementor'),
+                'default'           => __('Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus.','pixerex-elementor-elements'),
                 'label_block'       => true,
             ]
         );
@@ -285,14 +285,14 @@ class Pixerex_Testimonials extends Widget_Base {
         
         $this->start_controls_section('pixerex_testimonial_image_style',
             [
-                'label'             => __('Image', 'pixerex-addons-for-elementor'),
+                'label'             => __('Image', 'pixerex-elementor-elements'),
                 'tab'               => Controls_Manager::TAB_STYLE, 
             ]
         );
         
         $this->add_control('pixerex_testimonial_img_size',
             [
-                'label'             => __('Size', 'pixerex-addons-for-elementor'),
+                'label'             => __('Size', 'pixerex-elementor-elements'),
                 'type'              => Controls_Manager::SLIDER,
                 'size_units'        => ['px', 'em'],
                 'default'           => [
@@ -313,7 +313,7 @@ class Pixerex_Testimonials extends Widget_Base {
 
         $this->add_control('pixerex_testimonial_img_border_width',
             [
-                'label'             => __('Border Width (PX)', 'pixerex-addons-for-elementor'),
+                'label'             => __('Border Width (PX)', 'pixerex-elementor-elements'),
                 'type'              => Controls_Manager::SLIDER,
                 'default'           => [
                     'unit'  => 'px',
@@ -333,7 +333,7 @@ class Pixerex_Testimonials extends Widget_Base {
         
         $this->add_control('pixerex_testimonial_image_border_color',
              [
-                'label'                 => __('Border Color', 'pixerex-addons-for-elementor'),
+                'label'                 => __('Border Color', 'pixerex-elementor-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'scheme'            => [
                         'type'  => Scheme_Color::get_type(),
@@ -349,14 +349,14 @@ class Pixerex_Testimonials extends Widget_Base {
         
         $this->start_controls_section('pixerex_testimonials_person_style', 
             [
-                'label'                 => __('Author', 'pixerex-addons-for-elementor'),
+                'label'                 => __('Author', 'pixerex-elementor-elements'),
                 'tab'                   => Controls_Manager::TAB_STYLE, 
             ]
         );
         
         $this->add_control('pixerex_testimonial_person_name_color',
             [
-                'label'             => __('Author Color', 'pixerex-addons-for-elementor'),
+                'label'             => __('Author Color', 'pixerex-elementor-elements'),
                 'type'              => Controls_Manager::COLOR,
                 'scheme'            => [
                     'type'  => Scheme_Color::get_type(),
@@ -372,7 +372,7 @@ class Pixerex_Testimonials extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'          => 'author_name_typography',
-                'label'         => __('Name Typograhy', 'pixerex-addons-for-elementor'),
+                'label'         => __('Name Typograhy', 'pixerex-elementor-elements'),
                 'scheme'        => Scheme_Typography::TYPOGRAPHY_1,
                 'selector'      => '{{WRAPPER}} .pixerex-testimonial-person-name',
             ]
@@ -388,7 +388,7 @@ class Pixerex_Testimonials extends Widget_Base {
         
         $this->add_control('pixerex_testimonial_separator_color',
             [
-                'label'             => __('Separator Color', 'pixerex-addons-for-elementor'),
+                'label'             => __('Separator Color', 'pixerex-elementor-elements'),
                 'type'              => Controls_Manager::COLOR,
                 'scheme'            => [
                     'type'  => Scheme_Color::get_type(),
@@ -408,7 +408,7 @@ class Pixerex_Testimonials extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'          => 'separator_typography',
-                'label'         => __('Separator Typograhy', 'pixerex-addons-for-elementor'),
+                'label'         => __('Separator Typograhy', 'pixerex-elementor-elements'),
                 'condition'     => [
                     'separator_text!'  => ''
                 ],
@@ -420,14 +420,14 @@ class Pixerex_Testimonials extends Widget_Base {
         
         $this->start_controls_section('pixerex_testimonial_company_style',
             [
-                'label'             => __('Company', 'pixerex-addons-for-elementor'),
+                'label'             => __('Company', 'pixerex-elementor-elements'),
                 'tab'               => Controls_Manager::TAB_STYLE, 
             ]
         );
 
         $this->add_control('pixerex_testimonial_company_name_color',
             [
-                'label'             => __('Color', 'pixerex-addons-for-elementor'),
+                'label'             => __('Color', 'pixerex-elementor-elements'),
                 'type'              => Controls_Manager::COLOR,
                 'scheme'            => [
                     'type'  => Scheme_Color::get_type(),
@@ -460,14 +460,14 @@ class Pixerex_Testimonials extends Widget_Base {
         
         $this->start_controls_section('pixerex_testimonial_content_style',
             [
-                'label'             => __('Content', 'pixerex-addons-for-elementor'),
+                'label'             => __('Content', 'pixerex-elementor-elements'),
                 'tab'               => Controls_Manager::TAB_STYLE, 
             ]
         );
 
         $this->add_control('pixerex_testimonial_content_color',
             [
-                'label'             => __('Color', 'pixerex-addons-for-elementor'),
+                'label'             => __('Color', 'pixerex-elementor-elements'),
                 'type'              => Controls_Manager::COLOR,
                 'scheme'            => [
                     'type'  => Scheme_Color::get_type(),
@@ -490,7 +490,7 @@ class Pixerex_Testimonials extends Widget_Base {
         
         $this->add_responsive_control('pixerex_testimonial_margin',
             [
-                'label'                 => __('Margin', 'pixerex-addons-for-elementor'),
+                'label'                 => __('Margin', 'pixerex-elementor-elements'),
                 'type'                  => Controls_Manager::DIMENSIONS,
                 'size_units'            => ['px', 'em', '%'],
                 'default'               =>[
@@ -510,14 +510,14 @@ class Pixerex_Testimonials extends Widget_Base {
         
         $this->start_controls_section('pixerex_testimonial_quotes',
             [
-                'label'             => __('Quotation Icon', 'pixerex-addons-for-elementor'),
+                'label'             => __('Quotation Icon', 'pixerex-elementor-elements'),
                 'tab'               => Controls_Manager::TAB_STYLE,
             ]
         );
         
         $this->add_control('pixerex_testimonial_quote_icon_color',
             [
-                'label'              => __('Color','pixerex-addons-for-elementor'),
+                'label'              => __('Color','pixerex-elementor-elements'),
                 'type'               => Controls_Manager::COLOR,
                 'default'            => 'rgba(110,193,228,0.2)',
                 'selectors'         =>  [
@@ -528,7 +528,7 @@ class Pixerex_Testimonials extends Widget_Base {
 
         $this->add_control('pixerex_testimonial_quotes_size',
             [
-                'label'             => __('Size', 'pixerex-addons-for-elementor'),
+                'label'             => __('Size', 'pixerex-elementor-elements'),
                 'type'              => Controls_Manager::SLIDER,
                 'size_units'    => ['px', 'em', '%'],
                 'default'           => [
@@ -549,7 +549,7 @@ class Pixerex_Testimonials extends Widget_Base {
         
         $this->add_responsive_control('pixerex_testimonial_upper_quote_position',
             [
-                'label'             => __('Top Icon Position', 'pixerex-addons-for-elementor'),
+                'label'             => __('Top Icon Position', 'pixerex-elementor-elements'),
                 'type'              => Controls_Manager::DIMENSIONS,
                 'size_units'            => ['px', 'em', '%'],
                 'default'           =>[
@@ -565,7 +565,7 @@ class Pixerex_Testimonials extends Widget_Base {
         
         $this->add_responsive_control('pixerex_testimonial_lower_quote_position',
             [
-                'label'             => __('Bottom Icon Position', 'pixerex-addons-for-elementor'),
+                'label'             => __('Bottom Icon Position', 'pixerex-elementor-elements'),
                 'type'              => Controls_Manager::DIMENSIONS,
                 'size_units'        => ['px', 'em', '%'],
                 'default'           =>[
@@ -583,7 +583,7 @@ class Pixerex_Testimonials extends Widget_Base {
         
         $this->start_controls_section('pixerex_testimonial_container_style',
             [
-                'label'     => __('Container','pixerex-addons-for-elementor'),
+                'label'     => __('Container','pixerex-elementor-elements'),
                 'tab'       => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -607,7 +607,7 @@ class Pixerex_Testimonials extends Widget_Base {
 
         $this->add_control('pixerex_testimonial_container_border_radius',
             [
-                'label'         => __('Border Radius', 'pixerex-addons-for-elementor'),
+                'label'         => __('Border Radius', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SLIDER,
                 'size_units'    => ['px', 'em', '%'],
                 'selectors'     => [
@@ -626,7 +626,7 @@ class Pixerex_Testimonials extends Widget_Base {
         
         $this->add_responsive_control('pixerex_testimonial_box_padding',
                 [
-                    'label'         => __('Padding', 'pixerex-addons-for-elementor'),
+                    'label'         => __('Padding', 'pixerex-elementor-elements'),
                     'type'          => Controls_Manager::DIMENSIONS,
                     'size_units'    => [ 'px', 'em', '%' ],
                     'selectors'     => [

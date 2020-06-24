@@ -49,10 +49,10 @@ class Grid extends WPML_Elementor_Module_With_Items {
 	protected function get_title( $field ) {
 		
         if ( 'pixerex_gallery_img_name' === $field ) {
-			return __( 'Grid: Image Name', 'pixerex-addons-for-elementor' );
+			return __( 'Grid: Image Name', 'pixerex-elementor-elements' );
 		}
         if ( 'pixerex_gallery_img_desc' === $field ) {
-			return __( 'Grid: Image Description', 'pixerex-addons-for-elementor' );
+			return __( 'Grid: Image Description', 'pixerex-elementor-elements' );
 		}
 
 		return '';

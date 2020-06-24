@@ -29,7 +29,7 @@ class Maps {
         add_submenu_page(
             'pixerex-addons',
             '',
-            __('Google Maps', 'pixerex-addons-for-elementor'),
+            __('Google Maps', 'pixerex-elementor-elements'),
             'manage_options',
             'pixerex-addons-maps',
             [ $this, 'pa_maps_page' ]
@@ -70,7 +70,7 @@ class Maps {
            <div class="pa-header-wrapper">
               <div class="pa-title-left">
                   <h1 class="pa-title-main"><?php echo Helper_Functions::name(); ?></h1>
-                 <h3 class="pa-title-sub"><?php echo sprintf(__('Thank you for using %s. This plugin has been developed by %s and we hope you enjoy using it.','pixerex-addons-for-elementor'), Helper_Functions::name(), Helper_Functions::author()); ?></h3>
+                 <h3 class="pa-title-sub"><?php echo sprintf(__('Thank you for using %s. This plugin has been developed by %s and we hope you enjoy using it.','pixerex-elementor-elements'), Helper_Functions::name(), Helper_Functions::author()); ?></h3>
               </div>
               <?php if( ! Helper_Functions::is_hide_logo()) : ?>
                     <div class="pa-title-right">
@@ -84,12 +84,12 @@ class Maps {
                     <table class="pa-maps-table">
                        <tr>
                           <p class="pa-maps-api-notice">
-                             <?php echo esc_html( Helper_Functions::get_prefix() ) . __(' Maps Element requires Google API key to be entered below. If you don’t have one, click ', 'pixerex-addons-for-elementor'); ?><a href="https://pixerexaddons.com/docs/getting-your-api-key-for-google-reviews/" target="_blank"><?php echo __('here', 'pixerex-addons-for-elementor'); ?></a><?php echo __(' to get your  key.', 'pixerex-addons-for-elementor'); ?>
+                             <?php echo esc_html( Helper_Functions::get_prefix() ) . __(' Maps Element requires Google API key to be entered below. If you don’t have one, click ', 'pixerex-elementor-elements'); ?><a href="https://pixerexaddons.com/docs/getting-your-api-key-for-google-reviews/" target="_blank"><?php echo __('here', 'pixerex-elementor-elements'); ?></a><?php echo __(' to get your  key.', 'pixerex-elementor-elements'); ?>
                           </p>
                        </tr>
                        <tr>
                           <td>
-                             <h4 class="pa-api-title"><?php echo __('Google Maps API Key:', 'pixerex-addons-for-elementor'); ?></h4>
+                             <h4 class="pa-api-title"><?php echo __('Google Maps API Key:', 'pixerex-elementor-elements'); ?></h4>
                           </td>
                           <td>
                               <input name="pixerex-map-api" id="pixerex-map-api" type="text" placeholder="API Key" value="<?php echo esc_attr( $settings['pixerex-map-api'] ); ?>">
@@ -97,11 +97,11 @@ class Maps {
                        </tr>
                        <tr>
                           <td>
-                             <h4 class="pa-api-disable-title"><?php echo __('Google Maps Localization Language:', 'pixerex-addons-for-elementor'); ?></h4>
+                             <h4 class="pa-api-disable-title"><?php echo __('Google Maps Localization Language:', 'pixerex-elementor-elements'); ?></h4>
                           </td>
                           <td>
                               <select name="pixerex-map-locale" id="pixerex-map-locale" class="placeholder placeholder-active">
-                                    <option value=""><?php _e( 'Default', 'pixerex-addons-for-elementor' ); ?></option>
+                                    <option value=""><?php _e( 'Default', 'pixerex-elementor-elements' ); ?></option>
                                 <?php foreach ( $locales as $key => $value ) { ?>
                                     <?php
                                     $selected = '';
@@ -116,25 +116,25 @@ class Maps {
                        </tr>
                        <tr>
                           <td>
-                             <h4 class="pa-api-disable-title"><?php echo __('Load Maps API JS File:','pixerex-addons-for-elementor'); ?></h4>
+                             <h4 class="pa-api-disable-title"><?php echo __('Load Maps API JS File:','pixerex-elementor-elements'); ?></h4>
                           </td>
                           <td>
-                              <input name="pixerex-map-disable-api" id="pixerex-map-disable-api" type="checkbox" <?php checked(1, $settings['pixerex-map-disable-api'], true) ?>><span><?php echo __('This will load API JS file if it\'s not loaded by another theme or plugin', 'pixerex-addons-for-elementor'); ?></span>
+                              <input name="pixerex-map-disable-api" id="pixerex-map-disable-api" type="checkbox" <?php checked(1, $settings['pixerex-map-disable-api'], true) ?>><span><?php echo __('This will load API JS file if it\'s not loaded by another theme or plugin', 'pixerex-elementor-elements'); ?></span>
                           </td>
                        </tr>
                        <tr>
                           <td>
-                             <h4 class="pa-api-disable-title"><?php echo __('Load Markers Clustering JS File:','pixerex-addons-for-elementor'); ?></h4>
+                             <h4 class="pa-api-disable-title"><?php echo __('Load Markers Clustering JS File:','pixerex-elementor-elements'); ?></h4>
                           </td>
                           <td>
-                              <input name="pixerex-map-cluster" id="pixerex-map-cluster" type="checkbox" <?php checked(1, $settings['pixerex-map-cluster'], true) ?>><span><?php echo __('This will load the JS file for markers clusters', 'pixerex-addons-for-elementor'); ?></span>
+                              <input name="pixerex-map-cluster" id="pixerex-map-cluster" type="checkbox" <?php checked(1, $settings['pixerex-map-cluster'], true) ?>><span><?php echo __('This will load the JS file for markers clusters', 'pixerex-elementor-elements'); ?></span>
                           </td>
                        </tr>
                     </table>
-                    <input type="submit" value="<?php echo __('Save Settings', 'pixerex-addons-for-elementor'); ?>" class="button pa-btn pa-save-button">
+                    <input type="submit" value="<?php echo __('Save Settings', 'pixerex-elementor-elements'); ?>" class="button pa-btn pa-save-button">
                     <?php if( ! Helper_Functions::is_hide_rate() ) : ?>
                         <div>
-                                <p><?php echo __('Did you like pixerex Addons for Elementor Plugin? Please ', 'pixerex-addons-for-elementor'); ?><a href="https://wordpress.org/support/plugin/pixerex-addons-for-elementor/reviews/#new-post" target="_blank"><?php echo __('Click Here to Rate it ★★★★★', 'pixerex-addons-for-elementor'); ?></a></p>
+                                <p><?php echo __('Did you like pixerex Addons for Elementor Plugin? Please ', 'pixerex-elementor-elements'); ?><a href="https://wordpress.org/support/plugin/pixerex-elementor-elements/reviews/#new-post" target="_blank"><?php echo __('Click Here to Rate it ★★★★★', 'pixerex-elementor-elements'); ?></a></p>
                         </div>
                     <?php endif; ?>
                  </div>

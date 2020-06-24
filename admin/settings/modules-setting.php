@@ -37,10 +37,10 @@ class Modules_Settings {
             [
                 'home_url'  => home_url(),
                 'i18n' => [
-					'rollback_confirm' => __( 'Are you sure you want to reinstall version ' . PIXEREX_ADDONS_STABLE_VERSION . ' ?', 'pixerex-addons-for-elementor' ),
-					'rollback_to_previous_version' => __( 'Rollback to Previous Version', 'pixerex-addons-for-elementor' ),
-					'yes' => __( 'Yes', 'pixerex-addons-for-elementor' ),
-					'cancel' => __( 'Cancel', 'pixerex-addons-for-elementor' ),
+					'rollback_confirm' => __( 'Are you sure you want to reinstall version ' . PIXEREX_ADDONS_STABLE_VERSION . ' ?', 'pixerex-elementor-elements' ),
+					'rollback_to_previous_version' => __( 'Rollback to Previous Version', 'pixerex-elementor-elements' ),
+					'yes' => __( 'Yes', 'pixerex-elementor-elements' ),
+					'cancel' => __( 'Cancel', 'pixerex-elementor-elements' ),
 				],
             ]
             );
@@ -163,7 +163,7 @@ class Modules_Settings {
             <div class="pa-header-wrapper">
                 <div class="pa-title-left">
                     <h1 class="pa-title-main"><?php echo Helper_Functions::name(); ?></h1>
-                    <h3 class="pa-title-sub"><?php echo sprintf(__('Thank you for using %s. This plugin has been developed by %s and we hope you enjoy using it.','pixerex-addons-for-elementor'), Helper_Functions::name(), Helper_Functions::author() ); ?></h3>
+                    <h3 class="pa-title-sub"><?php echo sprintf(__('Thank you for using %s. This plugin has been developed by %s and we hope you enjoy using it.','pixerex-elementor-elements'), Helper_Functions::name(), Helper_Functions::author() ); ?></h3>
                 </div>
                 <?php if( ! Helper_Functions::is_hide_logo() ) : ?>
                 <div class="pa-title-right">
@@ -185,7 +185,7 @@ class Modules_Settings {
                             
                             <tr>
                                 
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Dual Heading', 'pixerex-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Dual Heading', 'pixerex-elementor-elements') ); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox" id="pixerex-dual-header" name="pixerex-dual-header" <?php checked(1, $this->pa_get_settings['pixerex-dual-header'], true) ?>>
@@ -195,7 +195,7 @@ class Modules_Settings {
                             </tr>
                             
                             <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Fancy Text', 'pixerex-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Fancy Text', 'pixerex-elementor-elements') ); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox" id="pixerex-fancytext" name="pixerex-fancytext" <?php checked(1, $this->pa_get_settings['pixerex-fancytext'], true) ?>>
@@ -209,7 +209,7 @@ class Modules_Settings {
                           
                             
                             <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Image Separator', 'pixerex-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Image Separator', 'pixerex-elementor-elements') ); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox" id="pixerex-image-separator" name="pixerex-image-separator" <?php checked(1, $this->pa_get_settings['pixerex-image-separator'], true) ?>>
@@ -222,7 +222,7 @@ class Modules_Settings {
                            
                             
                             <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Team Members', 'pixerex-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Team Members', 'pixerex-elementor-elements') ); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox" id="pixerex-person" name="pixerex-person" <?php checked(1, $this->pa_get_settings['pixerex-person'], true) ?>>
@@ -236,7 +236,7 @@ class Modules_Settings {
                             <tr>
                                 
 
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Testimonials', 'pixerex-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Testimonials', 'pixerex-elementor-elements') ); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox" id="pixerex-testimonials" name="pixerex-testimonials" <?php checked(1, $this->pa_get_settings['pixerex-testimonials'], true) ?>>
@@ -246,7 +246,7 @@ class Modules_Settings {
                             </tr>
                             
                             <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Title', 'pixerex-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Title', 'pixerex-elementor-elements') ); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox" id="pixerex-title" name="pixerex-title" <?php checked(1, $this->pa_get_settings['pixerex-title'], true) ?>>
@@ -264,7 +264,7 @@ class Modules_Settings {
                             <?php endif; ?> 
                         </tbody>
                     </table>
-                    <input type="submit" value="<?php echo __('Save Settings', 'pixerex-addons-for-elementor'); ?>" class="button pa-btn pa-save-button">
+                    <input type="submit" value="<?php echo __('Save Settings', 'pixerex-elementor-elements'); ?>" class="button pa-btn pa-save-button">
                     
                 </div>
                 

@@ -28,7 +28,7 @@ class Pixerex_Dual_Header extends Widget_Base {
     }
 
     public function get_title() {
-        return sprintf( '%1$s %2$s', Helper_Functions::get_prefix(), __('Dual Heading', 'pixerex-addons-for-elementor') );
+        return sprintf( '%1$s %2$s', Helper_Functions::get_prefix(), __('Dual Heading', 'pixerex-elementor-elements') );
 	}
 
     public function get_style_depends() {
@@ -56,17 +56,17 @@ class Pixerex_Dual_Header extends Widget_Base {
         /*Start General Section*/
         $this->start_controls_section('pixerex_dual_header_general_settings',
             [
-                'label'         => __('Dual Heading', 'pixerex-addons-for-elementor')
+                'label'         => __('Dual Heading', 'pixerex-elementor-elements')
             ]
         );
         
         /*First Header*/
         $this->add_control('pixerex_dual_header_first_header_text',
             [
-                'label'         => __('First Heading', 'pixerex-addons-for-elementor'),
+                'label'         => __('First Heading', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
-                'default'       => __('Pixerex', 'pixerex-addons-for-elementor'),
+                'default'       => __('Pixerex', 'pixerex-elementor-elements'),
                 'label_block'   => true,
             ]
         );
@@ -74,10 +74,10 @@ class Pixerex_Dual_Header extends Widget_Base {
         /*Second Header*/
         $this->add_control('pixerex_dual_header_second_header_text',
             [
-                'label'         => __('Second Heading', 'pixerex-addons-for-elementor'),
+                'label'         => __('Second Heading', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [ 'active' => true ],
-                'default'       => __('Addons', 'pixerex-addons-for-elementor'),
+                'default'       => __('Addons', 'pixerex-elementor-elements'),
                 'label_block'   => true,
             ]
         );
@@ -85,7 +85,7 @@ class Pixerex_Dual_Header extends Widget_Base {
          /*Title Tag*/
         $this->add_control('pixerex_dual_header_first_header_tag',
             [
-                'label'         => __('HTML Tag', 'pixerex-addons-for-elementor'),
+                'label'         => __('HTML Tag', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SELECT,
                 'default'       => 'h2',
                 'options'       => [
@@ -105,11 +105,11 @@ class Pixerex_Dual_Header extends Widget_Base {
         /*Text Align*/
         $this->add_control('pixerex_dual_header_position',
             [
-                'label'         => __( 'Display', 'pixerex-addons-for-elementor' ),
+                'label'         => __( 'Display', 'pixerex-elementor-elements' ),
                 'type'          => Controls_Manager::SELECT,
                 'options'       => [
-                    'inline'=> __('Inline', 'pixerex-addons-for-elementor'),
-                    'block' => __('Block', 'pixerex-addons-for-elementor'),
+                    'inline'=> __('Inline', 'pixerex-elementor-elements'),
+                    'block' => __('Block', 'pixerex-elementor-elements'),
                 ],
                 'default'       => 'inline',
                 'selectors'     => [
@@ -121,19 +121,19 @@ class Pixerex_Dual_Header extends Widget_Base {
         
         $this->add_control('pixerex_dual_header_link_switcher',
             [
-                'label'         => __('Link', 'pixerex-addons-for-elementor'),
+                'label'         => __('Link', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SWITCHER,
-                'description'   => __('Enable or disable link','pixerex-addons-for-elementor'),
+                'description'   => __('Enable or disable link','pixerex-elementor-elements'),
             ]
         );
         
         $this->add_control('pixerex_dual_heading_link_selection', 
             [
-                'label'         => __('Link Type', 'pixerex-addons-for-elementor'),
+                'label'         => __('Link Type', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SELECT,
                 'options'       => [
-                    'url'   => __('URL', 'pixerex-addons-for-elementor'),
-                    'link'  => __('Existing Page', 'pixerex-addons-for-elementor'),
+                    'url'   => __('URL', 'pixerex-elementor-elements'),
+                    'link'  => __('Existing Page', 'pixerex-elementor-elements'),
                 ],
                 'default'       => 'url',
                 'label_block'   => true,
@@ -145,7 +145,7 @@ class Pixerex_Dual_Header extends Widget_Base {
         
         $this->add_control('pixerex_dual_heading_link',
             [
-                'label'         => __('Link', 'pixerex-addons-for-elementor'),
+                'label'         => __('Link', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::URL,
                 'dynamic'       => [ 'active' => true ],
                 'default'       => [
@@ -163,7 +163,7 @@ class Pixerex_Dual_Header extends Widget_Base {
         
         $this->add_control('pixerex_dual_heading_existing_link',
             [
-                'label'         => __('Existing Page', 'pixerex-addons-for-elementor'),
+                'label'         => __('Existing Page', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SELECT2,
                 'options'       => $this->getTemplateInstance()->get_all_post(),
                 'condition'     => [
@@ -179,19 +179,19 @@ class Pixerex_Dual_Header extends Widget_Base {
         /*Text Align*/
         $this->add_responsive_control('pixerex_dual_header_text_align',
             [
-                'label'         => __( 'Alignment', 'pixerex-addons-for-elementor' ),
+                'label'         => __( 'Alignment', 'pixerex-elementor-elements' ),
                 'type'          => Controls_Manager::CHOOSE,
                 'options'       => [
                     'left'      => [
-                        'title'=> __( 'Left', 'pixerex-addons-for-elementor' ),
+                        'title'=> __( 'Left', 'pixerex-elementor-elements' ),
                         'icon' => 'fa fa-align-left',
                     ],
                     'center'    => [
-                        'title'=> __( 'Center', 'pixerex-addons-for-elementor' ),
+                        'title'=> __( 'Center', 'pixerex-elementor-elements' ),
                         'icon' => 'fa fa-align-center',
                     ],
                     'right'     => [
-                        'title'=> __( 'Right', 'pixerex-addons-for-elementor' ),
+                        'title'=> __( 'Right', 'pixerex-elementor-elements' ),
                         'icon' => 'fa fa-align-right'
                     ]
                 ],
@@ -204,7 +204,7 @@ class Pixerex_Dual_Header extends Widget_Base {
 
         $this->add_responsive_control('rotate',
             [
-                'label'         => __('Degrees', 'pixerex-addons-for-elementor'),
+                'label'         => __('Degrees', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::NUMBER,
                 'min'           => -180,
                 'max'           => 180,
@@ -216,20 +216,20 @@ class Pixerex_Dual_Header extends Widget_Base {
 
         $this->add_responsive_control('transform_origin_x',
             [
-                'label' => __( 'X Anchor Point', 'pixerex-addons-for-elementor' ),
+                'label' => __( 'X Anchor Point', 'pixerex-elementor-elements' ),
                 'type' => Controls_Manager::CHOOSE,
                 'default' => 'center',
                 'options' => [
                     'left' => [
-                        'title' => __( 'Left', 'pixerex-addons-for-elementor' ),
+                        'title' => __( 'Left', 'pixerex-elementor-elements' ),
                         'icon' => 'eicon-h-align-left',
                     ],
                     'center' => [
-                        'title' => __( 'Center', 'pixerex-addons-for-elementor' ),
+                        'title' => __( 'Center', 'pixerex-elementor-elements' ),
                         'icon' => 'eicon-h-align-center',
                     ],
                     'right' => [
-                        'title' => __( 'Right', 'pixerex-addons-for-elementor' ),
+                        'title' => __( 'Right', 'pixerex-elementor-elements' ),
                         'icon' => 'eicon-h-align-right',
                     ],
                 ],
@@ -244,20 +244,20 @@ class Pixerex_Dual_Header extends Widget_Base {
 
         $this->add_responsive_control('transform_origin_y',
             [
-                'label' => __( 'Y Anchor Point', 'pixerex-addons-for-elementor' ),
+                'label' => __( 'Y Anchor Point', 'pixerex-elementor-elements' ),
                 'type' => Controls_Manager::CHOOSE,
                 'default' => 'center',
                 'options' => [
                     'top' => [
-                        'title' => __( 'Top', 'pixerex-addons-for-elementor' ),
+                        'title' => __( 'Top', 'pixerex-elementor-elements' ),
                         'icon' => 'eicon-v-align-top',
                     ],
                     'center' => [
-                        'title' => __( 'Center', 'pixerex-addons-for-elementor' ),
+                        'title' => __( 'Center', 'pixerex-elementor-elements' ),
                         'icon' => 'eicon-v-align-middle',
                     ],
                     'bottom' => [
-                        'title' => __( 'Bottom', 'pixerex-addons-for-elementor' ),
+                        'title' => __( 'Bottom', 'pixerex-elementor-elements' ),
                         'icon' => 'eicon-v-align-bottom',
                     ],
                 ],
@@ -277,14 +277,14 @@ class Pixerex_Dual_Header extends Widget_Base {
 
         $this->start_controls_section('section_pa_docs',
             [
-                'label'         => __('Helpful Documentations', 'pixerex-addons-for-elementor'),
+                'label'         => __('Helpful Documentations', 'pixerex-elementor-elements'),
             ]
         );
 
         $this->add_control('doc_1',
             [
                 'type'            => Controls_Manager::RAW_HTML,
-                'raw'             => sprintf( __( '%1$s Getting started » %2$s', 'pixerex-addons-for-elementor' ), '<a href="https://pixerexaddons.com/docs/dual-heading-widget-tutorial/?utm_source=pa-dashboard&utm_medium=pa-editor&utm_campaign=pa-plugin" target="_blank" rel="noopener">', '</a>' ),
+                'raw'             => sprintf( __( '%1$s Getting started » %2$s', 'pixerex-elementor-elements' ), '<a href="https://pixerexaddons.com/docs/dual-heading-widget-tutorial/?utm_source=pa-dashboard&utm_medium=pa-editor&utm_campaign=pa-plugin" target="_blank" rel="noopener">', '</a>' ),
                 'content_classes' => 'editor-pa-doc',
             ]
         );
@@ -292,7 +292,7 @@ class Pixerex_Dual_Header extends Widget_Base {
         $this->add_control('doc_2',
             [
                 'type'            => Controls_Manager::RAW_HTML,
-                'raw'             => sprintf( __( '%1$s How to add an outlined heading using Dual Heading widget » %2$s', 'pixerex-addons-for-elementor' ), '<a href="https://pixerexaddons.com/docs/how-to-add-an-outlined-heading-to-my-website/?utm_source=pa-dashboard&utm_medium=pa-editor&utm_campaign=pa-plugin" target="_blank" rel="noopener">', '</a>' ),
+                'raw'             => sprintf( __( '%1$s How to add an outlined heading using Dual Heading widget » %2$s', 'pixerex-elementor-elements' ), '<a href="https://pixerexaddons.com/docs/how-to-add-an-outlined-heading-to-my-website/?utm_source=pa-dashboard&utm_medium=pa-editor&utm_campaign=pa-plugin" target="_blank" rel="noopener">', '</a>' ),
                 'content_classes' => 'editor-pa-doc',
             ]
         );
@@ -302,7 +302,7 @@ class Pixerex_Dual_Header extends Widget_Base {
         /*Start First Header Styling Section*/
         $this->start_controls_section('pixerex_dual_header_first_style',
             [
-                'label'         => __('First Heading', 'pixerex-addons-for-elementor'),
+                'label'         => __('First Heading', 'pixerex-elementor-elements'),
                 'tab'           => Controls_Manager::TAB_STYLE
             ]
         );
@@ -319,7 +319,7 @@ class Pixerex_Dual_Header extends Widget_Base {
         
         $this->add_control('pixerex_dual_header_first_animated',
             [
-                'label'         => __('Animated Background', 'pixerex-addons-for-elementor'),
+                'label'         => __('Animated Background', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SWITCHER
             ]
         );
@@ -327,13 +327,13 @@ class Pixerex_Dual_Header extends Widget_Base {
         /*First Coloring Style*/
         $this->add_control('pixerex_dual_header_first_back_clip',
             [
-                'label'         => __('Background Style', 'pixerex-addons-for-elementor'),
+                'label'         => __('Background Style', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SELECT,
                 'default'       => 'color',
-                'description'   => __('Choose ‘Normal’ style to put a background behind the text. Choose ‘Clipped’ style so the background will be clipped on the text.','pixerex-addons-for-elementor'),
+                'description'   => __('Choose ‘Normal’ style to put a background behind the text. Choose ‘Clipped’ style so the background will be clipped on the text.','pixerex-elementor-elements'),
                 'options'       => [
-                    'color'         => __('Normal', 'pixerex-addons-for-elementor'),
-                    'clipped'       => __('Clipped', 'pixerex-addons-for-elementor'),
+                    'color'         => __('Normal', 'pixerex-elementor-elements'),
+                    'clipped'       => __('Clipped', 'pixerex-elementor-elements'),
                 ],
                 'label_block'   =>  true
             ]
@@ -342,7 +342,7 @@ class Pixerex_Dual_Header extends Widget_Base {
         /*First Color*/
         $this->add_control('pixerex_dual_header_first_color',
             [
-                'label'         => __('Text Color', 'pixerex-addons-for-elementor'),
+                'label'         => __('Text Color', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::COLOR,
                 'scheme'        => [
                     'type'  => Scheme_Color::get_type(),
@@ -372,7 +372,7 @@ class Pixerex_Dual_Header extends Widget_Base {
         
         $this->add_control('pixerex_dual_header_first_stroke',
             [
-                'label'         => __('Stroke', 'pixerex-addons-for-elementor'),
+                'label'         => __('Stroke', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SWITCHER,
                 'condition'         => [
                     'pixerex_dual_header_first_back_clip'  => 'clipped'
@@ -382,7 +382,7 @@ class Pixerex_Dual_Header extends Widget_Base {
         
         $this->add_control('pixerex_dual_header_first_stroke_text_color',
             [
-                'label'         => __('Stroke Text Color', 'pixerex-addons-for-elementor'),
+                'label'         => __('Stroke Text Color', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::COLOR,
                 'condition'     => [
                     'pixerex_dual_header_first_back_clip'   => 'clipped',
@@ -396,7 +396,7 @@ class Pixerex_Dual_Header extends Widget_Base {
         
         $this->add_control('pixerex_dual_header_first_stroke_color',
             [
-                'label'         => __('Stroke Fill Color', 'pixerex-addons-for-elementor'),
+                'label'         => __('Stroke Fill Color', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::COLOR,
                 'condition'     => [
                     'pixerex_dual_header_first_back_clip'   => 'clipped',
@@ -410,7 +410,7 @@ class Pixerex_Dual_Header extends Widget_Base {
         
         $this->add_control('pixerex_dual_header_first_stroke_width',
             [
-                'label'         => __('Stroke Fill Width', 'pixerex-addons-for-elementor'),
+                'label'         => __('Stroke Fill Width', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SLIDER,
                 'condition'     => [
                     'pixerex_dual_header_first_back_clip'   => 'clipped',
@@ -449,7 +449,7 @@ class Pixerex_Dual_Header extends Widget_Base {
         /*First Border Radius*/
         $this->add_control('pixerex_dual_header_first_border_radius',
             [
-                'label'         => __('Border Radius', 'pixerex-addons-for-elementor'),
+                'label'         => __('Border Radius', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SLIDER,
                 'size_units'    => ['px', '%', 'em'],
                 'selectors'     => [
@@ -462,7 +462,7 @@ class Pixerex_Dual_Header extends Widget_Base {
         $this->add_group_control(
             Group_Control_Text_Shadow::get_type(),
             [
-                'label'         => __('Shadow','pixerex-addons-for-elementor'),
+                'label'         => __('Shadow','pixerex-elementor-elements'),
                 'name'          => 'pixerex_dual_header_first_text_shadow',
                 'selector'      => '{{WRAPPER}} .pixerex-dual-header-first-span'
             ]
@@ -471,7 +471,7 @@ class Pixerex_Dual_Header extends Widget_Base {
         /*First Margin*/
         $this->add_responsive_control('pixerex_dual_header_first_margin',
             [
-                'label'         => __('Margin', 'pixerex-addons-for-elementor'),
+                'label'         => __('Margin', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::DIMENSIONS,
                 'size_units'    => [ 'px', 'em', '%' ],
                 'separator'     => 'before',
@@ -484,7 +484,7 @@ class Pixerex_Dual_Header extends Widget_Base {
         /*First Padding*/
         $this->add_responsive_control('pixerex_dual_header_first_padding',
             [
-                'label'         => __('Padding', 'pixerex-addons-for-elementor'),
+                'label'         => __('Padding', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::DIMENSIONS,
                 'size_units'    => [ 'px', 'em', '%' ],
                 'selectors'     => [
@@ -499,7 +499,7 @@ class Pixerex_Dual_Header extends Widget_Base {
         /*Start First Header Styling Section*/
         $this->start_controls_section('pixerex_dual_header_second_style',
             [
-                'label'         => __('Second Heading', 'pixerex-addons-for-elementor'),
+                'label'         => __('Second Heading', 'pixerex-elementor-elements'),
                 'tab'           => Controls_Manager::TAB_STYLE
             ]
         );
@@ -516,7 +516,7 @@ class Pixerex_Dual_Header extends Widget_Base {
         
         $this->add_control('pixerex_dual_header_second_animated',
             [
-                'label'         => __('Animated Background', 'pixerex-addons-for-elementor'),
+                'label'         => __('Animated Background', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SWITCHER
             ]
         );
@@ -524,13 +524,13 @@ class Pixerex_Dual_Header extends Widget_Base {
         /*Second Coloring Style*/
         $this->add_control('pixerex_dual_header_second_back_clip',
             [
-                'label'         => __('Background Style', 'pixerex-addons-for-elementor'),
+                'label'         => __('Background Style', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SELECT,
                 'default'       => 'color',
-                'description'   => __('Choose ‘Normal’ style to put a background behind the text. Choose ‘Clipped’ style so the background will be clipped on the text.','pixerex-addons-for-elementor'),
+                'description'   => __('Choose ‘Normal’ style to put a background behind the text. Choose ‘Clipped’ style so the background will be clipped on the text.','pixerex-elementor-elements'),
                 'options'       => [
-                    'color'         => __('Normal', 'pixerex-addons-for-elementor'),
-                    'clipped'       => __('Clipped', 'pixerex-addons-for-elementor')
+                    'color'         => __('Normal', 'pixerex-elementor-elements'),
+                    'clipped'       => __('Clipped', 'pixerex-elementor-elements')
                 ],
                 'label_block'   =>  true
             ]
@@ -539,7 +539,7 @@ class Pixerex_Dual_Header extends Widget_Base {
         /*Second Color*/
         $this->add_control('pixerex_dual_header_second_color',
             [
-                'label'         => __('Text Color', 'pixerex-addons-for-elementor'),
+                'label'         => __('Text Color', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::COLOR,
                 'scheme'        => [
                     'type'  => Scheme_Color::get_type(),
@@ -569,7 +569,7 @@ class Pixerex_Dual_Header extends Widget_Base {
         
         $this->add_control('pixerex_dual_header_second_stroke',
             [
-                'label'         => __('Stroke', 'pixerex-addons-for-elementor'),
+                'label'         => __('Stroke', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SWITCHER,
                 'condition'         => [
                     'pixerex_dual_header_second_back_clip'  => 'clipped'
@@ -579,7 +579,7 @@ class Pixerex_Dual_Header extends Widget_Base {
         
         $this->add_control('pixerex_dual_header_second_stroke_text_color',
             [
-                'label'         => __('Stroke Text Color', 'pixerex-addons-for-elementor'),
+                'label'         => __('Stroke Text Color', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::COLOR,
                 'condition'     => [
                     'pixerex_dual_header_second_back_clip'   => 'clipped',
@@ -593,7 +593,7 @@ class Pixerex_Dual_Header extends Widget_Base {
         
         $this->add_control('pixerex_dual_header_second_stroke_color',
             [
-                'label'         => __('Stroke Fill Color', 'pixerex-addons-for-elementor'),
+                'label'         => __('Stroke Fill Color', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::COLOR,
                 'condition'     => [
                     'pixerex_dual_header_second_back_clip'   => 'clipped',
@@ -607,7 +607,7 @@ class Pixerex_Dual_Header extends Widget_Base {
         
         $this->add_control('pixerex_dual_header_second_stroke_width',
             [
-                'label'         => __('Stroke Fill Width', 'pixerex-addons-for-elementor'),
+                'label'         => __('Stroke Fill Width', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SLIDER,
                 'condition'     => [
                     'pixerex_dual_header_second_back_clip'   => 'clipped',
@@ -646,7 +646,7 @@ class Pixerex_Dual_Header extends Widget_Base {
         /*Second Border Radius*/
         $this->add_control('pixerex_dual_header_second_border_radius',
             [
-                'label'         => __('Border Radius', 'pixerex-addons-for-elementor'),
+                'label'         => __('Border Radius', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SLIDER,
                 'size_units'    => ['px', '%', 'em'],
                 'selectors'     => [
@@ -659,7 +659,7 @@ class Pixerex_Dual_Header extends Widget_Base {
         $this->add_group_control(
             Group_Control_Text_Shadow::get_type(),
             [
-                'label'         => __('Shadow','pixerex-addons-for-elementor'),
+                'label'         => __('Shadow','pixerex-elementor-elements'),
                 'name'          => 'pixerex_dual_header_second_text_shadow',
                 'selector'      => '{{WRAPPER}} .pixerex-dual-header-second-header'
             ]
@@ -668,7 +668,7 @@ class Pixerex_Dual_Header extends Widget_Base {
         /*Second Margin*/
         $this->add_responsive_control('pixerex_dual_header_second_margin',
             [
-                'label'         => __('Margin', 'pixerex-addons-for-elementor'),
+                'label'         => __('Margin', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::DIMENSIONS,
                 'separator'     => 'before',
                 'size_units'    => [ 'px', 'em', '%' ],
@@ -681,7 +681,7 @@ class Pixerex_Dual_Header extends Widget_Base {
         /*Second Padding*/
         $this->add_responsive_control('pixerex_dual_header_second_padding',
             [
-                'label'         => __('Padding', 'pixerex-addons-for-elementor'),
+                'label'         => __('Padding', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::DIMENSIONS,
                 'size_units'    => [ 'px', 'em', '%' ],
                 'selectors'     => [

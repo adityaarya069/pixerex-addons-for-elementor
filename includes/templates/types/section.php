@@ -16,11 +16,11 @@ if ( ! class_exists( 'Pixerex_Structure_Section' ) ) {
 		}
 
 		public function get_single_label() {
-			return __( 'Section', 'pixerex-addons-for-elementor' );
+			return __( 'Section', 'pixerex-elementor-elements' );
 		}
 
 		public function get_plural_label() {
-			return __( 'Sections', 'pixerex-addons-for-elementor' );
+			return __( 'Sections', 'pixerex-elementor-elements' );
 		}
 
 		public function get_sources() {

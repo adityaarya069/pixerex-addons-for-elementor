@@ -186,7 +186,7 @@ if ( ! class_exists( 'Pixerex_Templates_Manager' ) ) {
 			$all_cats = array(
 				array(
 					'slug' => '',
-					'title' => __( 'All', 'pixerex-addons-for-elementor' ),
+					'title' => __( 'All', 'pixerex-elementor-elements' ),
 				)
 			);
 

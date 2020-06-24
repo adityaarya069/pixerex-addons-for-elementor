@@ -13,7 +13,7 @@ class Papro_Actions {
         add_submenu_page(
             'Pixerex-addons',
             '',
-            '<span class="dashicons dashicons-star-filled" style="font-size: 17px"></span> ' . __( 'Get PRO Widgets & Addons', 'pixerex-addons-for-elementor' ),
+            '<span class="dashicons dashicons-star-filled" style="font-size: 17px"></span> ' . __( 'Get PRO Widgets & Addons', 'pixerex-elementor-elements' ),
             'manage_options',
             'pixerex-addons-pro',
             [ $this, 'handle_custom_redirects' ]
@@ -46,7 +46,7 @@ class Papro_Actions {
         global $submenu;
         
         if( isset($submenu['pixerex-addons'] ) ) {
-            $submenu['pixerex-addons'][0][0] = __( 'Settings', 'pixerex-addons-for-elementor' );
+            $submenu['pixerex-addons'][0][0] = __( 'Settings', 'pixerex-elementor-elements' );
         }
     }
 

@@ -131,9 +131,9 @@ class Admin_Notices {
 
                     $install_url = wp_nonce_url( self_admin_url( sprintf( 'update.php?action=install-plugin&plugin=%s', self::$elementor ) ), 'install-plugin_elementor' );
 
-                    $message = sprintf( '<p>%s</p>', __('Pixerex Addons for Elementor is not working because you need to Install Elementor plugin.', 'pixerex-addons-for-elementor' ) );
+                    $message = sprintf( '<p>%s</p>', __('Pixerex Addons for Elementor is not working because you need to Install Elementor plugin.', 'pixerex-elementor-elements' ) );
 
-                    $message .= sprintf( '<p><a href="%s" class="button-primary">%s</a></p>', $install_url, __( 'Install Now', 'pixerex-addons-for-elementor' ) );
+                    $message .= sprintf( '<p><a href="%s" class="button-primary">%s</a></p>', $install_url, __( 'Install Now', 'pixerex-elementor-elements' ) );
 
                 }
             } else {
@@ -141,9 +141,9 @@ class Admin_Notices {
 
                     $activation_url = wp_nonce_url( 'plugins.php?action=activate&amp;plugin=' . $elementor_path . '&amp;plugin_status=all&amp;paged=1&amp;s', 'activate-plugin_' . $elementor_path );
 
-                    $message = '<p>' . __( 'Pixerex Addons for Elementor is not working because you need to activate Elementor plugin.', 'pixerex-addons-for-elementor' ) . '</p>';
+                    $message = '<p>' . __( 'Pixerex Addons for Elementor is not working because you need to activate Elementor plugin.', 'pixerex-elementor-elements' ) . '</p>';
 
-                    $message .= '<p>' . sprintf( '<a href="%s" class="button-primary">%s</a>', $activation_url, __( 'Activate Now', 'pixerex-addons-for-elementor' ) ) . '</p>';
+                    $message .= '<p>' . sprintf( '<a href="%s" class="button-primary">%s</a>', $activation_url, __( 'Activate Now', 'pixerex-elementor-elements' ) ) . '</p>';
 
                 }
             }
@@ -161,11 +161,11 @@ class Admin_Notices {
     public function get_review_text( $review_url, $optout_url ) {
         
         $notice = sprintf(
-            '<p>' . __('Did you like','pixerex-addons-for-elementor') . '<strong>&nbspPixerex Addons for Elementor&nbsp</strong>' . __('Plugin?','pixerex-addons-for-elementor') . '</p>
-             <p>' . __('Could you please do us a BIG favor ? if you could take 2 min of your time, we\'d really appreciate if you give Pixerex Addons for Elementor 5-star rating on WordPress. By spreading the love, we can create even greater free stuff in the future!','pixerex-addons-for-elementor') . '</p>
-            <p><a class="button button-primary" href="%s" target="_blank"><span><i class="dashicons dashicons-external"></i>' . __('Leave a Review','pixerex-addons-for-elementor') . '</span></a>
-                <a class="button button-secondary pa-notice-reset"><span><i class="dashicons dashicons-calendar-alt"></i>' . __('Maybe Later','pixerex-addons-for-elementor') . '</span></a>
-                <a class="button button-secondary" href="%2$s"><span><i class="dashicons dashicons-smiley"></i>' . __('I Already did','pixerex-addons-for-elementor') . '</span></a>
+            '<p>' . __('Did you like','pixerex-elementor-elements') . '<strong>&nbspPixerex Addons for Elementor&nbsp</strong>' . __('Plugin?','pixerex-elementor-elements') . '</p>
+             <p>' . __('Could you please do us a BIG favor ? if you could take 2 min of your time, we\'d really appreciate if you give Pixerex Addons for Elementor 5-star rating on WordPress. By spreading the love, we can create even greater free stuff in the future!','pixerex-elementor-elements') . '</p>
+            <p><a class="button button-primary" href="%s" target="_blank"><span><i class="dashicons dashicons-external"></i>' . __('Leave a Review','pixerex-elementor-elements') . '</span></a>
+                <a class="button button-secondary pa-notice-reset"><span><i class="dashicons dashicons-calendar-alt"></i>' . __('Maybe Later','pixerex-elementor-elements') . '</span></a>
+                <a class="button button-secondary" href="%2$s"><span><i class="dashicons dashicons-smiley"></i>' . __('I Already did','pixerex-elementor-elements') . '</span></a>
             </p>',
         $review_url, $optout_url );
         
@@ -183,7 +183,7 @@ class Admin_Notices {
 
         $review = get_option( 'pa_review_notice' );
 
-        $review_url = 'https://wordpress.org/support/plugin/pixerex-addons-for-elementor/reviews/?filter=5';
+        $review_url = 'https://wordpress.org/support/plugin/pixerex-elementor-elements/reviews/?filter=5';
 
         if ( '1' === $review ) {
             return;
@@ -232,7 +232,7 @@ class Admin_Notices {
 
         $templates_message .= '<img class="pa-notice-logo" src="' . PIXEREX_ADDONS_URL .'admin/images/Pixerex-addons-logo.png' . '">';
 
-        $templates_message .= '<strong>' . __('Pixerex Lottie Animations','pixerex-addons-for-elementor') . '&nbsp</strong><span>' . __('widget is now available.', 'pixerex-addons-for-elementor') . '&nbsp</span><a href="' . esc_url( $notice_url ) . '" target="_blank">' . __('Check it out now', 'pixerex-addons-for-elementor') . '</a>';
+        $templates_message .= '<strong>' . __('Pixerex Lottie Animations','pixerex-elementor-elements') . '&nbsp</strong><span>' . __('widget is now available.', 'pixerex-elementor-elements') . '&nbsp</span><a href="' . esc_url( $notice_url ) . '" target="_blank">' . __('Check it out now', 'pixerex-elementor-elements') . '</a>';
 
         $templates_message .= '<div class="pa-notice-close" data-notice="lottie"><span class="dashicons dashicons-dismiss"></span></div>';
 

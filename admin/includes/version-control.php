@@ -32,7 +32,7 @@ class Version_Control {
                 add_submenu_page(
                 'pixerex-addons',
                 '',
-                __('Version Control','pixerex-addons-for-elementor'),
+                __('Version Control','pixerex-elementor-elements'),
                 'manage_options',
                 'pixerex-addons-version',
                 [$this, 'pa_version_page']
@@ -71,7 +71,7 @@ class Version_Control {
        <div class="pa-header-wrapper">
           <div class="pa-title-left">
              <h1 class="pa-title-main"><?php echo Helper_Functions::name(); ?></h1>
-             <h3 class="pa-title-sub"><?php echo sprintf(__('Thank you for using %s. This plugin has been developed by %s and we hope you enjoy using it.','pixerex-addons-for-elementor'), Helper_Functions::name(), Helper_Functions::author() ); ?></h3>
+             <h3 class="pa-title-sub"><?php echo sprintf(__('Thank you for using %s. This plugin has been developed by %s and we hope you enjoy using it.','pixerex-elementor-elements'), Helper_Functions::name(), Helper_Functions::author() ); ?></h3>
           </div>
           <?php if( ! Helper_Functions::is_hide_logo() ) : ?>
                 <div class="pa-title-right">
@@ -85,34 +85,34 @@ class Version_Control {
                 <table class="pa-beta-table">
                    <tr>
                       <th>
-                         <h4 class="pa-roll-back"><?php echo __('Rollback to Previous Version', 'pixerex-addons-for-elementor'); ?></h4>
-                         <span class="pa-roll-back-span"><?php echo sprintf( __('Experiencing an issue with pixerex Addons for Elementor version %s? Rollback to a previous version before the issue appeared.', 'pixerex-addons-for-elementor'), pixerex_ADDONS_VERSION ); ?></span>
+                         <h4 class="pa-roll-back"><?php echo __('Rollback to Previous Version', 'pixerex-elementor-elements'); ?></h4>
+                         <span class="pa-roll-back-span"><?php echo sprintf( __('Experiencing an issue with pixerex Addons for Elementor version %s? Rollback to a previous version before the issue appeared.', 'pixerex-elementor-elements'), pixerex_ADDONS_VERSION ); ?></span>
                       </th>
                    </tr>
                    <tr class="pa-roll-row">
-                      <th><?php echo __('Rollback Version', 'pixerex-addons-for-elementor'); ?></th>
+                      <th><?php echo __('Rollback Version', 'pixerex-elementor-elements'); ?></th>
                       <td>
-                         <div><?php echo  sprintf( '<a target="_blank" href="%1$s" class="button pa-btn pa-rollback-button elementor-button-spinner">%2$s</a>', wp_nonce_url( admin_url( 'admin-post.php?action=pixerex_addons_rollback' ), 'pixerex_addons_rollback' ), __('Rollback to Version ' . PIXEREX_ADDONS_STABLE_VERSION, 'pixerex-addons-for-elementor') ); ?></div>
+                         <div><?php echo  sprintf( '<a target="_blank" href="%1$s" class="button pa-btn pa-rollback-button elementor-button-spinner">%2$s</a>', wp_nonce_url( admin_url( 'admin-post.php?action=pixerex_addons_rollback' ), 'pixerex_addons_rollback' ), __('Rollback to Version ' . PIXEREX_ADDONS_STABLE_VERSION, 'pixerex-elementor-elements') ); ?></div>
                          <p class="pa-roll-desc">
-                             <span><?php echo __('Warning: Please backup your database before making the rollback.', 'pixerex-addons-for-elementor'); ?></span>
+                             <span><?php echo __('Warning: Please backup your database before making the rollback.', 'pixerex-elementor-elements'); ?></span>
                          </p>
                       </td>
                    </tr>
                    <tr>
                       <th>
-                         <h4 class="pa-beta-test"><?php echo __('Become a Beta Tester', 'pixerex-addons-for-elementor'); ?></h4>
-                         <span class="pa-beta-test-span"><?php echo __('Turn-on Beta Tester, to get notified when a new beta version of pixerex Addons for Elementor. The Beta version will not install automatically. You always have the option to ignore it.', 'pixerex-addons-for-elementor'); ?></span>
+                         <h4 class="pa-beta-test"><?php echo __('Become a Beta Tester', 'pixerex-elementor-elements'); ?></h4>
+                         <span class="pa-beta-test-span"><?php echo __('Turn-on Beta Tester, to get notified when a new beta version of pixerex Addons for Elementor. The Beta version will not install automatically. You always have the option to ignore it.', 'pixerex-elementor-elements'); ?></span>
                       </th>
                    </tr>
                    <tr class="pa-beta-row">
-                      <th><?php echo __('Beta Tester','pixerex-addons-for-elementor'); ?></th>
+                      <th><?php echo __('Beta Tester','pixerex-elementor-elements'); ?></th>
                       <td>
-                         <div><input name="is-beta-tester" id="is-beta-tester" type="checkbox" <?php checked(1, $this->pa_beta_get_settings['is-beta-tester'], true) ?>><span><?php echo __('Check this box to get updates for beta versions','pixerex-addons-for-elementor'); ?></span></div>
-                         <p class="pa-beta-desc"><span><?php echo __('Please Note: We do not recommend updating to a beta version on production sites.', 'pixerex-addons-for-elementor'); ?></span></p>
+                         <div><input name="is-beta-tester" id="is-beta-tester" type="checkbox" <?php checked(1, $this->pa_beta_get_settings['is-beta-tester'], true) ?>><span><?php echo __('Check this box to get updates for beta versions','pixerex-elementor-elements'); ?></span></div>
+                         <p class="pa-beta-desc"><span><?php echo __('Please Note: We do not recommend updating to a beta version on production sites.', 'pixerex-elementor-elements'); ?></span></p>
                       </td>
                    </tr>
                 </table>
-                <input type="submit" value="<?php echo __('Save Settings', 'pixerex-addons-for-elementor'); ?>" class="button pa-btn pa-save-button">
+                <input type="submit" value="<?php echo __('Save Settings', 'pixerex-elementor-elements'); ?>" class="button pa-btn pa-save-button">
              </div>
           </div>
        </div>

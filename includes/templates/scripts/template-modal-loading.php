@@ -10,5 +10,5 @@
 		<div class="elementor-loader-box"></div>
 		<div class="elementor-loader-box"></div>
 	</div>
-	<div class="elementor-loading-title"><?php echo __('Loading', 'pixerex-addons-for-elementor'); ?></div>
+	<div class="elementor-loading-title"><?php echo __('Loading', 'pixerex-elementor-elements'); ?></div>
 </div>

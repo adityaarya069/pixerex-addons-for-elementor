@@ -17,7 +17,7 @@ class Config_Data {
         add_submenu_page(
             'pixerex-addons',
             '',
-            __( 'System Info','pixerex-addons-for-elementor' ),
+            __( 'System Info','pixerex-elementor-elements' ),
             'manage_options',
             'pixerex-addons-sys',
             [$this, 'pa_sys_info_page']
@@ -31,7 +31,7 @@ class Config_Data {
         <div class="pa-header-wrapper">
             <div class="pa-title-left">
                 <h1 class="pa-title-main"><?php echo Helper_Functions::name(); ?></h1>
-                <h3 class="pa-title-sub"><?php echo sprintf( __( 'Thank you for using %s. This plugin has been developed by %s and we hope you enjoy using it.','pixerex-addons-for-elementor' ), Helper_Functions::name(), Helper_Functions::author() ); ?></h3>
+                <h3 class="pa-title-sub"><?php echo sprintf( __( 'Thank you for using %s. This plugin has been developed by %s and we hope you enjoy using it.','pixerex-elementor-elements' ), Helper_Functions::name(), Helper_Functions::author() ); ?></h3>
             </div>
             <?php if( ! Helper_Functions::is_hide_logo() ) : ?>
                 <div class="pa-title-right">
@@ -42,7 +42,7 @@ class Config_Data {
         <div class="pa-settings-tabs pa-sys-info-tab">
             <div id="pa-system" class="pa-settings-tab">
                 <div class="pa-row">                
-                    <h3 class="pa-sys-info-title"><?php echo __('System setup information useful for debugging purposes.','pixerex-addons-for-elementor');?></h3>
+                    <h3 class="pa-sys-info-title"><?php echo __('System setup information useful for debugging purposes.','pixerex-elementor-elements');?></h3>
                     <div class="pa-system-info-container">
                         <?php
                         require_once ( PIXEREX_ADDONS_PATH . 'admin/includes/dep/info.php');
@@ -53,7 +53,7 @@ class Config_Data {
             </div>
             <?php if( ! Helper_Functions::is_hide_rate() ) : ?>
                 <div>
-                    <p><?php echo __('Did you like Pixerex Addons for Elementor Plugin? Please ', 'pixerex-addons-for-elementor'); ?><a href="https://wordpress.org/support/plugin/pixerex-addons-for-elementor/reviews/#new-post" target="_blank"><?php echo __('Click Here to Rate it ★★★★★', 'pixerex-addons-for-elementor'); ?></a></p>
+                    <p><?php echo __('Did you like Pixerex Addons for Elementor Plugin? Please ', 'pixerex-elementor-elements'); ?><a href="https://wordpress.org/support/plugin/pixerex-elementor-elements/reviews/#new-post" target="_blank"><?php echo __('Click Here to Rate it ★★★★★', 'pixerex-elementor-elements'); ?></a></p>
                 </div>
             <?php endif; ?>
         </div>

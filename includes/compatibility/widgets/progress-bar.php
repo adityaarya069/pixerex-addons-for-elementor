@@ -47,7 +47,7 @@ class Progress_Bar extends WPML_Elementor_Module_With_Items {
 	 */
 	protected function get_title( $field ) {
 		
-        return __( 'Progress Bar: Label Text', 'pixerex-addons-for-elementor' );
+        return __( 'Progress Bar: Label Text', 'pixerex-elementor-elements' );
 		
 	}
 

@@ -58,7 +58,7 @@ if( ! class_exists('Pixerex_Templates_Core_Config') ) {
         public function __construct() {
             
             $this->config = array(
-                'pixerex_temps'     => __('Pixerex Templates', 'pixerex-addons-for-elementor'),
+                'pixerex_temps'     => __('Pixerex Templates', 'pixerex-elementor-elements'),
                 'key'               => $this->get_license_key(),
                 'status'            => $this->get_license_status(),
                 'license_page'      => $this->get_license_page(),
@@ -170,9 +170,9 @@ if( ! class_exists('Pixerex_Templates_Core_Config') ) {
         public function get_pro_message() {
             
             if( defined ('PREMIUM_PRO_ADDONS_VERSION') ) {
-                return __('Activate License', 'pixerex-addons-for-elementor');
+                return __('Activate License', 'pixerex-elementor-elements');
             } else {
-                return __('Get Pro', 'pixerex-addons-for-elementor');
+                return __('Get Pro', 'pixerex-elementor-elements');
             }
             
         }

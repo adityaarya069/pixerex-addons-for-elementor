@@ -54,9 +54,9 @@ class Admin_Helper {
        
        $is_papro_installed = Helper_Functions::is_plugin_installed( $papro_path );
        
-       $settings_link = sprintf( '<a href="%1$s">%2$s</a>', admin_url( 'admin.php?page=' . $this->page_slug ), __( 'Settings', 'pixerex-addons-for-elementor' ) );
+       $settings_link = sprintf( '<a href="%1$s">%2$s</a>', admin_url( 'admin.php?page=' . $this->page_slug ), __( 'Settings', 'pixerex-elementor-elements' ) );
        
-       $rollback_link = sprintf( '<a href="%1$s">%2$s</a>', wp_nonce_url( admin_url( 'admin-post.php?action=pixerex_addons_rollback' ), 'pixerex_addons_rollback' ), __( 'Rollback to Version ' . PIXEREX_ADDONS_STABLE_VERSION, 'pixerex-addons-for-elementor' ) );
+       $rollback_link = sprintf( '<a href="%1$s">%2$s</a>', wp_nonce_url( admin_url( 'admin-post.php?action=pixerex_addons_rollback' ), 'pixerex_addons_rollback' ), __( 'Rollback to Version ' . PIXEREX_ADDONS_STABLE_VERSION, 'pixerex-elementor-elements' ) );
        
        $new_links = array( $settings_link, $rollback_link );
        
@@ -66,7 +66,7 @@ class Admin_Helper {
                     
            $link = sprintf( 'https://pixerexAddons.com/pro/?utm_source=plugins-page&utm_medium=wp-dash&utm_campaign=get-pro&utm_term=%s', $theme );
            
-           $pro_link = sprintf( '<a href="%s" target="_blank" style="color: #39b54a; font-weight: bold;">%s</a>', $link, __( 'Go Pro', 'pixerex-addons-for-elementor' ) );
+           $pro_link = sprintf( '<a href="%s" target="_blank" style="color: #39b54a; font-weight: bold;">%s</a>', $link, __( 'Go Pro', 'pixerex-elementor-elements' ) );
            array_push ( $new_links, $pro_link );
        }
        
@@ -99,8 +99,8 @@ class Admin_Helper {
             $link = sprintf( 'https://pixerexAddons.com/support/?utm_source=plugins-page&utm_medium=wp-dash&utm_campaign=get-support&utm_term=%s', $theme );
             
             $row_meta = [
-				'docs' => '<a href="' . esc_attr( $link ) . '" aria-label="' . esc_attr( __( 'View Pixerex Addons for Elementor Documentation', 'pixerex-addons-for-elementor' ) ) . '" target="_blank">' . __( 'Docs & FAQs', 'pixerex-addons-for-elementor' ) . '</a>',
-				'videos' => '<a href="https://www.youtube.com/watch?v=D3INxWw_jKI&list=PLLpZVOYpMtTArB4hrlpSnDJB36D2sdoTv" aria-label="' . esc_attr( __( 'View Pixerex Addons Video Tutorials', 'pixerex-addons-for-elementor' ) ) . '" target="_blank">' . __( 'Video Tutorials', 'pixerex-addons-for-elementor' ) . '</a>',
+				'docs' => '<a href="' . esc_attr( $link ) . '" aria-label="' . esc_attr( __( 'View Pixerex Addons for Elementor Documentation', 'pixerex-elementor-elements' ) ) . '" target="_blank">' . __( 'Docs & FAQs', 'pixerex-elementor-elements' ) . '</a>',
+				'videos' => '<a href="https://www.youtube.com/watch?v=D3INxWw_jKI&list=PLLpZVOYpMtTArB4hrlpSnDJB36D2sdoTv" aria-label="' . esc_attr( __( 'View Pixerex Addons Video Tutorials', 'pixerex-elementor-elements' ) ) . '" target="_blank">' . __( 'Video Tutorials', 'pixerex-elementor-elements' ) . '</a>',
 			];
 
 			$meta = array_merge( $meta, $row_meta );
@@ -129,8 +129,8 @@ class Admin_Helper {
             $actions[ self::DUPLICATE_ACTION ] = sprintf(
                 '<a href="%1$s" title="%2$s"><span class="screen-reader-text">%2$s</span>%3$s</a>',
                 esc_url( self::get_duplicate_url( $post->ID ) ),
-                sprintf( esc_attr__( 'Duplicate - %s', 'pixerex-addons-for-elementor' ), esc_attr( $post->post_title ) ),
-                __( 'PA Duplicate', 'pixerex-addons-for-elementor' )
+                sprintf( esc_attr__( 'Duplicate - %s', 'pixerex-elementor-elements' ), esc_attr( $post->post_title ) ),
+                __( 'PA Duplicate', 'pixerex-elementor-elements' )
             );
             
         }
@@ -229,7 +229,7 @@ class Admin_Helper {
             'comment_status' => $post->comment_status,
             'to_ping'        => $post->to_ping,
             'post_author'    => $current_user->ID,
-            'post_title'     => sprintf( __( 'Duplicated: %s - [#%d]', 'pixerex-addons-for-elementor' ), $post->post_title,
+            'post_title'     => sprintf( __( 'Duplicated: %s - [#%d]', 'pixerex-elementor-elements' ), $post->post_title,
                 $post->ID )
         ];
         

@@ -51,16 +51,16 @@ class Maps extends WPML_Elementor_Module_With_Items {
 	protected function get_title( $field ) {
 		
         if ( 'map_latitude' === $field ) {
-			return __( 'Maps: Marker Latitude', 'pixerex-addons-for-elementor' );
+			return __( 'Maps: Marker Latitude', 'pixerex-elementor-elements' );
 		}
         if ( 'map_longitude' === $field ) {
-			return __( 'Maps: Marker Longitude', 'pixerex-addons-for-elementor' );
+			return __( 'Maps: Marker Longitude', 'pixerex-elementor-elements' );
 		}
         if ( 'pin_title' === $field ) {
-			return __( 'Maps: Marker Title', 'pixerex-addons-for-elementor' );
+			return __( 'Maps: Marker Title', 'pixerex-elementor-elements' );
 		}
         if ( 'pin_desc' === $field ) {
-			return __( 'Maps: Marker Description', 'pixerex-addons-for-elementor' );
+			return __( 'Maps: Marker Description', 'pixerex-elementor-elements' );
 		}
         
 		return '';

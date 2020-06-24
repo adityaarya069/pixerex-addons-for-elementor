@@ -35,7 +35,7 @@ class Pixerex_Image_Separator extends Widget_Base {
     }
 
     public function get_title() {
-		return sprintf( '%1$s %2$s', Helper_Functions::get_prefix(), __('Image Separator', 'pixerex-addons-for-elementor') );
+		return sprintf( '%1$s %2$s', Helper_Functions::get_prefix(), __('Image Separator', 'pixerex-elementor-elements') );
 	}
 
     public function get_style_depends() {
@@ -72,18 +72,18 @@ class Pixerex_Image_Separator extends Widget_Base {
 
         $this->start_controls_section('pixerex_image_separator_general_settings',
             [
-                'label'         => __('Image Settings', 'pixerex-addons-for-elementor')
+                'label'         => __('Image Settings', 'pixerex-elementor-elements')
             ]
         );
         
         $this->add_control('separator_type',
             [
-                'label'			=> __( 'Separator Type', 'pixerex-addons-for-elementor' ),
+                'label'			=> __( 'Separator Type', 'pixerex-elementor-elements' ),
                 'type' 			=> Controls_Manager::SELECT,
                 'options'		=> [
-                    'icon'          => __('Icon', 'pixerex-addons-for-elementor'),
-                    'image'         => __( 'Image', 'pixerex-addons-for-elementor'),
-                    'animation'     => __('Lottie Animation', 'pixerex-addons-for-elementor'),
+                    'icon'          => __('Icon', 'pixerex-elementor-elements'),
+                    'image'         => __( 'Image', 'pixerex-elementor-elements'),
+                    'animation'     => __('Lottie Animation', 'pixerex-elementor-elements'),
                 ],
                 'default'		=> 'image'
             ]
@@ -91,7 +91,7 @@ class Pixerex_Image_Separator extends Widget_Base {
 
         $this->add_control('separator_icon',
 		  	[
-		     	'label'			=> __( 'Select an Icon', 'pixerex-addons-for-elementor' ),
+		     	'label'			=> __( 'Select an Icon', 'pixerex-elementor-elements' ),
 		     	'type'              => Controls_Manager::ICONS,
                 'default' => [
                     'value'     => 'fas fa-grip-lines',
@@ -105,8 +105,8 @@ class Pixerex_Image_Separator extends Widget_Base {
 
         $this->add_control('pixerex_image_separator_image',
             [
-                'label'         => __('Image', 'pixerex-addons-for-elementor'),
-                'description'   => __('Choose the separator image', 'pixerex-addons-for-elementor' ),
+                'label'         => __('Image', 'pixerex-elementor-elements'),
+                'description'   => __('Choose the separator image', 'pixerex-elementor-elements' ),
                 'type'          => Controls_Manager::MEDIA,
                 'dynamic'       => [ 'active' => true ],
                 'default'       => [
@@ -121,7 +121,7 @@ class Pixerex_Image_Separator extends Widget_Base {
 
         $this->add_control('lottie_url', 
             [
-                'label'             => __( 'Animation JSON URL', 'pixerex-addons-for-elementor' ),
+                'label'             => __( 'Animation JSON URL', 'pixerex-elementor-elements' ),
                 'type'              => Controls_Manager::TEXT,
                 'dynamic'           => [ 'active' => true ],
                 'description'       => 'Get JSON code URL from <a href="https://lottiefiles.com/" target="_blank">here</a>',
@@ -134,7 +134,7 @@ class Pixerex_Image_Separator extends Widget_Base {
 
         $this->add_control('lottie_loop',
             [
-                'label'         => __('Loop','pixerex-addons-for-elementor'),
+                'label'         => __('Loop','pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SWITCHER,
                 'return_value'  => 'true',
                 'default'       => 'true',
@@ -146,7 +146,7 @@ class Pixerex_Image_Separator extends Widget_Base {
 
         $this->add_control('lottie_reverse',
             [
-                'label'         => __('Reverse','pixerex-addons-for-elementor'),
+                'label'         => __('Reverse','pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SWITCHER,
                 'return_value'  => 'true',
                 'condition'         => [
@@ -157,7 +157,7 @@ class Pixerex_Image_Separator extends Widget_Base {
 
         $this->add_control('lottie_hover',
             [
-                'label'         => __('Only Play on Hover','pixerex-addons-for-elementor'),
+                'label'         => __('Only Play on Hover','pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SWITCHER,
                 'return_value'  => 'true',
                 'condition'         => [
@@ -168,7 +168,7 @@ class Pixerex_Image_Separator extends Widget_Base {
 
         $this->add_responsive_control('pixerex_image_separator_image_size',
             [
-                'label'         => __('Size', 'pixerex-addons-for-elementor'),
+                'label'         => __('Size', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SLIDER,
                 'size_units'    => ['px', 'em', '%'],
                 'default'       => [
@@ -195,10 +195,10 @@ class Pixerex_Image_Separator extends Widget_Base {
         
         $this->add_responsive_control('pixerex_image_separator_image_gutter',
             [
-                'label'         => __('Gutter (%)', 'pixerex-addons-for-elementor'),
+                'label'         => __('Gutter (%)', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::NUMBER,
                 'default'       => -50,
-                'description'   => __('-50% is default. Increase to push the image outside or decrease to pull the image inside.','pixerex-addons-for-elementor'),
+                'description'   => __('-50% is default. Increase to push the image outside or decrease to pull the image inside.','pixerex-elementor-elements'),
                 'selectors'     => [
                     '{{WRAPPER}} .pixerex-image-separator-container' => 'transform: translateY( {{VALUE}}% );'
                 ]
@@ -207,19 +207,19 @@ class Pixerex_Image_Separator extends Widget_Base {
         
         $this->add_control('pixerex_image_separator_image_align', 
             [
-                'label'         => __('Alignment', 'pixerex-addons-for-elementor'),
+                'label'         => __('Alignment', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::CHOOSE,
                 'options'       => [
                     'left'  => [
-                        'title'     => __('Left', 'pixerex-addons-for-elementor'),
+                        'title'     => __('Left', 'pixerex-elementor-elements'),
                         'icon'      => 'fa fa-align-left'
                     ],
                     'center'  => [
-                        'title'     => __('Center', 'pixerex-addons-for-elementor'),
+                        'title'     => __('Center', 'pixerex-elementor-elements'),
                         'icon'      => 'fa fa-align-center'
                     ],
                     'right'  => [
-                        'title'     => __('Right', 'pixerex-addons-for-elementor'),
+                        'title'     => __('Right', 'pixerex-elementor-elements'),
                         'icon'      => 'fa fa-align-right'
                     ],
                 ],
@@ -232,19 +232,19 @@ class Pixerex_Image_Separator extends Widget_Base {
         
         $this->add_control('pixerex_image_separator_link_switcher', 
             [
-                'label'         => __('Link', 'pixerex-addons-for-elementor'),
+                'label'         => __('Link', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SWITCHER,
-                'description'   => __('Add a custom link or select an existing page link','pixerex-addons-for-elementor'),
+                'description'   => __('Add a custom link or select an existing page link','pixerex-elementor-elements'),
             ]
         );
         
         $this->add_control('pixerex_image_separator_link_type', 
             [
-                'label'         => __('Link/URL', 'pixerex-addons-for-elementor'),
+                'label'         => __('Link/URL', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SELECT,
                 'options'       => [
-                    'url'   => __('URL', 'pixerex-addons-for-elementor'),
-                    'link'  => __('Existing Page', 'pixerex-addons-for-elementor'),
+                    'url'   => __('URL', 'pixerex-elementor-elements'),
+                    'link'  => __('Existing Page', 'pixerex-elementor-elements'),
                 ],
                 'default'       => 'url',
                 'label_block'   => true,
@@ -256,7 +256,7 @@ class Pixerex_Image_Separator extends Widget_Base {
         
         $this->add_control('pixerex_image_separator_existing_page', 
             [
-                'label'         => __('Existing Page', 'pixerex-addons-for-elementor'),
+                'label'         => __('Existing Page', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SELECT2,
                 'options'       => $this->getTemplateInstance()->get_all_post(),
                 'multiple'      => false,
@@ -270,7 +270,7 @@ class Pixerex_Image_Separator extends Widget_Base {
         
         $this->add_control('pixerex_image_separator_image_link',
             [
-                'label'         => __('URL', 'pixerex-addons-for-elementor'),
+                'label'         => __('URL', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'dynamic'       => [
                     'active'        => true,
@@ -289,7 +289,7 @@ class Pixerex_Image_Separator extends Widget_Base {
         
         $this->add_control('pixerex_image_separator_image_link_text',
             [
-                'label'         => __('Image Title', 'pixerex-addons-for-elementor'),
+                'label'         => __('Image Title', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
                 'label_block'   => true,
                 'condition'     => [
@@ -300,7 +300,7 @@ class Pixerex_Image_Separator extends Widget_Base {
         
         $this->add_control('link_new_tab',
             [
-                'label'         => __('Open Link in New Tab', 'pixerex-addons-for-elementor'),
+                'label'         => __('Open Link in New Tab', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SWITCHER,
                 'default'       => 'yes',
                 'condition'     => [
@@ -313,7 +313,7 @@ class Pixerex_Image_Separator extends Widget_Base {
         
         $this->start_controls_section('pixerex_image_separator_style',
             [
-                'label'         => __('Separator', 'pixerex-addons-for-elementor'),
+                'label'         => __('Separator', 'pixerex-elementor-elements'),
                 'tab'           => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -333,7 +333,7 @@ class Pixerex_Image_Separator extends Widget_Base {
 			Group_Control_Css_Filter::get_type(),
 			[
 				'name'      => 'hover_css_filters',
-                'label'     => __('Hover CSS Filters', 'pixerex-addons-for-elementor'),
+                'label'     => __('Hover CSS Filters', 'pixerex-elementor-elements'),
                 'selector'  => '{{WRAPPER}} .pixerex-image-separator-container:hover',
                 'condition' => [
                     'separator_type!'    => 'icon'
@@ -343,7 +343,7 @@ class Pixerex_Image_Separator extends Widget_Base {
         
         $this->add_control('icon_color',
 		  	[
-				'label'         => __( 'Color', 'pixerex-addons-for-elementor' ),
+				'label'         => __( 'Color', 'pixerex-elementor-elements' ),
                 'type' 			=> Controls_Manager::COLOR,
                 'scheme' 		=> [
 				    'type' 	=> Scheme_Color::get_type(),
@@ -360,7 +360,7 @@ class Pixerex_Image_Separator extends Widget_Base {
 
         $this->add_control('icon_hover_color',
             [
-                'label'         => __( 'Hover Color', 'pixerex-addons-for-elementor' ),
+                'label'         => __( 'Hover Color', 'pixerex-elementor-elements' ),
                 'type' 			=> Controls_Manager::COLOR,
                 'scheme' 		=> [
                     'type' 	=> Scheme_Color::get_type(),
@@ -377,7 +377,7 @@ class Pixerex_Image_Separator extends Widget_Base {
         
         $this->add_control('icon_background_color',
 		  	[
-				'label'         => __( 'Background Color', 'pixerex-addons-for-elementor' ),
+				'label'         => __( 'Background Color', 'pixerex-elementor-elements' ),
                 'type' 			=> Controls_Manager::COLOR,
                 'scheme' 		=> [
 				    'type' 	=> Scheme_Color::get_type(),
@@ -394,7 +394,7 @@ class Pixerex_Image_Separator extends Widget_Base {
  
         $this->add_control('icon_hover_background_color',
 		  	[
-				'label'         => __( 'Hover Background Color', 'pixerex-addons-for-elementor' ),
+				'label'         => __( 'Hover Background Color', 'pixerex-elementor-elements' ),
                 'type' 			=> Controls_Manager::COLOR,
                 'scheme' 		=> [
 				    'type' 	=> Scheme_Color::get_type(),
@@ -411,7 +411,7 @@ class Pixerex_Image_Separator extends Widget_Base {
 
         $this->add_responsive_control('separator_border_radius',
             [
-                'label'         => __('Border Radius', 'pixerex-addons-for-elementor'),
+                'label'         => __('Border Radius', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::DIMENSIONS,
                 'size_units'    => ['px', 'em', '%'],
                 'selectors'     => [
@@ -433,7 +433,7 @@ class Pixerex_Image_Separator extends Widget_Base {
         
         $this->add_responsive_control('icon_padding',
             [
-                'label'         => __('Padding', 'pixerex-addons-for-elementor'),
+                'label'         => __('Padding', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::DIMENSIONS,
                 'size_units'    => ['px', 'em', '%'],
                 'selectors'     => [

@@ -91,27 +91,27 @@ if ( ! class_exists ('Pixerex_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'premium_banner_title',
-                       'type'        => __( 'Banner: Title', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Banner: Title', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_banner_description',
-                       'type'        => __( 'Banner: Description', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Banner: Description', 'pixerex-elementor-elements' ),
                        'editor_type' => 'AREA',
                    ],
                    [
                        'field'       => 'premium_banner_more_text',
-                       'type'        => __( 'Banner: Button Text', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Banner: Button Text', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    'premium_banner_image_custom_link' => [
                        'field'       => 'url',
-                       'type'        => __( 'Banner: URL', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Banner: URL', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINK',
                    ],
                    'premium_banner_link' => [
                        'field'       => 'url',
-                       'type'        => __( 'Banner: Button URL', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Banner: Button URL', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINK',
                    ],
                ]
@@ -122,12 +122,12 @@ if ( ! class_exists ('Pixerex_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'premium_button_text',
-                       'type'        => __( 'Button: Text', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Button: Text', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    'premium_button_link' => [
                        'field'       => 'url',
-                       'type'        => __( 'Button: URL', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Button: URL', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINK',
                    ],
                ]
@@ -138,82 +138,82 @@ if ( ! class_exists ('Pixerex_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'premium_countdown_expiry_text_',
-                       'type'        => __( 'Countdown: Expiration Message', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Expiration Message', 'pixerex-elementor-elements' ),
                        'editor_type' => 'AREA',
                    ],
                    [
                        'field'       => 'premium_countdown_day_singular',
-                       'type'        => __( 'Countdown: Day Singular', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Day Singular', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_countdown_day_plural',
-                       'type'        => __( 'Countdown: Day Plural', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Day Plural', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_countdown_week_singular',
-                       'type'        => __( 'Countdown: Week Singular', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Week Singular', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_countdown_week_plural',
-                       'type'        => __( 'Countdown: Week Plural', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Week Plural', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_countdown_month_singular',
-                       'type'        => __( 'Countdown: Month Singular', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Month Singular', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_countdown_month_plural',
-                       'type'        => __( 'Countdown: Month Plural', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Month Plural', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_countdown_year_singular',
-                       'type'        => __( 'Countdown: Year Singular', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Year Singular', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_countdown_year_plural',
-                       'type'        => __( 'Countdown: Year Plural', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Year Plural', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_countdown_hour_singular',
-                       'type'        => __( 'Countdown: Hour Singular', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Hour Singular', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_countdown_hour_plural',
-                       'type'        => __( 'Countdown: Hour Plural', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Hour Plural', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_countdown_minute_singular',
-                       'type'        => __( 'Countdown: Minute Singular', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Minute Singular', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_countdown_minute_plural',
-                       'type'        => __( 'Countdown: Minute Plural', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Minute Plural', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_countdown_second_singular',
-                       'type'        => __( 'Countdown: Second Singular', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Second Singular', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_countdown_second_plural',
-                       'type'        => __( 'Countdown: Second Plural', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Second Plural', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    'premium_countdown_expiry_redirection_' => [
                        'field'       => 'url',
-                       'type'        => __( 'Countdown: Direction URL', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Direction URL', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINK',
                    ],
                ]
@@ -224,27 +224,27 @@ if ( ! class_exists ('Pixerex_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'premium_counter_title',
-                       'type'        => __( 'Counter: Title Text', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Counter: Title Text', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_counter_t_separator',
-                       'type'        => __( 'Counter: Thousands Separator', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Counter: Thousands Separator', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_counter_preffix',
-                       'type'        => __( 'Counter: Prefix', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Counter: Prefix', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_counter_suffix',
-                       'type'        => __( 'Counter: Suffix', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Counter: Suffix', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    'premium_dual_heading_link' => [
                        'field'       => 'url',
-                       'type'        => __( 'Advanced Heading: Heading URL', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Advanced Heading: Heading URL', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINK',
                    ]
                ]
@@ -255,17 +255,17 @@ if ( ! class_exists ('Pixerex_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'premium_dual_header_first_header_text',
-                       'type'        => __( 'Dual Heading: First Heading', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Dual Heading: First Heading', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_dual_header_second_header_text',
-                       'type'        => __( 'Dual Heading: Second Heading', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Dual Heading: Second Heading', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    'premium_dual_heading_link' => [
                        'field'       => 'url',
-                       'type'        => __( 'Advanced Heading: Heading URL', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Advanced Heading: Heading URL', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINK',
                    ]
                ]
@@ -281,17 +281,17 @@ if ( ! class_exists ('Pixerex_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'premium_fancy_prefix_text',
-                       'type'        => __( 'Fancy Text: Prefix', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Fancy Text: Prefix', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_fancy_suffix_text',
-                       'type'        => __( 'Fancy Text: Suffix', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Fancy Text: Suffix', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_fancy_text_cursor_text',
-                       'type'        => __( 'Fancy Text: Cursor Text', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Fancy Text: Cursor Text', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                ],
@@ -303,7 +303,7 @@ if ( ! class_exists ('Pixerex_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'premium_gallery_load_more_text',
-                       'type'        => __( 'Grid: Load More Button', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Grid: Load More Button', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ]
                ],
@@ -315,12 +315,12 @@ if ( ! class_exists ('Pixerex_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'premium_image_button_text',
-                       'type'        => __( 'Button: Text', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Button: Text', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    'premium_image_button_link' => [
                        'field'       => 'url',
-                       'type'        => __( 'Button: URL', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Button: URL', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINK',
                    ],
                ]
@@ -331,12 +331,12 @@ if ( ! class_exists ('Pixerex_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'link_text',
-                       'type'        => __( 'Image Scroll: Link Title', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Image Scroll: Link Title', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    'link' => [
                        'field'       => 'url',
-                       'type'        => __( 'Image Scroll: URL', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Image Scroll: URL', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINK',
                    ]
                ]
@@ -347,12 +347,12 @@ if ( ! class_exists ('Pixerex_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'premium_image_separator_image_link_text',
-                       'type'        => __( 'Image Separator: Link Title', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Image Separator: Link Title', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    'link' => [
                        'field'       => 'premium_image_separator_image_link',
-                       'type'        => __( 'Image Separator: URL', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Image Separator: URL', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINK',
                    ]
                ]
@@ -363,12 +363,12 @@ if ( ! class_exists ('Pixerex_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'premium_maps_center_lat',
-                       'type'        => __( 'Maps: Center Latitude', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Maps: Center Latitude', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_maps_center_long',
-                       'type'        => __( 'Maps: Center Longitude', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Maps: Center Longitude', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ]
                ],
@@ -380,27 +380,27 @@ if ( ! class_exists ('Pixerex_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'premium_modal_box_title',
-                       'type'        => __( 'Modal Box: Header Title', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Modal Box: Header Title', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_modal_box_content',
-                       'type'        => __( 'Modal Box: Content Text', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Modal Box: Content Text', 'pixerex-elementor-elements' ),
                        'editor_type' => 'VISUAL',
                    ],
                    [
                        'field'       => 'premium_modal_close_text',
-                       'type'        => __( 'Modal Box: Close Button', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Modal Box: Close Button', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_modal_box_button_text',
-                       'type'        => __( 'Modal Box: Trigger Button', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Modal Box: Trigger Button', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_modal_box_selector_text',
-                       'type'        => __( 'Modal Box: Trigger Text', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Modal Box: Trigger Text', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],  
                ],
@@ -411,17 +411,17 @@ if ( ! class_exists ('Pixerex_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'premium_person_name',
-                       'type'        => __( 'Person: Name', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Person: Name', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_person_title',
-                       'type'        => __( 'Person: Title', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Person: Title', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_person_content',
-                       'type'        => __( 'Person: Description', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Person: Description', 'pixerex-elementor-elements' ),
                        'editor_type' => 'AREA',
                    ],
                ],
@@ -432,52 +432,52 @@ if ( ! class_exists ('Pixerex_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'premium_pricing_table_title_text',
-                       'type'        => __( 'Pricing Table: Title', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Pricing Table: Title', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_pricing_table_slashed_price_value',
-                       'type'        => __( 'Pricing Table: Slashed Price', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Pricing Table: Slashed Price', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_pricing_table_price_currency',
-                       'type'        => __( 'Pricing Table: Currency', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Pricing Table: Currency', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_pricing_table_price_value',
-                       'type'        => __( 'Pricing Table: Price Value', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Pricing Table: Price Value', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_pricing_table_price_separator',
-                       'type'        => __( 'Pricing Table: Separator', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Pricing Table: Separator', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_pricing_table_price_duration',
-                       'type'        => __( 'Pricing Table: Duration', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Pricing Table: Duration', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_pricing_table_description_text',
-                       'type'        => __( 'Pricing Table: Description', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Pricing Table: Description', 'pixerex-elementor-elements' ),
                        'editor_type' => 'AREA',
                    ],
                    [
                        'field'       => 'premium_pricing_table_button_text',
-                       'type'        => __( 'Pricing Table: Button Text', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Pricing Table: Button Text', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_pricing_table_button_link',
-                       'type'        => __( 'Pricing Table: Button URL', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Pricing Table: Button URL', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINK',
                    ],
                    [
                        'field'       => 'premium_pricing_table_badge_text',
-                       'type'        => __( 'Pricing Table: Badge', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Pricing Table: Badge', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                ],
@@ -489,7 +489,7 @@ if ( ! class_exists ('Pixerex_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'premium_progressbar_left_label',
-                       'type'        => __( 'Progress Bar: Left Label', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Progress Bar: Left Label', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                ],
@@ -501,22 +501,22 @@ if ( ! class_exists ('Pixerex_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'premium_testimonial_person_name',
-                       'type'        => __( 'Testimonial: Name', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Testimonial: Name', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_testimonial_company_name',
-                       'type'        => __( 'Testimonial: Company', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Testimonial: Company', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'premium_testimonial_company_link',
-                       'type'        => __( 'Testimonial: Company Link', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Testimonial: Company Link', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINK',
                    ],
                    [
                        'field'       => 'premium_testimonial_content',
-                       'type'        => __( 'Testimonial: Content', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Testimonial: Content', 'pixerex-elementor-elements' ),
                        'editor_type' => 'AREA',
                    ],
                ],
@@ -527,7 +527,7 @@ if ( ! class_exists ('Pixerex_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'premium_title_text',
-                       'type'        => __( 'Title: Text', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Title: Text', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ]
                ],
@@ -538,12 +538,12 @@ if ( ! class_exists ('Pixerex_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'premium_video_box_link',
-                       'type'        => __( 'Video Box: Link', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Video Box: Link', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINK',
                    ],
                    [
                        'field'       => 'premium_video_box_description_text',
-                       'type'        => __( 'Video Box: Description', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Video Box: Description', 'pixerex-elementor-elements' ),
                        'editor_type' => 'AREA',
                    ]
                ]
@@ -554,7 +554,7 @@ if ( ! class_exists ('Pixerex_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'dots_tooltips',
-                       'type'        => __( 'Vertical Scroll: Tooltips', 'pixerex-addons-for-elementor' ),
+                       'type'        => __( 'Vertical Scroll: Tooltips', 'pixerex-elementor-elements' ),
                        'editor_type' => 'LINE',
                    ]
                ],

@@ -37,7 +37,7 @@ class Pixerex_Title extends Widget_Base {
     }
 
     public function get_title() {
-		return sprintf( '%1$s %2$s', Helper_Functions::get_prefix(), __('Title', 'pixerex-addons-for-elementor') );
+		return sprintf( '%1$s %2$s', Helper_Functions::get_prefix(), __('Title', 'pixerex-elementor-elements') );
 	}
 
     public function get_icon() {
@@ -75,16 +75,16 @@ class Pixerex_Title extends Widget_Base {
         /* Start Title General Settings Section */
         $this->start_controls_section('pixerex_title_content',
             [
-                'label'         => __('Title', 'pixerex-addons-for-elementor'),
+                'label'         => __('Title', 'pixerex-elementor-elements'),
             ]
         );
         
         /*Title Text*/ 
         $this->add_control('pixerex_title_text',
             [
-                'label'         => __('Title', 'pixerex-addons-for-elementor'),
+                'label'         => __('Title', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::TEXT,
-                'default'       => __('Pixerex Title','pixerex-addons-for-elementor'),
+                'default'       => __('Pixerex Title','pixerex-elementor-elements'),
                 'label_block'   => true,
                 'dynamic'       => [ 'active' => true ]
             ]
@@ -92,17 +92,17 @@ class Pixerex_Title extends Widget_Base {
         
         $this->add_control('pixerex_title_style', 
             [
-                'label'         => __('Style', 'pixerex-addons-for-elementor'),
+                'label'         => __('Style', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SELECT,
                 'default'       => 'style1',
                 'options'       => [
-                    'style1'        => __('Style 1', 'pixerex-addons-for-elementor'),
-                    'style2'        => __('Style 2', 'pixerex-addons-for-elementor'),
-                    'style3'        => __('Style 3', 'pixerex-addons-for-elementor'),
-                    'style4'        => __('Style 4', 'pixerex-addons-for-elementor'),
-                    'style5'        => __('Style 5', 'pixerex-addons-for-elementor'),
-                    'style6'        => __('Style 6', 'pixerex-addons-for-elementor'),
-                    'style7'        => __('Style 7', 'pixerex-addons-for-elementor'),
+                    'style1'        => __('Style 1', 'pixerex-elementor-elements'),
+                    'style2'        => __('Style 2', 'pixerex-elementor-elements'),
+                    'style3'        => __('Style 3', 'pixerex-elementor-elements'),
+                    'style4'        => __('Style 4', 'pixerex-elementor-elements'),
+                    'style5'        => __('Style 5', 'pixerex-elementor-elements'),
+                    'style6'        => __('Style 6', 'pixerex-elementor-elements'),
+                    'style7'        => __('Style 7', 'pixerex-elementor-elements'),
                     ],
                 'label_block'   => true,
             ]
@@ -110,19 +110,19 @@ class Pixerex_Title extends Widget_Base {
         
         $this->add_control('pixerex_title_icon_switcher',
             [
-                'label'         => __('Icon', 'pixerex-addons-for-elementor'),
+                'label'         => __('Icon', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SWITCHER,
             ]
         );
 
         $this->add_control('icon_type',
             [
-                'label'			=> __( 'Icon Type', 'pixerex-addons-for-elementor' ),
+                'label'			=> __( 'Icon Type', 'pixerex-elementor-elements' ),
                 'type' 			=> Controls_Manager::SELECT,
                 'options'		=> [
-                    'icon'          => __('Icon', 'pixerex-addons-for-elementor'),
-                    'image'         => __('Image', 'pixerex-addons-for-elementor'),
-                    'animation'     => __('Lottie Animation', 'pixerex-addons-for-elementor'),
+                    'icon'          => __('Icon', 'pixerex-elementor-elements'),
+                    'image'         => __('Image', 'pixerex-elementor-elements'),
+                    'animation'     => __('Lottie Animation', 'pixerex-elementor-elements'),
                 ],
                 'default'		=> 'icon',
                 'condition'     => [
@@ -133,7 +133,7 @@ class Pixerex_Title extends Widget_Base {
         
         $this->add_control('pixerex_title_icon_updated', 
             [
-                'label'         => __('Font Awesome Icon', 'pixerex-addons-for-elementor'),
+                'label'         => __('Font Awesome Icon', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::ICONS,
                 'fa4compatibility'  => 'pixerex_title_icon',
                 'default'       => [
@@ -150,7 +150,7 @@ class Pixerex_Title extends Widget_Base {
 
         $this->add_control('image_upload',
 		  	[
-		     	'label'			=> __( 'Upload Image', 'pixerex-addons-for-elementor' ),
+		     	'label'			=> __( 'Upload Image', 'pixerex-elementor-elements' ),
 		     	'type' 			=> Controls_Manager::MEDIA,
 			  	'default'		=> [
 			  		'url' => Utils::get_placeholder_image_src(),
@@ -164,7 +164,7 @@ class Pixerex_Title extends Widget_Base {
 
         $this->add_control('lottie_url', 
             [
-                'label'             => __( 'Animation JSON URL', 'pixerex-addons-for-elementor' ),
+                'label'             => __( 'Animation JSON URL', 'pixerex-elementor-elements' ),
                 'type'              => Controls_Manager::TEXT,
                 'dynamic'           => [ 'active' => true ],
                 'description'       => 'Get JSON code URL from <a href="https://lottiefiles.com/" target="_blank">here</a>',
@@ -178,7 +178,7 @@ class Pixerex_Title extends Widget_Base {
 
         $this->add_control('lottie_loop',
             [
-                'label'         => __('Loop','pixerex-addons-for-elementor'),
+                'label'         => __('Loop','pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SWITCHER,
                 'return_value'  => 'true',
                 'default'       => 'true',
@@ -191,7 +191,7 @@ class Pixerex_Title extends Widget_Base {
 
         $this->add_control('lottie_reverse',
             [
-                'label'         => __('Reverse','pixerex-addons-for-elementor'),
+                'label'         => __('Reverse','pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SWITCHER,
                 'return_value'  => 'true',
                 'condition'     => [
@@ -203,12 +203,12 @@ class Pixerex_Title extends Widget_Base {
 
         $this->add_responsive_control('icon_position',
             [
-                'label'         => __( 'Icon Position', 'pixerex-addons-for-elementor' ),
+                'label'         => __( 'Icon Position', 'pixerex-elementor-elements' ),
                 'type'          => Controls_Manager::SELECT,
                 'options'       => [
-                    'row'           => __('Before', 'pixerex-addons-for-elementor'),
-                    'row-reverse'   => __('After', 'pixerex-addons-for-elementor'),
-                    'column'        => __('Top', 'pixerex-addons-for-elementor'),
+                    'row'           => __('Before', 'pixerex-elementor-elements'),
+                    'row-reverse'   => __('After', 'pixerex-elementor-elements'),
+                    'column'        => __('Top', 'pixerex-elementor-elements'),
                 ],
                 'default'       => 'row',
                 'toggle'        => false,
@@ -225,19 +225,19 @@ class Pixerex_Title extends Widget_Base {
 
         $this->add_responsive_control('top_icon_align',
             [
-                'label'         => __( 'Icon Alignment', 'pixerex-addons-for-elementor' ),
+                'label'         => __( 'Icon Alignment', 'pixerex-elementor-elements' ),
                 'type'          => Controls_Manager::CHOOSE,
                 'options'       => [
                     'flex-start'      => [
-                        'title'=> __( 'Left', 'pixerex-addons-for-elementor' ),
+                        'title'=> __( 'Left', 'pixerex-elementor-elements' ),
                         'icon' => 'fa fa-align-left',
                     ],
                     'center'    => [
-                        'title'=> __( 'Center', 'pixerex-addons-for-elementor' ),
+                        'title'=> __( 'Center', 'pixerex-elementor-elements' ),
                         'icon' => 'fa fa-align-center',
                     ],
                     'flex-end'     => [
-                        'title'=> __( 'Right', 'pixerex-addons-for-elementor' ),
+                        'title'=> __( 'Right', 'pixerex-elementor-elements' ),
                         'icon' => 'fa fa-align-right',
                     ],
                 ],
@@ -257,7 +257,7 @@ class Pixerex_Title extends Widget_Base {
 
         $this->add_control('pixerex_title_tag',
             [
-                'label'         => __('HTML Tag', 'pixerex-addons-for-elementor'),
+                'label'         => __('HTML Tag', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SELECT,
                 'default'       => 'h2',
                 'options'       => [
@@ -278,19 +278,19 @@ class Pixerex_Title extends Widget_Base {
         
         $this->add_responsive_control('pixerex_title_align',
             [
-                'label'         => __( 'Alignment', 'pixerex-addons-for-elementor' ),
+                'label'         => __( 'Alignment', 'pixerex-elementor-elements' ),
                 'type'          => Controls_Manager::CHOOSE,
                 'options'       => [
                     'left'      => [
-                        'title'=> __( 'Left', 'pixerex-addons-for-elementor' ),
+                        'title'=> __( 'Left', 'pixerex-elementor-elements' ),
                         'icon' => 'fa fa-align-left',
                     ],
                     'center'    => [
-                        'title'=> __( 'Center', 'pixerex-addons-for-elementor' ),
+                        'title'=> __( 'Center', 'pixerex-elementor-elements' ),
                         'icon' => 'fa fa-align-center',
                     ],
                     'right'     => [
-                        'title'=> __( 'Right', 'pixerex-addons-for-elementor' ),
+                        'title'=> __( 'Right', 'pixerex-elementor-elements' ),
                         'icon' => 'fa fa-align-right',
                     ],
                 ],
@@ -307,19 +307,19 @@ class Pixerex_Title extends Widget_Base {
 
         $this->add_responsive_control('pixerex_title_align_flex',
             [
-                'label'         => __( 'Alignment', 'pixerex-addons-for-elementor' ),
+                'label'         => __( 'Alignment', 'pixerex-elementor-elements' ),
                 'type'          => Controls_Manager::CHOOSE,
                 'options'       => [
                     'flex-start'      => [
-                        'title'=> __( 'Left', 'pixerex-addons-for-elementor' ),
+                        'title'=> __( 'Left', 'pixerex-elementor-elements' ),
                         'icon' => 'fa fa-align-left',
                     ],
                     'center'    => [
-                        'title'=> __( 'Center', 'pixerex-addons-for-elementor' ),
+                        'title'=> __( 'Center', 'pixerex-elementor-elements' ),
                         'icon' => 'fa fa-align-center',
                     ],
                     'flex-end'     => [
-                        'title'=> __( 'Right', 'pixerex-addons-for-elementor' ),
+                        'title'=> __( 'Right', 'pixerex-elementor-elements' ),
                         'icon' => 'fa fa-align-right',
                     ],
                 ],
@@ -337,7 +337,7 @@ class Pixerex_Title extends Widget_Base {
 
         $this->add_control('alignment_notice', 
             [
-                'raw'               => __('Please note that left/right alignment is reversed when Icon Position is set to After.', 'pixerex-addons-for-elementor'),
+                'raw'               => __('Please note that left/right alignment is reversed when Icon Position is set to After.', 'pixerex-elementor-elements'),
                 'type'              => Controls_Manager::RAW_HTML,
                 'content_classes' => 'elementor-panel-alert elementor-panel-alert-info',
                 'condition'     => [
@@ -350,11 +350,11 @@ class Pixerex_Title extends Widget_Base {
         
         $this->add_control('pixerex_title_stripe_pos', 
             [
-                'label'         => __('Stripe Position', 'pixerex-addons-for-elementor'),
+                'label'         => __('Stripe Position', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SELECT,
                 'options'       => [
-                    'top'    => __('Top', 'pixerex-addons-for-elementor'),
-                    'bottom' => __('Bottom', 'pixerex-addons-for-elementor')
+                    'top'    => __('Top', 'pixerex-elementor-elements'),
+                    'bottom' => __('Bottom', 'pixerex-elementor-elements')
                 ],
                 'selectors_dictionary'  => [
                     'top'      => 'initial',
@@ -374,7 +374,7 @@ class Pixerex_Title extends Widget_Base {
         
         $this->add_responsive_control('pixerex_title_style7_strip_width',
             [
-                'label'         => __('Stripe Width (PX)', 'pixerex-addons-for-elementor'),
+                'label'         => __('Stripe Width (PX)', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SLIDER,
                 'size_units'    => ['px', '%', 'em'],
                 'default'       => [
@@ -393,7 +393,7 @@ class Pixerex_Title extends Widget_Base {
         
         $this->add_responsive_control('pixerex_title_style7_strip_height',
             [
-                'label'         => __('Stripe Height (PX)', 'pixerex-addons-for-elementor'),
+                'label'         => __('Stripe Height (PX)', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SLIDER,
                 'size_units'    => ['px', 'em'],
                 'default'       => [
@@ -412,7 +412,7 @@ class Pixerex_Title extends Widget_Base {
         
         $this->add_responsive_control('pixerex_title_style7_strip_top_spacing',
             [
-                'label'         => __('Stripe Top Spacing (PX)', 'pixerex-addons-for-elementor'),
+                'label'         => __('Stripe Top Spacing (PX)', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SLIDER,
                 'size_units'    => ['px', '%', 'em'],
                 'selectors'     => [
@@ -427,7 +427,7 @@ class Pixerex_Title extends Widget_Base {
         
         $this->add_responsive_control('pixerex_title_style7_strip_bottom_spacing',
             [
-                'label'         => __('Stripe Bottom Spacing (PX)', 'pixerex-addons-for-elementor'),
+                'label'         => __('Stripe Bottom Spacing (PX)', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SLIDER,
                 'size_units'    => ['px', '%', 'em'],
                 'label_block'   => true,
@@ -442,19 +442,19 @@ class Pixerex_Title extends Widget_Base {
         
         $this->add_responsive_control('pixerex_title_style7_strip_align',
             [
-                'label'         => __( 'Stripe Alignment', 'pixerex-addons-for-elementor' ),
+                'label'         => __( 'Stripe Alignment', 'pixerex-elementor-elements' ),
                 'type'          => Controls_Manager::CHOOSE,
                 'options'       => [
                     'flex-start'    => [
-                        'title' => __( 'Left', 'pixerex-addons-for-elementor' ),
+                        'title' => __( 'Left', 'pixerex-elementor-elements' ),
                         'icon'  => 'fa fa-align-left',
                         ],
                     'center'        => [
-                        'title' => __( 'Center', 'pixerex-addons-for-elementor' ),
+                        'title' => __( 'Center', 'pixerex-elementor-elements' ),
                         'icon'  => 'fa fa-align-center',
                         ],
                     'flex-end'     => [
-                        'title'=> __( 'Right', 'pixerex-addons-for-elementor' ),
+                        'title'=> __( 'Right', 'pixerex-elementor-elements' ),
                         'icon' => 'fa fa-align-right',
                     ],
                 ],
@@ -472,18 +472,18 @@ class Pixerex_Title extends Widget_Base {
 
         $this->add_control('link_switcher',
             [
-                'label'         => __('Link', 'pixerex-addons-for-elementor'),
+                'label'         => __('Link', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SWITCHER,
             ]
         );
         
         $this->add_control('link_selection', 
             [
-                'label'         => __('Link Type', 'pixerex-addons-for-elementor'),
+                'label'         => __('Link Type', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SELECT,
                 'options'       => [
-                    'url'   => __('URL', 'pixerex-addons-for-elementor'),
-                    'link'  => __('Existing Page', 'pixerex-addons-for-elementor'),
+                    'url'   => __('URL', 'pixerex-elementor-elements'),
+                    'link'  => __('Existing Page', 'pixerex-elementor-elements'),
                 ],
                 'default'       => 'url',
                 'label_block'   => true,
@@ -495,7 +495,7 @@ class Pixerex_Title extends Widget_Base {
         
         $this->add_control('custom_link',
             [
-                'label'         => __('Link', 'pixerex-addons-for-elementor'),
+                'label'         => __('Link', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::URL,
                 'dynamic'       => [ 'active' => true ],
                 'default'       => [
@@ -513,7 +513,7 @@ class Pixerex_Title extends Widget_Base {
         
         $this->add_control('existing_link',
             [
-                'label'         => __('Existing Page', 'pixerex-addons-for-elementor'),
+                'label'         => __('Existing Page', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SELECT2,
                 'options'       => $this->getTemplateInstance()->get_all_post(),
                 'condition'     => [
@@ -529,14 +529,14 @@ class Pixerex_Title extends Widget_Base {
 
         $this->start_controls_section('pixerex_title_style_section',
             [
-                'label'         => __('Title', 'pixerex-addons-for-elementor'),
+                'label'         => __('Title', 'pixerex-elementor-elements'),
                 'tab'           => Controls_Manager::TAB_STYLE,
             ]
         );
         
         $this->add_control('pixerex_title_color', 
             [
-                'label'         => __('Color', 'pixerex-addons-for-elementor'),
+                'label'         => __('Color', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::COLOR,
                 'scheme'        => [
                     'type'  => Scheme_Color::get_type(),
@@ -570,7 +570,7 @@ class Pixerex_Title extends Widget_Base {
         
         $this->add_control('pixerex_title_style2_background_color', 
             [
-                'label'         => __('Background Color', 'pixerex-addons-for-elementor'),
+                'label'         => __('Background Color', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::COLOR,
                 'scheme'        => [
                     'type'  => Scheme_Color::get_type(),
@@ -587,7 +587,7 @@ class Pixerex_Title extends Widget_Base {
         
         $this->add_control('pixerex_title_style3_background_color', 
             [
-                'label'         => __('Background Color', 'pixerex-addons-for-elementor'),
+                'label'         => __('Background Color', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::COLOR,
                 'scheme'        => [
                     'type'  => Scheme_Color::get_type(),
@@ -604,7 +604,7 @@ class Pixerex_Title extends Widget_Base {
         
         $this->add_control('pixerex_title_style5_header_line_color', 
             [
-                'label'         => __('Line Color', 'pixerex-addons-for-elementor'),
+                'label'         => __('Line Color', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::COLOR,
                 'scheme' => [
                     'type'  => Scheme_Color::get_type(),
@@ -632,7 +632,7 @@ class Pixerex_Title extends Widget_Base {
         
         $this->add_control('pixerex_title_style6_header_line_color', 
             [
-                'label'         => __('Line Color', 'pixerex-addons-for-elementor'),
+                'label'         => __('Line Color', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::COLOR,
                 'scheme' => [
                     'type'  => Scheme_Color::get_type(),
@@ -649,7 +649,7 @@ class Pixerex_Title extends Widget_Base {
        
         $this->add_control('pixerex_title_style6_triangle_color', 
             [
-                'label'         => __('Triangle Color', 'pixerex-addons-for-elementor'),
+                'label'         => __('Triangle Color', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::COLOR,
                 'scheme'        => [
                     'type'  => Scheme_Color::get_type(),
@@ -666,7 +666,7 @@ class Pixerex_Title extends Widget_Base {
         
         $this->add_control('pixerex_title_style7_strip_color', 
             [
-                'label'         => __('Stripe Color', 'pixerex-addons-for-elementor'),
+                'label'         => __('Stripe Color', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::COLOR,
                 'scheme'        => [
                     'type'  => Scheme_Color::get_type(),
@@ -684,7 +684,7 @@ class Pixerex_Title extends Widget_Base {
         $this->add_group_control(
             Group_Control_Text_Shadow::get_type(),
             [
-                'label'         => __('Shadow','pixerex-addons-for-elementor'),
+                'label'         => __('Shadow','pixerex-elementor-elements'),
                 'name'          => 'pixerex_title_text_shadow',
                 'selector'      => '{{WRAPPER}} .pixerex-title-header'
             ]
@@ -692,7 +692,7 @@ class Pixerex_Title extends Widget_Base {
         
         $this->add_responsive_control('pixerex_title_margin', 
             [
-                'label'         => __('Margin', 'pixerex-addons-for-elementor'),
+                'label'         => __('Margin', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::DIMENSIONS,
                 'size_units'    => ['px', 'em', '%'],
                 'selectors'     => [
@@ -703,7 +703,7 @@ class Pixerex_Title extends Widget_Base {
 
         $this->add_responsive_control('pixerex_title_padding', 
             [
-                'label'         => __('Padding', 'pixerex-addons-for-elementor'),
+                'label'         => __('Padding', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::DIMENSIONS,
                 'size_units'    => ['px', 'em', '%'],
                 'selectors'     => [
@@ -716,7 +716,7 @@ class Pixerex_Title extends Widget_Base {
         
         $this->start_controls_section('pixerex_title_icon_style_section',
             [
-                'label'         => __('Icon', 'pixerex-addons-for-elementor'),
+                'label'         => __('Icon', 'pixerex-elementor-elements'),
                 'tab'           => Controls_Manager::TAB_STYLE,
                 'condition'     => [
                     'pixerex_title_icon_switcher'   => 'yes'
@@ -726,7 +726,7 @@ class Pixerex_Title extends Widget_Base {
         
         $this->add_control('pixerex_title_icon_color', 
             [
-                'label'         => __('Color', 'pixerex-addons-for-elementor'),
+                'label'         => __('Color', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::COLOR,
                 'scheme' => [
                     'type'  => Scheme_Color::get_type(),
@@ -744,7 +744,7 @@ class Pixerex_Title extends Widget_Base {
         
         $this->add_responsive_control('pixerex_title_icon_size', 
             [
-                'label'         => __('Size', 'pixerex-addons-for-elementor'),
+                'label'         => __('Size', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SLIDER,
                 'size_units'    => ['px', 'em', '%'],
                 'range' => [
@@ -783,7 +783,7 @@ class Pixerex_Title extends Widget_Base {
         
         $this->add_control('pixerex_title_icon_border_radius',
             [
-                'label'         => __('Border Radius', 'pixerex-addons-for-elementor'),
+                'label'         => __('Border Radius', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::SLIDER,
                 'size_units'    => ['px', '%', 'em'],
                 'selectors'     => [
@@ -794,7 +794,7 @@ class Pixerex_Title extends Widget_Base {
         
         $this->add_responsive_control('pixerex_title_icon_margin',
             [
-                'label'         => __('Margin', 'pixerex-addons-for-elementor'),
+                'label'         => __('Margin', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::DIMENSIONS,
                 'size_units'    => [ 'px', 'em', '%' ],
                 'selectors'     => [
@@ -805,7 +805,7 @@ class Pixerex_Title extends Widget_Base {
         
         $this->add_responsive_control('pixerex_title_icon_padding',
             [
-                'label'         => __('Padding', 'pixerex-addons-for-elementor'),
+                'label'         => __('Padding', 'pixerex-elementor-elements'),
                 'type'          => Controls_Manager::DIMENSIONS,
                 'size_units'    => [ 'px', 'em', '%' ],
                 'selectors'     => [
@@ -817,7 +817,7 @@ class Pixerex_Title extends Widget_Base {
         $this->add_group_control(
             Group_Control_Text_Shadow::get_type(),
             [
-                'label'         => __('Icon Shadow', 'pixerex-addons-for-elementor'),
+                'label'         => __('Icon Shadow', 'pixerex-elementor-elements'),
                 'name'          => 'pixerex_title_icon_text_shadow',
                 'selector'      => '{{WRAPPER}} .pixerex-title-icon',
                 'condition'     => [

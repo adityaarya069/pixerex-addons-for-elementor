@@ -16,7 +16,7 @@
 	<# if ( 'valid' === window.PixerexTempsData.license.status || ! pro ) { #>
         <button class="elementor-template-library-template-action pixerex-template-insert elementor-button elementor-button-success">
             <i class="eicon-file-download"></i>
-                <span class="elementor-button-title"><?php echo __( 'Insert', 'pixerex-addons-for-elementor' ); ?></span>
+                <span class="elementor-button-title"><?php echo __( 'Insert', 'pixerex-elementor-elements' ); ?></span>
         </button>
 	<# } else if ( pro ) { #>
     <a class="template-library-activate-license" href="{{{ window.PixerexTempsData.license.activateLink }}}" target="_blank">
