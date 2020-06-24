@@ -630,10 +630,6 @@ class Modules_Settings {
         }
 
         $this->pa_settings = array(
-            'pixerex-blog'              => intval( $settings['pixerex-blog'] ? 1 : 0 ),
-            'pixerex-carousel'          => intval( $settings['pixerex-carousel'] ? 1 : 0 ),
-            'pixerex-countdown'         => intval( $settings['pixerex-countdown'] ? 1 : 0 ),
-            'pixerex-counter'           => intval( $settings['pixerex-counter'] ? 1 : 0 ),
             'pixerex-dual-header'       => intval( $settings['pixerex-dual-header'] ? 1 : 0 ),
             'pixerex-fancytext'         => intval( $settings['pixerex-fancytext'] ? 1 : 0 ),
             'pixerex-image-separator'   => intval( $settings['pixerex-image-separator'] ? 1 : 0 ),
