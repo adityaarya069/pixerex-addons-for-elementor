@@ -85,6 +85,6 @@ class Plugin_Info {
     <?php }
     
 	public function __construct() {
-        add_action( 'admin_menu', array ($this,'create_about_menu' ), 100 );
+        //add_action( 'admin_menu', array ($this,'create_about_menu' ), 100 );
 	}    
 }

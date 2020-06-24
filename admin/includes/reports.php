@@ -10,7 +10,7 @@ class Config_Data {
     
     public function __construct() {
         
-        add_action( 'admin_menu', array ($this,'create_sys_info_menu' ), 100 );
+       // add_action( 'admin_menu', array ($this,'create_sys_info_menu' ), 100 );
     }
     
     public function create_sys_info_menu() {

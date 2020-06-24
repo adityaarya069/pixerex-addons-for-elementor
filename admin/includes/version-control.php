@@ -18,7 +18,7 @@ class Version_Control {
     
     public function __construct() {
         
-        add_action( 'admin_menu', array ($this,'create_version_control_menu' ), 100 );
+       // add_action( 'admin_menu', array ($this,'create_version_control_menu' ), 100 );
         
         add_action( 'wp_ajax_pa_beta_save_settings', array( $this, 'pa_beta_save_settings' ) );
         
