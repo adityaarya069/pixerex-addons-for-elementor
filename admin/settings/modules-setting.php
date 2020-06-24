@@ -10,7 +10,7 @@ class Modules_Settings {
     
     protected $page_slug = 'pixerex-addons';
 
-    public static $pa_elements_keys = ['pixerex-banner', 'pixerex-blog', 'pixerex-carousel', 'pixerex-countdown', 'pixerex-counter', 'pixerex-dual-header', 'pixerex-fancytext', 'pixerex-image-separator', 'pixerex-lottie', 'pixerex-maps', 'pixerex-modalbox', 'pixerex-person', 'pixerex-progressbar', 'pixerex-testimonials', 'pixerex-title', 'pixerex-videobox', 'pixerex-pricing-table', 'pixerex-button', 'pixerex-contactform',  'pixerex-image-button', 'pixerex-grid', 'pixerex-vscroll', 'pixerex-image-scroll', 'pixerex-templates', 'pixerex-duplicator'];
+    public static $pa_elements_keys = ['pixerex-blog', 'pixerex-carousel', 'pixerex-countdown', 'pixerex-counter', 'pixerex-dual-header', 'pixerex-fancytext', 'pixerex-image-separator', 'pixerex-lottie', 'pixerex-maps', 'pixerex-modalbox', 'pixerex-person', 'pixerex-progressbar', 'pixerex-testimonials', 'pixerex-title', 'pixerex-videobox', 'pixerex-pricing-table', 'pixerex-button', 'pixerex-contactform',  'pixerex-image-button', 'pixerex-grid', 'pixerex-vscroll', 'pixerex-image-scroll', 'pixerex-templates', 'pixerex-duplicator'];
     
     private $pa_default_settings;
     
@@ -181,13 +181,6 @@ class Modules_Settings {
                     <table class="pa-elements-table">
                         <tbody>
                             <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Banner', 'pixerex-addons-for-elementor') ); ?></th>
-                                <td>
-                                    <label class="switch">
-                                        <input type="checkbox" id="pixerex-banner" name="pixerex-banner" <?php checked(1, $this->pa_get_settings['pixerex-banner'], true) ?>>
-                                        <span class="slider round"></span>
-                                </label>
-                                </td>
                                 <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Blog', 'pixerex-addons-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
@@ -785,7 +778,6 @@ class Modules_Settings {
         }
 
         $this->pa_settings = array(
-            'pixerex-banner'            => intval( $settings['pixerex-banner'] ? 1 : 0 ),
             'pixerex-blog'              => intval( $settings['pixerex-blog'] ? 1 : 0 ),
             'pixerex-carousel'          => intval( $settings['pixerex-carousel'] ? 1 : 0 ),
             'pixerex-countdown'         => intval( $settings['pixerex-countdown'] ? 1 : 0 ),
