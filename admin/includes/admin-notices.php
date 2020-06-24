@@ -218,7 +218,7 @@ class Admin_Notices {
      * @return void
      */
     public function get_lottie_notice() {
-        
+	 
         $lottie_notice = get_option( 'lottie_widget_notice' );
         
         if( '1' === $lottie_notice )

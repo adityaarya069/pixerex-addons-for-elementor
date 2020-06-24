@@ -41,7 +41,7 @@ class Plugin_Info {
               </div>
               <?php if( ! Helper_Functions::is_hide_logo() ) : ?>
                 <div class="pa-title-right">
-                    <img class="pa-logo" src="<?php echo pixerex_ADDONS_URL . 'admin/images/pixerex-addons-logo.png';?>">
+                    <img class="pa-logo" src="<?php echo PIXEREX_ADDONS_URL . 'admin/images/pixerex-addons-logo.png';?>">
                 </div>
                 <?php endif; ?>
            </div>
