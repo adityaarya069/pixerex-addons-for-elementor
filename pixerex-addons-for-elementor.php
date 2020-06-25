@@ -107,10 +107,8 @@ if( ! class_exists('Pixerex_Addons_Elementor') ) {
             
             if ( is_admin() ) {                         
                 require_once ( PIXEREX_ADDONS_PATH . 'admin/includes/dep/admin-helper.php');
-                require_once ( PIXEREX_ADDONS_PATH . 'includes/class-beta-testers.php');
                 require_once ( PIXEREX_ADDONS_PATH . 'includes/plugin.php');
-                require_once ( PIXEREX_ADDONS_PATH . 'admin/includes/admin-notices.php' );
-                $beta_testers = new Pixerex_Beta_Testers();
+
                 
             }
     

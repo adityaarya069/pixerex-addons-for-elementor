@@ -10,24 +10,25 @@ class Modules_Settings {
     
     protected $page_slug = 'pixerex-addons';
 
-    public static $pr_elements_keys = ['premium-banner', 
-	'premium-blog',
-	'premium-carousel', 
-	'premium-countdown', 
-	'premium-counter', 
-	'premium-dual-header',
-	'premium-lottie', 
-	'premium-maps', 
-	'premium-modalbox',
-	'premium-progressbar', 
-	'premium-pricing-table', 
-	'premium-button',
-	'premium-contactform', 
-	'premium-image-button', 
-	'premium-grid', 
-	'premium-image-scroll',
-	'premium-templates',
-	'premium-duplicator'];
+    public static $pr_elements_keys = [
+	'pixerex-banner', 
+	'pixerex-blog',
+	'pixerex-carousel', 
+	'pixerex-countdown', 
+	'pixerex-counter', 
+	'pixerex-dual-header',
+	'pixerex-lottie', 
+	'pixerex-maps', 
+	'pixerex-modalbox',
+	'pixerex-progressbar', 
+	'pixerex-pricing-table', 
+	'pixerex-button',
+	'pixerex-contactform', 
+	'pixerex-image-button', 
+	'pixerex-grid', 
+	'pixerex-image-scroll',
+	'pixerex-templates',
+	'pixerex-duplicator'];
     
     private $pr_default_settings;
     
@@ -198,68 +199,68 @@ class Modules_Settings {
                     <table class="pr-elements-table">
                         <tbody>
                             <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Banner', 'premium-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Banner', 'pixerex-addons-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
-                                        <input type="checkbox" id="premium-banner" name="premium-banner" <?php checked(1, $this->pr_get_settings['premium-banner'], true) ?>>
+                                        <input type="checkbox" id="pixerex-banner" name="pixerex-banner" <?php checked(1, $this->pr_get_settings['pixerex-banner'], true) ?>>
                                         <span class="slider round"></span>
                                 </label>
                                 </td>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Blog', 'premium-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Blog', 'pixerex-addons-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
-                                            <input type="checkbox" id="premium-blog" name="premium-blog" <?php checked(1, $this->pr_get_settings['premium-blog'], true) ?>>
+                                            <input type="checkbox" id="pixerex-blog" name="pixerex-blog" <?php checked(1, $this->pr_get_settings['pixerex-blog'], true) ?>>
                                             <span class="slider round"></span>
                                     </label>
                                 </td>
                             </tr>
                             
                             <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Button', 'premium-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Button', 'pixerex-addons-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
-                                            <input type="checkbox" id="premium-button" name="premium-button" <?php checked(1, $this->pr_get_settings['premium-button'], true) ?>>
+                                            <input type="checkbox" id="pixerex-button" name="pixerex-button" <?php checked(1, $this->pr_get_settings['pixerex-button'], true) ?>>
                                             <span class="slider round"></span>
                                     </label>
                                 </td>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Carousel', 'premium-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Carousel', 'pixerex-addons-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
-                                            <input type="checkbox" id="premium-carousel" name="premium-carousel" <?php checked(1, $this->pr_get_settings['premium-carousel'], true) ?>>
-                                            <span class="slider round"></span>
-                                    </label>
-                                </td>
-                            </tr>
-                            
-                            <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Contact Form7', 'premium-addons-for-elementor') ); ?></th>
-                                <td>
-                                    <label class="switch">
-                                            <input type="checkbox" id="premium-contactform" name="premium-contactform" <?php checked(1, $this->pr_get_settings['premium-contactform'], true) ?>>
-                                            <span class="slider round"></span>
-                                    </label>
-                                </td>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Countdown', 'premium-addons-for-elementor') ); ?></th>
-                                <td>
-                                    <label class="switch">
-                                            <input type="checkbox" id="premium-countdown" name="premium-countdown" <?php checked(1, $this->pr_get_settings['premium-countdown'], true) ?>>
+                                            <input type="checkbox" id="pixerex-carousel" name="pixerex-carousel" <?php checked(1, $this->pr_get_settings['pixerex-carousel'], true) ?>>
                                             <span class="slider round"></span>
                                     </label>
                                 </td>
                             </tr>
                             
                             <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Counter', 'premium-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Contact Form7', 'pixerex-addons-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
-                                            <input type="checkbox" id="premium-counter" name="premium-counter" <?php checked(1, $this->pr_get_settings['premium-counter'], true) ?>>
+                                            <input type="checkbox" id="pixerex-contactform" name="pixerex-contactform" <?php checked(1, $this->pr_get_settings['pixerex-contactform'], true) ?>>
                                             <span class="slider round"></span>
                                     </label>
                                 </td>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Dual Heading', 'premium-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Countdown', 'pixerex-addons-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
-                                            <input type="checkbox" id="premium-dual-header" name="premium-dual-header" <?php checked(1, $this->pr_get_settings['premium-dual-header'], true) ?>>
+                                            <input type="checkbox" id="pixerex-countdown" name="pixerex-countdown" <?php checked(1, $this->pr_get_settings['pixerex-countdown'], true) ?>>
+                                            <span class="slider round"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Counter', 'pixerex-addons-for-elementor') ); ?></th>
+                                <td>
+                                    <label class="switch">
+                                            <input type="checkbox" id="pixerex-counter" name="pixerex-counter" <?php checked(1, $this->pr_get_settings['pixerex-counter'], true) ?>>
+                                            <span class="slider round"></span>
+                                    </label>
+                                </td>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Dual Heading', 'pixerex-addons-for-elementor') ); ?></th>
+                                <td>
+                                    <label class="switch">
+                                            <input type="checkbox" id="pixerex-dual-header" name="pixerex-dual-header" <?php checked(1, $this->pr_get_settings['pixerex-dual-header'], true) ?>>
                                             <span class="slider round"></span>
                                     </label>
                                 </td>
@@ -268,35 +269,35 @@ class Modules_Settings {
                             <tr>
                                
                                 
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Media Grid', 'premium-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Media Grid', 'pixerex-addons-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
-                                            <input type="checkbox" id="premium-grid" name="premium-grid" <?php checked(1, $this->pr_get_settings['premium-grid'], true) ?>>
+                                            <input type="checkbox" id="pixerex-grid" name="pixerex-grid" <?php checked(1, $this->pr_get_settings['pixerex-grid'], true) ?>>
                                             <span class="slider round"></span>
                                     </label>
                                 </td>
-								<th><?php echo sprintf( '%1$s %2$s', $prefix, __('Image Scroll', 'premium-addons-for-elementor') ); ?></th>
+								<th><?php echo sprintf( '%1$s %2$s', $prefix, __('Image Scroll', 'pixerex-addons-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
-                                            <input type="checkbox" id="premium-image-scroll" name="premium-image-scroll" <?php checked(1, $this->pr_get_settings['premium-image-scroll'], true) ?>>
+                                            <input type="checkbox" id="pixerex-image-scroll" name="pixerex-image-scroll" <?php checked(1, $this->pr_get_settings['pixerex-image-scroll'], true) ?>>
                                             <span class="slider round"></span>
                                     </label>
                                 </td>
                             </tr>
                             
                             <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Image Button', 'premium-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Image Button', 'pixerex-addons-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
-                                            <input type="checkbox" id="premium-image-button" name="premium-image-button" <?php checked(1, $this->pr_get_settings['premium-image-button'], true) ?>>
+                                            <input type="checkbox" id="pixerex-image-button" name="pixerex-image-button" <?php checked(1, $this->pr_get_settings['pixerex-image-button'], true) ?>>
                                             <span class="slider round"></span>
                                     </label>
                                 </td>
                                 
-                               <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Modal Box', 'premium-addons-for-elementor') ); ?></th>
+                               <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Modal Box', 'pixerex-addons-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
-                                            <input type="checkbox" id="premium-modalbox" name="premium-modalbox" <?php checked(1, $this->pr_get_settings['premium-modalbox'], true) ?>>
+                                            <input type="checkbox" id="pixerex-modalbox" name="pixerex-modalbox" <?php checked(1, $this->pr_get_settings['pixerex-modalbox'], true) ?>>
                                             <span class="slider round"></span>
                                     </label>
                                 </td> 
@@ -304,19 +305,19 @@ class Modules_Settings {
                             
                             <tr>
                                 
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Lottie Animations', 'premium-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Lottie Animations', 'pixerex-addons-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
-                                            <input type="checkbox" id="premium-lottie" name="premium-lottie" <?php checked(1, $this->pr_get_settings['premium-lottie'], true) ?>>
+                                            <input type="checkbox" id="pixerex-lottie" name="pixerex-lottie" <?php checked(1, $this->pr_get_settings['pixerex-lottie'], true) ?>>
                                             <span class="slider round"></span>
                                     </label>
                                 </td>
 								
 								
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Templates', 'premium-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Templates', 'pixerex-addons-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
-                                            <input type="checkbox" id="premium-templates" name="premium-templates" <?php checked(1, $this->pr_get_settings['premium-templates'], true) ?>>
+                                            <input type="checkbox" id="pixerex-templates" name="pixerex-templates" <?php checked(1, $this->pr_get_settings['pixerex-templates'], true) ?>>
                                             <span class="slider round"></span>
                                     </label>
                                 </td>
@@ -324,10 +325,10 @@ class Modules_Settings {
                             </tr>
                             
                             <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Maps', 'premium-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Maps', 'pixerex-addons-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
-                                            <input type="checkbox" id="premium-maps" name="premium-maps" <?php checked(1, $this->pr_get_settings['premium-maps'], true) ?>>
+                                            <input type="checkbox" id="pixerex-maps" name="pixerex-maps" <?php checked(1, $this->pr_get_settings['pixerex-maps'], true) ?>>
                                             <span class="slider round"></span>
                                     </label>
                                 </td>
@@ -337,20 +338,20 @@ class Modules_Settings {
                             <tr>
                                 
 
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Progress Bar', 'premium-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Progress Bar', 'pixerex-addons-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
-                                            <input type="checkbox" id="premium-progressbar" name="premium-progressbar" <?php checked(1, $this->pr_get_settings['premium-progressbar'], true) ?>>
+                                            <input type="checkbox" id="pixerex-progressbar" name="pixerex-progressbar" <?php checked(1, $this->pr_get_settings['pixerex-progressbar'], true) ?>>
                                             <span class="slider round"></span>
                                     </label>
                                 </td>                                
                             </tr>
                             
                             <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Pricing Table', 'premium-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Pricing Table', 'pixerex-addons-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
-                                            <input type="checkbox" id="premium-pricing-table" name="premium-pricing-table" <?php checked(1, $this->pr_get_settings['premium-pricing-table'], true) ?>>
+                                            <input type="checkbox" id="pixerex-pricing-table" name="pixerex-pricing-table" <?php checked(1, $this->pr_get_settings['pixerex-pricing-table'], true) ?>>
                                             <span class="slider round"></span>
                                     </label>
                                 </td>
@@ -370,10 +371,10 @@ class Modules_Settings {
                             
                             <tr>
                                 
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Duplicator', 'premium-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Duplicator', 'pixerex-addons-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
-                                            <input type="checkbox" id="premium-duplicator" name="premium-duplicator" <?php checked(1, $this->pr_get_settings['premium-duplicator'], true) ?>>
+                                            <input type="checkbox" id="pixerex-duplicator" name="pixerex-duplicator" <?php checked(1, $this->pr_get_settings['pixerex-duplicator'], true) ?>>
                                             <span class="slider round"></span>
                                     </label>
                                 </td>
@@ -462,33 +463,36 @@ class Modules_Settings {
         }
 
          $this->pr_settings = array(
-            'premium-banner'            => intval( $settings['premium-banner'] ? 1 : 0 ),
-            'premium-blog'              => intval( $settings['premium-blog'] ? 1 : 0 ),
-            'premium-carousel'          => intval( $settings['premium-carousel'] ? 1 : 0 ),
-            'premium-countdown'         => intval( $settings['premium-countdown'] ? 1 : 0 ),
-            'premium-counter'           => intval( $settings['premium-counter'] ? 1 : 0 ),
-            'premium-dual-header'       => intval( $settings['premium-dual-header'] ? 1 : 0 ),
-            'premium-fancytext'         => intval( $settings['premium-fancytext'] ? 1 : 0 ),
-            'premium-image-separator'   => intval( $settings['premium-image-separator'] ? 1 : 0 ),
-            'premium-lottie'            => intval( $settings['premium-lottie'] ? 1 : 0 ),
-            'premium-maps'              => intval( $settings['premium-maps'] ? 1 : 0 ),
-            'premium-modalbox' 			=> intval( $settings['premium-modalbox'] ? 1 : 0 ),
-            'premium-person' 			=> intval( $settings['premium-person'] ? 1 : 0 ),
-            'premium-progressbar' 		=> intval( $settings['premium-progressbar'] ? 1 : 0 ),
-            'premium-testimonials' 		=> intval( $settings['premium-testimonials'] ? 1 : 0 ),
-            'premium-title'             => intval( $settings['premium-title'] ? 1 : 0 ),
-            'premium-pricing-table'     => intval( $settings['premium-pricing-table'] ? 1 : 0 ),
-            'premium-button'            => intval( $settings['premium-button'] ? 1 : 0 ),
-            'premium-contactform'       => intval( $settings['premium-contactform'] ? 1 : 0 ),
-            'premium-image-button'      => intval( $settings['premium-image-button'] ? 1 : 0 ),
-            'premium-grid'              => intval( $settings['premium-grid'] ? 1 : 0 ),
-            'premium-image-scroll'      => intval( $settings['premium-image-scroll'] ? 1 : 0 ),
-            'premium-templates'         => intval( $settings['premium-templates'] ? 1 : 0 ),
-            'premium-duplicator'        => intval( $settings['premium-duplicator'] ? 1 : 0 ),
+            'pixerex-banner'            => intval( $settings['pixerex-banner'] ? 1 : 0 ),
+            'pixerex-blog'              => intval( $settings['pixerex-blog'] ? 1 : 0 ),
+            'pixerex-carousel'          => intval( $settings['pixerex-carousel'] ? 1 : 0 ),
+            'pixerex-countdown'         => intval( $settings['pixerex-countdown'] ? 1 : 0 ),
+            'pixerex-counter'           => intval( $settings['pixerex-counter'] ? 1 : 0 ),
+            'pixerex-dual-header'       => intval( $settings['pixerex-dual-header'] ? 1 : 0 ),
+            'pixerex-fancytext'         => intval( $settings['pixerex-fancytext'] ? 1 : 0 ),
+            'pixerex-image-separator'   => intval( $settings['pixerex-image-separator'] ? 1 : 0 ),
+            'pixerex-lottie'            => intval( $settings['pixerex-lottie'] ? 1 : 0 ),
+            'pixerex-maps'              => intval( $settings['pixerex-maps'] ? 1 : 0 ),
+            'pixerex-modalbox' 			=> intval( $settings['pixerex-modalbox'] ? 1 : 0 ),
+            'pixerex-person' 			=> intval( $settings['pixerex-person'] ? 1 : 0 ),
+            'pixerex-progressbar' 		=> intval( $settings['pixerex-progressbar'] ? 1 : 0 ),
+            'pixerex-testimonials' 		=> intval( $settings['pixerex-testimonials'] ? 1 : 0 ),
+            'pixerex-title'             => intval( $settings['pixerex-title'] ? 1 : 0 ),
+            'pixerex-pricing-table'     => intval( $settings['pixerex-pricing-table'] ? 1 : 0 ),
+            'pixerex-button'            => intval( $settings['pixerex-button'] ? 1 : 0 ),
+            'pixerex-contactform'       => intval( $settings['pixerex-contactform'] ? 1 : 0 ),
+            'pixerex-image-button'      => intval( $settings['pixerex-image-button'] ? 1 : 0 ),
+            'pixerex-grid'              => intval( $settings['pixerex-grid'] ? 1 : 0 ),
+            'pixerex-image-scroll'      => intval( $settings['pixerex-image-scroll'] ? 1 : 0 ),
+            'pixerex-templates'         => intval( $settings['pixerex-templates'] ? 1 : 0 ),
+            'pixerex-duplicator'        => intval( $settings['pixerex-duplicator'] ? 1 : 0 ),
         );
 
         update_option( 'pr_save_settings', $this->pr_settings );
 
         return true;
     }
+	
+
+
 }
