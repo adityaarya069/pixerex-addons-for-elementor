@@ -31,7 +31,7 @@ class Pixerex_Maps extends Widget_Base {
 	}
     
     public function get_icon() {
-        return 'pa-maps';
+        return 'pr-maps';
     }
 
     public function get_categories() {
@@ -404,7 +404,7 @@ class Pixerex_Maps extends Widget_Base {
     
         $this->end_controls_section();
         
-        $this->start_controls_section('section_pa_docs',
+        $this->start_controls_section('section_pr_docs',
             [
                 'label'         => __('Helpful Documentations', 'pixerex-addons-for-elementor'),
             ]
@@ -412,17 +412,17 @@ class Pixerex_Maps extends Widget_Base {
         
         $this->add_control('doc_1',
             [
-                'raw'             => sprintf( __( '%1$s Getting started » %2$s', 'pixerex-addons-for-elementor' ), '<a href="https://pixerexaddons.com/docs/google-maps-widget-tutorial/?utm_source=pa-dashboard&utm_medium=pa-editor&utm_campaign=pa-plugin" target="_blank" rel="noopener">', '</a>' ),
+                'raw'             => sprintf( __( '%1$s Getting started » %2$s', 'pixerex-addons-for-elementor' ), '<a href="https://pixerexaddons.com/docs/google-maps-widget-tutorial/?utm_source=pr-dashboard&utm_medium=pr-editor&utm_campaign=pr-plugin" target="_blank" rel="noopener">', '</a>' ),
                 'type'            => Controls_Manager::RAW_HTML,
-                'content_classes' => 'editor-pa-doc',
+                'content_classes' => 'editor-pr-doc',
             ]
         );
         
         $this->add_control('doc_2',
             [
-                'raw'             => sprintf( __( '%1$s Getting your API key » %2$s', 'pixerex-addons-for-elementor' ), '<a href="https://pixerexaddons.com/docs/getting-your-api-key-for-google-reviews/?utm_source=pa-dashboard&utm_medium=pa-editor&utm_campaign=pa-plugin" target="_blank" rel="noopener">', '</a>' ),
+                'raw'             => sprintf( __( '%1$s Getting your API key » %2$s', 'pixerex-addons-for-elementor' ), '<a href="https://pixerexaddons.com/docs/getting-your-api-key-for-google-reviews/?utm_source=pr-dashboard&utm_medium=pr-editor&utm_campaign=pr-plugin" target="_blank" rel="noopener">', '</a>' ),
                 'type'            => Controls_Manager::RAW_HTML,
-                'content_classes' => 'editor-pa-doc',
+                'content_classes' => 'editor-pr-doc',
             ]
         );
         

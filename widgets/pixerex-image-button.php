@@ -50,7 +50,7 @@ class Pixerex_Image_Button extends Widget_Base {
     }
 
     public function get_icon() {
-        return 'pa-image-button';
+        return 'pr-image-button';
     }
 
     public function get_categories() {

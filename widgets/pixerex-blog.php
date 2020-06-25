@@ -45,7 +45,7 @@ class Pixerex_Blog extends Widget_Base {
     }
 
     public function get_icon() {
-        return 'pa-blog';
+        return 'pr-blog';
     }
     
     public function get_keywords() {

@@ -25,7 +25,7 @@ class Pixerex_Countdown extends Widget_Base {
 	}
 
 	public function get_icon() {
-		return 'pa-countdown';
+		return 'pr-countdown';
 	}
     
     public function is_reload_preview_required() {

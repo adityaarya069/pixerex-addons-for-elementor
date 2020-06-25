@@ -3,18 +3,18 @@
     var redirectionLink = " https://pixerexaddons.com/pro/?utm_source=wp-menu&utm_medium=wp-dash&utm_campaign=get-pro&utm_term=";
     "use strict";
     
-    $(".pa-checkbox").on("click", function() {
+    $(".pr-checkbox").on("click", function() {
        if($(this).prop("checked") == true) {
-           $(".pa-elements-table input").prop("checked", 1);
+           $(".pr-elements-table input").prop("checked", 1);
        }else if($(this).prop("checked") == false){
-           $(".pa-elements-table input").prop("checked", 0);
+           $(".pr-elements-table input").prop("checked", 0);
        }
     });
    
    $(".pro-slider").on('click', function(){
 
         swal({
-            title: '<span class="pa-swal-head">Get PRO Widgets & Addons<span>',
+            title: '<span class="pr-swal-head">Get PRO Widgets & Addons<span>',
             html: 'Supercharge your Elementor with PRO widgets and addons that you won’t find anywhere else.',
             type: 'warning',
             showCloseButton: true,
@@ -28,15 +28,15 @@
         });
     });
 
-    $( 'form#pa-settings' ).on( 'submit', function(e) {
+    $( 'form#pr-settings' ).on( 'submit', function(e) {
 		e.preventDefault();
 		$.ajax( {
 			url: settings.ajaxurl,
 			type: 'post',
 			data: {
-                action: 'pa_save_admin_addons_settings',
+                action: 'pr_save_admin_addons_settings',
                 security: settings.nonce,
-				fields: $( 'form#pa-settings' ).serialize(),
+				fields: $( 'form#pr-settings' ).serialize(),
 			},
             success: function( response ) {
 				swal(
@@ -55,15 +55,15 @@
 
 	} );
         
-    $('form#pa-maps').on('submit',function(e){
+    $('form#pr-maps').on('submit',function(e){
        e.preventDefault();
        $.ajax( {
             url: settings.ajaxurl,
             type: 'post',
             data: {
-                action: 'pa_maps_save_settings',
+                action: 'pr_maps_save_settings',
                 security: settings.nonce,
-                fields: $('form#pa-maps').serialize(),
+                fields: $('form#pr-maps').serialize(),
             },
             success: function (response){
                 swal(
@@ -82,15 +82,15 @@
     });
     
     
-     $('form#pa-beta-form').on('submit',function(e){
+     $('form#pr-beta-form').on('submit',function(e){
        e.preventDefault();
        $.ajax( {
             url: settings.ajaxurl,
             type: 'post',
             data: {
-                action: 'pa_beta_save_settings',
+                action: 'pr_beta_save_settings',
                 security: settings.nonce,
-                fields: $('form#pa-beta-form').serialize(),
+                fields: $('form#pr-beta-form').serialize(),
             },
             success: function (response){
                 swal(
@@ -110,7 +110,7 @@
 
 
 
-    $( '.pa-rollback-button' ).on( 'click', function( event ) {
+    $( '.pr-rollback-button' ).on( 'click', function( event ) {
 				event.preventDefault();
 
 				var $this = $( this ),

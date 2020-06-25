@@ -2,7 +2,7 @@
 
 if( ! defined( 'ABSPATH' ) ) exit; //Exit if accessed directly
 
-function pa_get_sysinfo() {
+function pr_get_sysinfo() {
     global $wpdb;
 
     // Get theme info

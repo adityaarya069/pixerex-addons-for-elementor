@@ -45,7 +45,7 @@ class Pixerex_Lottie extends Widget_Base {
 	}
 
     public function get_icon() {
-        return 'pa-lottie-animations';
+        return 'pr-lottie-animations';
     }
 
     public function get_categories() {
@@ -323,7 +323,7 @@ class Pixerex_Lottie extends Widget_Base {
 
         $this->end_controls_section();
 
-        $this->start_controls_section('section_pa_docs',
+        $this->start_controls_section('section_pr_docs',
             [
                 'label'         => __('Helpful Documentations', 'pixerex-addons-for-elementor'),
             ]
@@ -333,23 +333,23 @@ class Pixerex_Lottie extends Widget_Base {
             [
                 'type'            => Controls_Manager::RAW_HTML,
                 'raw'             => sprintf( __( '%1$s Check the video tutorial » %2$s', 'pixerex-addons-pro' ), '<a href="https://www.youtube.com/watch?v=0QWzUpF57dw" target="_blank" rel="noopener">', '</a>' ),
-                'content_classes' => 'editor-pa-doc',
+                'content_classes' => 'editor-pr-doc',
             ]
         );
         
         $this->add_control('doc_2',
             [
-                'raw'             => sprintf( __( '%1$s Check the documentation article » %2$s', 'pixerex-addons-for-elementor' ), '<a href="https://pixerexaddons.com/docs/lottie-animations-widget-tutorial/?utm_source=pa-dashboard&utm_medium=pa-editor&utm_campaign=pa-plugin" target="_blank" rel="noopener">', '</a>' ),
+                'raw'             => sprintf( __( '%1$s Check the documentation article » %2$s', 'pixerex-addons-for-elementor' ), '<a href="https://pixerexaddons.com/docs/lottie-animations-widget-tutorial/?utm_source=pr-dashboard&utm_medium=pr-editor&utm_campaign=pr-plugin" target="_blank" rel="noopener">', '</a>' ),
                 'type'            => Controls_Manager::RAW_HTML,
-                'content_classes' => 'editor-pa-doc',
+                'content_classes' => 'editor-pr-doc',
             ]
         );
 
         $this->add_control('doc_3',
             [
                 'type'            => Controls_Manager::RAW_HTML,
-                'raw'             => sprintf( __( '%1$s How to speed up Elementor pages with many Lottie animations » %2$s', 'pixerex-addons-for-elementor' ), '<a href="https://pixerexaddons.com/docs/how-to-speed-up-elementor-pages-with-many-lottie-animations/?utm_source=pa-dashboard&utm_medium=pa-editor&utm_campaign=pa-plugin" target="_blank" rel="noopener">', '</a>' ),
-                'content_classes' => 'editor-pa-doc',
+                'raw'             => sprintf( __( '%1$s How to speed up Elementor pages with many Lottie animations » %2$s', 'pixerex-addons-for-elementor' ), '<a href="https://pixerexaddons.com/docs/how-to-speed-up-elementor-pages-with-many-lottie-animations/?utm_source=pr-dashboard&utm_medium=pr-editor&utm_campaign=pr-plugin" target="_blank" rel="noopener">', '</a>' ),
+                'content_classes' => 'editor-pr-doc',
             ]
         );
 

@@ -14901,7 +14901,7 @@
             var id = $scope.data('id'),
                 $lottieWrap = target.find("#pixerex-lottie-" + id);
 
-            var editorSettings = $lottieWrap.data("pa-lottie");
+            var editorSettings = $lottieWrap.data("pr-lottie");
 
             if (!editorSettings) {
                 return false;
@@ -14919,7 +14919,7 @@
         }
 
         function generatePreviewSettings() {
-            var previewSettings = target.data("pa-lottie");
+            var previewSettings = target.data("pr-lottie");
 
             if (!previewSettings) {
                 return false;

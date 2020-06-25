@@ -36,7 +36,7 @@ class Pixerex_Banner extends Widget_Base {
 	}
 
 	public function get_icon() {
-		return 'pa-banner';
+		return 'pr-banner';
 	}
     
 	public function get_categories() {

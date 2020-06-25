@@ -27,7 +27,7 @@ class Pixerex_Counter extends Widget_Base {
 	}
 
 	public function get_icon() {
-		return 'pa-counter';
+		return 'pr-counter';
 	}
     
     public function get_style_depends() {

@@ -302,9 +302,9 @@
                 var type = $(item).data("type");
                 $(item).closest(".pixerex-gallery-item").on("click", function () {
                     var $this = $(this);
-                    $this.find(".pa-gallery-img-container").css("background", "#000");
+                    $this.find(".pr-gallery-img-container").css("background", "#000");
 
-                    $this.find("img, .pa-gallery-icons-caption-container, .pa-gallery-icons-wrapper").css("visibility", "hidden");
+                    $this.find("img, .pr-gallery-icons-caption-container, .pr-gallery-icons-wrapper").css("visibility", "hidden");
 
                     if ("style3" !== settings.skin)
                         $this.find(".pixerex-gallery-caption").css("visibility", "hidden");

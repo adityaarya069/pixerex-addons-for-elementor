@@ -20,33 +20,33 @@ class Config_Data {
             __( 'System Info','pixerex-elementor-elements' ),
             'manage_options',
             'pixerex-addons-sys',
-            [$this, 'pa_sys_info_page']
+            [$this, 'pr_sys_info_page']
         );
     }
     
-    public function pa_sys_info_page() {
+    public function pr_sys_info_page() {
     ?>
     <div class="wrap">
         <div class="response-wrap"></div>
-        <div class="pa-header-wrapper">
-            <div class="pa-title-left">
-                <h1 class="pa-title-main"><?php echo Helper_Functions::name(); ?></h1>
-                <h3 class="pa-title-sub"><?php echo sprintf( __( 'Thank you for using %s. This plugin has been developed by %s and we hope you enjoy using it.','pixerex-elementor-elements' ), Helper_Functions::name(), Helper_Functions::author() ); ?></h3>
+        <div class="pr-header-wrapper">
+            <div class="pr-title-left">
+                <h1 class="pr-title-main"><?php echo Helper_Functions::name(); ?></h1>
+                <h3 class="pr-title-sub"><?php echo sprintf( __( 'Thank you for using %s. This plugin has been developed by %s and we hope you enjoy using it.','pixerex-elementor-elements' ), Helper_Functions::name(), Helper_Functions::author() ); ?></h3>
             </div>
             <?php if( ! Helper_Functions::is_hide_logo() ) : ?>
-                <div class="pa-title-right">
-                    <img class="pa-logo" src="<?php echo PIXEREX_ADDONS_URL . 'admin/images/pixerex-addons-logo.png'; ?>">
+                <div class="pr-title-right">
+                    <img class="pr-logo" src="<?php echo PIXEREX_ADDONS_URL . 'admin/images/pixerex-addons-logo.png'; ?>">
                 </div>
             <?php endif; ?>
         </div>
-        <div class="pa-settings-tabs pa-sys-info-tab">
-            <div id="pa-system" class="pa-settings-tab">
-                <div class="pa-row">                
-                    <h3 class="pa-sys-info-title"><?php echo __('System setup information useful for debugging purposes.','pixerex-elementor-elements');?></h3>
-                    <div class="pa-system-info-container">
+        <div class="pr-settings-tabs pr-sys-info-tab">
+            <div id="pr-system" class="pr-settings-tab">
+                <div class="pr-row">                
+                    <h3 class="pr-sys-info-title"><?php echo __('System setup information useful for debugging purposes.','pixerex-elementor-elements');?></h3>
+                    <div class="pr-system-info-container">
                         <?php
                         require_once ( PIXEREX_ADDONS_PATH . 'admin/includes/dep/info.php');
-                        echo nl2br( pa_get_sysinfo() );
+                        echo nl2br( pr_get_sysinfo() );
                         ?>
                     </div>
                 </div>

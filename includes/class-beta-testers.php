@@ -80,7 +80,7 @@ class Pixerex_Beta_Testers {
 		return $transient;
 	}
 	public function __construct() {
-        $check_component_active = isset(get_option( 'pa_beta_save_settings' )['is-beta-tester']) ? get_option( 'pa_beta_save_settings' )['is-beta-tester'] : 1;
+        $check_component_active = isset(get_option( 'pr_beta_save_settings' )['is-beta-tester']) ? get_option( 'pr_beta_save_settings' )['is-beta-tester'] : 1;
 		if ( 0 !== $check_component_active ) {
 			return;
 		}

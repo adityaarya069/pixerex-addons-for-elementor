@@ -83,7 +83,7 @@ if( ! class_exists('Pixerex_Templates_Assets') ) {
             $is_rtl = is_rtl() ? '-rtl' : '';
             
             wp_enqueue_style(
-                'pa-preview',
+                'pr-preview',
                 PIXEREX_ADDONS_URL . 'assets/editor/templates/css/preview' . $is_rtl . '.css', 
                 array(),
                 PIXEREX_ADDONS_VERSION,

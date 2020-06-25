@@ -29,7 +29,7 @@ class Pixerex_Carousel extends Widget_Base {
 	}
 
 	public function get_icon() {
-		return 'pa-carousel';
+		return 'pr-carousel';
 	}
     
     public function is_reload_preview_required() {
@@ -419,7 +419,7 @@ class Pixerex_Carousel extends Widget_Base {
         
         $this->end_controls_section();
         
-        $this->start_controls_section('section_pa_docs',
+        $this->start_controls_section('section_pr_docs',
             [
                 'label'         => __('Helpful Documentations', 'pixerex-addons-for-elementor'),
             ]
@@ -428,8 +428,8 @@ class Pixerex_Carousel extends Widget_Base {
         $this->add_control('doc_1',
             [
                 'type'            => Controls_Manager::RAW_HTML,
-                'raw'             => sprintf( __( '%1$s Issue: I can see the first slide only » %2$s', 'pixerex-addons-for-elementor' ), '<a href="https://pixerexaddons.com/docs/i-can-see-the-first-slide-only-in-carousel-widget/?utm_source=pa-dashboard&utm_medium=pa-editor&utm_campaign=pa-plugin" target="_blank" rel="noopener">', '</a>' ),
-                'content_classes' => 'editor-pa-doc',
+                'raw'             => sprintf( __( '%1$s Issue: I can see the first slide only » %2$s', 'pixerex-addons-for-elementor' ), '<a href="https://pixerexaddons.com/docs/i-can-see-the-first-slide-only-in-carousel-widget/?utm_source=pr-dashboard&utm_medium=pr-editor&utm_campaign=pr-plugin" target="_blank" rel="noopener">', '</a>' ),
+                'content_classes' => 'editor-pr-doc',
             ]
 		);
 		
@@ -437,7 +437,7 @@ class Pixerex_Carousel extends Widget_Base {
             [
                 'type'            => Controls_Manager::RAW_HTML,
                 'raw'             => sprintf( __( '%1$s I\'m not able to see Font Awesome icons in the widget » %2$s', 'pixerex-addons-pro' ), '<a href="https://pixerexaddons.com/docs/why-im-not-able-to-see-elementor-font-awesome-5-icons-in-pixerex-add-ons/?utm_source=papro-dashboard&utm_medium=papro-editor&utm_campaign=papro-plugin" target="_blank" rel="noopener">', '</a>' ),
-                'content_classes' => 'editor-pa-doc',
+                'content_classes' => 'editor-pr-doc',
             ]
         );
         

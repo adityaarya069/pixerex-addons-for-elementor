@@ -13,7 +13,7 @@ function post_pixerex_addons_rollback() {
     
     $plugin_slug = basename( PIXEREX_ADDONS_FILE, '.php' );
     
-    $pa_rollback = new PA_Rollback(
+    $pr_rollback = new PA_Rollback(
         [
             'version' => PIXEREX_ADDONS_STABLE_VERSION,
             'plugin_name' => PIXEREX_ADDONS_BASENAME,
@@ -22,7 +22,7 @@ function post_pixerex_addons_rollback() {
         ]
     );
 
-    $pa_rollback->run();
+    $pr_rollback->run();
 
     wp_die(
         '', __( 'Rollback to Previous Version', 'pixerex-elementor-elements' ), [

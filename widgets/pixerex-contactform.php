@@ -24,7 +24,7 @@ class Pixerex_Contactform extends Widget_Base {
 	}
 
 	public function get_icon() {
-		return 'pa-contact-form';
+		return 'pr-contact-form';
     }
     
     public function get_categories() {

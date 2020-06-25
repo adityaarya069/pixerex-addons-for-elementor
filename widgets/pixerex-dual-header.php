@@ -38,7 +38,7 @@ class Pixerex_Dual_Header extends Widget_Base {
     }
     
     public function get_icon() {
-        return 'pa-dual-header';
+        return 'pr-dual-header';
     }
 
     public function get_categories() {
@@ -275,7 +275,7 @@ class Pixerex_Dual_Header extends Widget_Base {
         /*End General Settings Section*/
         $this->end_controls_section();
 
-        $this->start_controls_section('section_pa_docs',
+        $this->start_controls_section('section_pr_docs',
             [
                 'label'         => __('Helpful Documentations', 'pixerex-elementor-elements'),
             ]
@@ -284,16 +284,16 @@ class Pixerex_Dual_Header extends Widget_Base {
         $this->add_control('doc_1',
             [
                 'type'            => Controls_Manager::RAW_HTML,
-                'raw'             => sprintf( __( '%1$s Getting started » %2$s', 'pixerex-elementor-elements' ), '<a href="https://pixerexaddons.com/docs/dual-heading-widget-tutorial/?utm_source=pa-dashboard&utm_medium=pa-editor&utm_campaign=pa-plugin" target="_blank" rel="noopener">', '</a>' ),
-                'content_classes' => 'editor-pa-doc',
+                'raw'             => sprintf( __( '%1$s Getting started » %2$s', 'pixerex-elementor-elements' ), '<a href="https://pixerexaddons.com/docs/dual-heading-widget-tutorial/?utm_source=pr-dashboard&utm_medium=pr-editor&utm_campaign=pr-plugin" target="_blank" rel="noopener">', '</a>' ),
+                'content_classes' => 'editor-pr-doc',
             ]
         );
 
         $this->add_control('doc_2',
             [
                 'type'            => Controls_Manager::RAW_HTML,
-                'raw'             => sprintf( __( '%1$s How to add an outlined heading using Dual Heading widget » %2$s', 'pixerex-elementor-elements' ), '<a href="https://pixerexaddons.com/docs/how-to-add-an-outlined-heading-to-my-website/?utm_source=pa-dashboard&utm_medium=pa-editor&utm_campaign=pa-plugin" target="_blank" rel="noopener">', '</a>' ),
-                'content_classes' => 'editor-pa-doc',
+                'raw'             => sprintf( __( '%1$s How to add an outlined heading using Dual Heading widget » %2$s', 'pixerex-elementor-elements' ), '<a href="https://pixerexaddons.com/docs/how-to-add-an-outlined-heading-to-my-website/?utm_source=pr-dashboard&utm_medium=pr-editor&utm_campaign=pr-plugin" target="_blank" rel="noopener">', '</a>' ),
+                'content_classes' => 'editor-pr-doc',
             ]
         );
         

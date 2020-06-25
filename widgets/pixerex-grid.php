@@ -39,12 +39,12 @@ class Pixerex_Grid extends Widget_Base {
 	}
     
     public function get_icon() {
-        return 'pa-grid-icon';
+        return 'pr-grid-icon';
     }
     
     public function get_style_depends() {
         return [
-            'pa-prettyphoto',
+            'pr-prettyphoto',
             'pixerex-addons'
         ];
     }
@@ -115,7 +115,7 @@ class Pixerex_Grid extends Widget_Base {
                     'pixerex_gallery_img_size_select'   => 'fitRows'
                 ],
                 'selectors'         => [
-                    '{{WRAPPER}} .pixerex-gallery-item .pa-gallery-image' => 'height: {{SIZE}}{{UNIT}}'
+                    '{{WRAPPER}} .pixerex-gallery-item .pr-gallery-image' => 'height: {{SIZE}}{{UNIT}}'
                 ]
 			]
 		);
@@ -130,7 +130,7 @@ class Pixerex_Grid extends Widget_Base {
                ],
                 'default'           => 'fill',
                 'selectors'         => [
-                    '{{WRAPPER}} .pixerex-gallery-item .pa-gallery-image'  => 'object-fit: {{VALUE}}'
+                    '{{WRAPPER}} .pixerex-gallery-item .pr-gallery-image'  => 'object-fit: {{VALUE}}'
                 ],
                 'condition'         => [
                     'pixerex_gallery_img_size_select'   =>  [ 'metro', 'fitRows' ]
@@ -737,7 +737,7 @@ class Pixerex_Grid extends Widget_Base {
                 ],
                 'label_block'   => true,
                 'selectors'     => [
-                    '{{WRAPPER}} .pa-gallery-img.style1 .pixerex-gallery-caption' => 'bottom: {{SIZE}}px;',
+                    '{{WRAPPER}} .pr-gallery-img.style1 .pixerex-gallery-caption' => 'bottom: {{SIZE}}px;',
                 ],
                 'condition'     => [
                     'pixerex_gallery_img_style' => 'style1'
@@ -894,7 +894,7 @@ class Pixerex_Grid extends Widget_Base {
 			[
 				'raw'             => __( 'Please note Elementor lightbox style is always applied on videos.', 'pixerex-addons-for-elementor' ),
                 'type'            => Controls_Manager::RAW_HTML,
-                'content_classes' => 'editor-pa-doc',
+                'content_classes' => 'editor-pr-doc',
 			]
 		);
         
@@ -981,7 +981,7 @@ class Pixerex_Grid extends Widget_Base {
 
 		$this->end_controls_section();
         
-        $this->start_controls_section('section_pa_docs',
+        $this->start_controls_section('section_pr_docs',
             [
                 'label'         => __('Helpful Documentations', 'pixerex-addons-for-elementor'),
             ]
@@ -989,25 +989,25 @@ class Pixerex_Grid extends Widget_Base {
         
         $this->add_control('doc_1',
             [
-                'raw'             => sprintf( __( '%1$s Getting started » %2$s', 'pixerex-addons-for-elementor' ), '<a href="https://pixerexaddons.com/docs/grid-widget-tutorial/?utm_source=pa-dashboard&utm_medium=pa-editor&utm_campaign=pa-plugin" target="_blank" rel="noopener">', '</a>' ),
+                'raw'             => sprintf( __( '%1$s Getting started » %2$s', 'pixerex-addons-for-elementor' ), '<a href="https://pixerexaddons.com/docs/grid-widget-tutorial/?utm_source=pr-dashboard&utm_medium=pr-editor&utm_campaign=pr-plugin" target="_blank" rel="noopener">', '</a>' ),
                 'type'            => Controls_Manager::RAW_HTML,
-                'content_classes' => 'editor-pa-doc',
+                'content_classes' => 'editor-pr-doc',
             ]
         );
 
         $this->add_control('doc_2',
             [
                 'type'            => Controls_Manager::RAW_HTML,
-                'raw'             => sprintf( __( '%1$s How to assign a grid item to multiple categories » %2$s', 'pixerex-addons-for-elementor' ), '<a href="https://pixerexaddons.com/docs/how-to-assign-an-image-to-multiple-categories/?utm_source=pa-dashboard&utm_medium=pa-editor&utm_campaign=pa-plugin" target="_blank" rel="noopener">', '</a>' ),
-                'content_classes' => 'editor-pa-doc',
+                'raw'             => sprintf( __( '%1$s How to assign a grid item to multiple categories » %2$s', 'pixerex-addons-for-elementor' ), '<a href="https://pixerexaddons.com/docs/how-to-assign-an-image-to-multiple-categories/?utm_source=pr-dashboard&utm_medium=pr-editor&utm_campaign=pr-plugin" target="_blank" rel="noopener">', '</a>' ),
+                'content_classes' => 'editor-pr-doc',
             ]
         );
 
         $this->add_control('doc_3',
             [
                 'type'            => Controls_Manager::RAW_HTML,
-                'raw'             => sprintf( __( '%1$s How to open an Elementor popup/lightbox using a grid item » %2$s', 'pixerex-addons-for-elementor' ), '<a href="https://pixerexaddons.com/docs/how-to-open-a-popup-lightbox-through-a-grid-image/?utm_source=pa-dashboard&utm_medium=pa-editor&utm_campaign=pa-plugin" target="_blank" rel="noopener">', '</a>' ),
-                'content_classes' => 'editor-pa-doc',
+                'raw'             => sprintf( __( '%1$s How to open an Elementor popup/lightbox using a grid item » %2$s', 'pixerex-addons-for-elementor' ), '<a href="https://pixerexaddons.com/docs/how-to-open-a-popup-lightbox-through-a-grid-image/?utm_source=pr-dashboard&utm_medium=pr-editor&utm_campaign=pr-plugin" target="_blank" rel="noopener">', '</a>' ),
+                'content_classes' => 'editor-pr-doc',
             ]
         );
 
@@ -1090,7 +1090,7 @@ class Pixerex_Grid extends Widget_Base {
                 'label'         => __('Hover Overlay Color', 'pixerex-addons-for-elementor'),
                 'type'          => Controls_Manager::COLOR,
                 'selectors'     => [
-                    '{{WRAPPER}} .pa-gallery-img:not(.style2):hover .pa-gallery-icons-wrapper, {{WRAPPER}} .pa-gallery-img .pa-gallery-icons-caption-container, {{WRAPPER}} .pa-gallery-img:hover .pa-gallery-icons-caption-container' => 'background-color: {{VALUE}};',
+                    '{{WRAPPER}} .pr-gallery-img:not(.style2):hover .pr-gallery-icons-wrapper, {{WRAPPER}} .pr-gallery-img .pr-gallery-icons-caption-container, {{WRAPPER}} .pr-gallery-img:hover .pr-gallery-icons-caption-container' => 'background-color: {{VALUE}};',
                 ],
             ]
         );
@@ -1099,7 +1099,7 @@ class Pixerex_Grid extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name'              => 'pixerex_gallery_img_border',
-                'selector'          => '{{WRAPPER}} .pa-gallery-img-container',
+                'selector'          => '{{WRAPPER}} .pr-gallery-img-container',
             ]
         );
         
@@ -1109,7 +1109,7 @@ class Pixerex_Grid extends Widget_Base {
                     'type'          => Controls_Manager::SLIDER,
                     'size_units'    => ['px', '%', 'em'],
                     'selectors'     => [
-                        '{{WRAPPER}} .pa-gallery-img-container' => 'border-radius: {{SIZE}}{{UNIT}};'
+                        '{{WRAPPER}} .pr-gallery-img-container' => 'border-radius: {{SIZE}}{{UNIT}};'
                         ]
                     ]
                 );
@@ -1119,7 +1119,7 @@ class Pixerex_Grid extends Widget_Base {
             [
                 'label'             => __('Shadow','pixerex-addons-for-elementor'),
                 'name'              => 'pixerex_gallery_img_box_shadow',
-                'selector'          => '{{WRAPPER}} .pa-gallery-img-container',
+                'selector'          => '{{WRAPPER}} .pr-gallery-img-container',
                 'condition'         => [
                     'pixerex_gallery_img_style!' => 'style1'
                 ]
@@ -1130,7 +1130,7 @@ class Pixerex_Grid extends Widget_Base {
 			Group_Control_Css_Filter::get_type(),
 			[
 				'name' => 'css_filters',
-				'selector' => '{{WRAPPER}} .pa-gallery-img-container img',
+				'selector' => '{{WRAPPER}} .pr-gallery-img-container img',
 			]
 		);
         
@@ -1149,7 +1149,7 @@ class Pixerex_Grid extends Widget_Base {
                     'type'          => Controls_Manager::DIMENSIONS,
                     'size_units'    => [ 'px', 'em', '%' ],
                     'selectors'     => [
-                        '{{WRAPPER}} .pa-gallery-img-container' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}}',
+                        '{{WRAPPER}} .pr-gallery-img-container' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}}',
                         ]
                     ]
                 );
@@ -1160,7 +1160,7 @@ class Pixerex_Grid extends Widget_Base {
                     'type'          => Controls_Manager::DIMENSIONS,
                     'size_units'    => [ 'px', 'em', '%' ],
                     'selectors'     => [
-                        '{{WRAPPER}} .pa-gallery-img-container' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}}',
+                        '{{WRAPPER}} .pr-gallery-img-container' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}}',
                         ]
                     ]
                 );
@@ -1323,7 +1323,7 @@ class Pixerex_Grid extends Widget_Base {
                 ],
                 'label_block'   => true,
                 'selectors'     => [
-                    '{{WRAPPER}} .pa-gallery-img.style1 .pa-gallery-icons-inner-container,{{WRAPPER}} .pa-gallery-img.default .pa-gallery-icons-inner-container' => 'top: {{SIZE}}{{UNIT}};',
+                    '{{WRAPPER}} .pr-gallery-img.style1 .pr-gallery-icons-inner-container,{{WRAPPER}} .pr-gallery-img.default .pr-gallery-icons-inner-container' => 'top: {{SIZE}}{{UNIT}};',
                 ],
                 'condition'     => [
                     'pixerex_gallery_img_style!' => 'style2'
@@ -1344,8 +1344,8 @@ class Pixerex_Grid extends Widget_Base {
                 ],
                 'label_block'   => true,
                 'selectors'     => [
-                    '{{WRAPPER}} .pa-gallery-icons-inner-container i, {{WRAPPER}} .pa-gallery-icons-caption-cell i' => 'font-size: {{SIZE}}{{UNIT}}',
-                    '{{WRAPPER}} .pa-gallery-icons-inner-container svg, {{WRAPPER}} .pa-gallery-icons-caption-cell svg' => 'width: {{SIZE}}{{UNIT}}; height: {{SIZE}}{{UNIT}}'
+                    '{{WRAPPER}} .pr-gallery-icons-inner-container i, {{WRAPPER}} .pr-gallery-icons-caption-cell i' => 'font-size: {{SIZE}}{{UNIT}}',
+                    '{{WRAPPER}} .pr-gallery-icons-inner-container svg, {{WRAPPER}} .pr-gallery-icons-caption-cell svg' => 'width: {{SIZE}}{{UNIT}}; height: {{SIZE}}{{UNIT}}'
                 ],
             ]
         );
@@ -1367,7 +1367,7 @@ class Pixerex_Grid extends Widget_Base {
                         'value' => Scheme_Color::COLOR_1,
                     ],
                     'selectors'     => [
-                        '{{WRAPPER}} .pa-gallery-magnific-image i, {{WRAPPER}} .pa-gallery-img-link i' => 'color: {{VALUE}};',
+                        '{{WRAPPER}} .pr-gallery-magnific-image i, {{WRAPPER}} .pr-gallery-img-link i' => 'color: {{VALUE}};',
                     ]
                 ]
                 );
@@ -1381,7 +1381,7 @@ class Pixerex_Grid extends Widget_Base {
                         'value' => Scheme_Color::COLOR_2,
                     ],
                     'selectors'     => [
-                        '{{WRAPPER}} .pa-gallery-magnific-image span, {{WRAPPER}} .pa-gallery-img-link span' => 'background-color: {{VALUE}};',
+                        '{{WRAPPER}} .pr-gallery-magnific-image span, {{WRAPPER}} .pr-gallery-img-link span' => 'background-color: {{VALUE}};',
                     ]
                 ]
                 );
@@ -1390,7 +1390,7 @@ class Pixerex_Grid extends Widget_Base {
             Group_Control_Border::get_type(), 
                 [
                     'name'          => 'pixerex_gallery_icons_style_border',
-                    'selector'      => '{{WRAPPER}} .pa-gallery-magnific-image span, {{WRAPPER}} .pa-gallery-img-link span',
+                    'selector'      => '{{WRAPPER}} .pr-gallery-magnific-image span, {{WRAPPER}} .pr-gallery-img-link span',
                 ]
                 );
         
@@ -1400,7 +1400,7 @@ class Pixerex_Grid extends Widget_Base {
                     'type'          => Controls_Manager::SLIDER,
                     'size_units'    => ['px', 'em' , '%'],
                     'selectors'     => [
-                        '{{WRAPPER}} .pa-gallery-magnific-image span, {{WRAPPER}} .pa-gallery-img-link span' => 'border-radius: {{SIZE}}{{UNIT}};'
+                        '{{WRAPPER}} .pr-gallery-magnific-image span, {{WRAPPER}} .pr-gallery-img-link span' => 'border-radius: {{SIZE}}{{UNIT}};'
                     ]
                 ]
                 );
@@ -1410,7 +1410,7 @@ class Pixerex_Grid extends Widget_Base {
                 [
                     'label'         => __('Shadow','pixerex-addons-for-elementor'),
                     'name'          => 'pixerex_gallery_icons_style_shadow',
-                    'selector'      => '{{WRAPPER}} .pa-gallery-magnific-image span, {{WRAPPER}} .pa-gallery-img-link span',
+                    'selector'      => '{{WRAPPER}} .pr-gallery-magnific-image span, {{WRAPPER}} .pr-gallery-img-link span',
                 ]
                 );
         
@@ -1420,7 +1420,7 @@ class Pixerex_Grid extends Widget_Base {
                     'type'          => Controls_Manager::DIMENSIONS,
                     'size_units'    => ['px', 'em', '%'],
                     'selectors'     => [
-                        '{{WRAPPER}} .pa-gallery-magnific-image span, {{WRAPPER}} .pa-gallery-img-link span' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
+                        '{{WRAPPER}} .pr-gallery-magnific-image span, {{WRAPPER}} .pr-gallery-img-link span' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
                     ]
                 ]);
         
@@ -1430,7 +1430,7 @@ class Pixerex_Grid extends Widget_Base {
                     'type'          => Controls_Manager::DIMENSIONS,
                     'size_units'    => ['px', 'em', '%'],
                     'selectors'     => [
-                        '{{WRAPPER}} .pa-gallery-magnific-image span, {{WRAPPER}} .pa-gallery-img-link span' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
+                        '{{WRAPPER}} .pr-gallery-magnific-image span, {{WRAPPER}} .pr-gallery-img-link span' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
                     ]
                 ]);
         
@@ -1451,7 +1451,7 @@ class Pixerex_Grid extends Widget_Base {
                         'value' => Scheme_Color::COLOR_1,
                     ],
                     'selectors'     => [
-                        '{{WRAPPER}} .pa-gallery-magnific-image:hover i, {{WRAPPER}} .pa-gallery-img-link:hover i' => 'color: {{VALUE}};',
+                        '{{WRAPPER}} .pr-gallery-magnific-image:hover i, {{WRAPPER}} .pr-gallery-img-link:hover i' => 'color: {{VALUE}};',
                     ]
                 ]
                 );
@@ -1465,7 +1465,7 @@ class Pixerex_Grid extends Widget_Base {
                         'value' => Scheme_Color::COLOR_2,
                     ],
                     'selectors'     => [
-                        '{{WRAPPER}} .pa-gallery-magnific-image:hover span, {{WRAPPER}} .pa-gallery-img-link:hover span' => 'background-color: {{VALUE}};',
+                        '{{WRAPPER}} .pr-gallery-magnific-image:hover span, {{WRAPPER}} .pr-gallery-img-link:hover span' => 'background-color: {{VALUE}};',
                     ]
                 ]
                 );
@@ -1474,7 +1474,7 @@ class Pixerex_Grid extends Widget_Base {
             Group_Control_Border::get_type(), 
                 [
                     'name'          => 'pixerex_gallery_icons_style_border_hover',
-                    'selector'      => '{{WRAPPER}} .pa-gallery-magnific-image:hover span, {{WRAPPER}} .pa-gallery-img-link:hover span',
+                    'selector'      => '{{WRAPPER}} .pr-gallery-magnific-image:hover span, {{WRAPPER}} .pr-gallery-img-link:hover span',
                 ]
                 );
         
@@ -1484,7 +1484,7 @@ class Pixerex_Grid extends Widget_Base {
                     'type'          => Controls_Manager::SLIDER,
                     'size_units'    => ['px', 'em' , '%' ],                    
                     'selectors'     => [
-                        '{{WRAPPER}} .pa-gallery-magnific-image:hover span, {{WRAPPER}} .pa-gallery-img-link:hover span' => 'border-radius: {{SIZE}}{{UNIT}};'
+                        '{{WRAPPER}} .pr-gallery-magnific-image:hover span, {{WRAPPER}} .pr-gallery-img-link:hover span' => 'border-radius: {{SIZE}}{{UNIT}};'
                     ]
                 ]
                 );
@@ -1494,7 +1494,7 @@ class Pixerex_Grid extends Widget_Base {
                 [
                     'label'         => __('Shadow','pixerex-addons-for-elementor'),
                     'name'          => 'pixerex_gallery_icons_style_shadow_hover',
-                    'selector'      => '{{WRAPPER}} {{WRAPPER}} .pa-gallery-magnific-image:hover span, {{WRAPPER}} .pa-gallery-img-link:hover span',
+                    'selector'      => '{{WRAPPER}} {{WRAPPER}} .pr-gallery-magnific-image:hover span, {{WRAPPER}} .pr-gallery-img-link:hover span',
                 ]
                 );
         
@@ -1504,7 +1504,7 @@ class Pixerex_Grid extends Widget_Base {
                     'type'          => Controls_Manager::DIMENSIONS,
                     'size_units'    => ['px', 'em', '%'],
                     'selectors'     => [
-                        '{{WRAPPER}} .pa-gallery-magnific-image:hover span, {{WRAPPER}} .pa-gallery-img-link:hover span' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
+                        '{{WRAPPER}} .pr-gallery-magnific-image:hover span, {{WRAPPER}} .pr-gallery-img-link:hover span' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
                     ]
                 ]);
         
@@ -1514,7 +1514,7 @@ class Pixerex_Grid extends Widget_Base {
                     'type'          => Controls_Manager::DIMENSIONS,
                     'size_units'    => ['px', 'em', '%'],
                     'selectors'     => [
-                        '{{WRAPPER}} .pa-gallery-magnific-image:hover span, {{WRAPPER}} .pa-gallery-img-link:hover span' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
+                        '{{WRAPPER}} .pr-gallery-magnific-image:hover span, {{WRAPPER}} .pr-gallery-img-link:hover span' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
                     ]
                 ]);
         
@@ -2199,7 +2199,7 @@ class Pixerex_Grid extends Widget_Base {
         }
         
         $this->add_render_attribute( 'container', 'class', [
-            'pa-gallery-img-container'
+            'pr-gallery-img-container'
         ]);
         
     ?>
@@ -2248,15 +2248,15 @@ class Pixerex_Grid extends Widget_Base {
                 
             ?>
             <div <?php echo $this->get_render_attribute_string( $key ); ?>>
-                <div class="pa-gallery-img <?php echo esc_attr( $skin ); ?>" onclick="">
+                <div class="pr-gallery-img <?php echo esc_attr( $skin ); ?>" onclick="">
                     <div <?php echo $this->get_render_attribute_string( 'container' ); ?>>
                         <?php 
                             $video_link = $this->render_grid_item ( $image, $index );
                             
                             $image['video_link'] = $video_link;
                         if( 'style3' === $skin ) : ?>
-                            <div class="pa-gallery-icons-wrapper">
-                                <div class="pa-gallery-icons-inner-container">
+                            <div class="pr-gallery-icons-wrapper">
+                                <div class="pr-gallery-icons-inner-container">
                                     <?php $this->render_icons( $image, $index ); ?>
                                 </div>
                             </div>
@@ -2264,8 +2264,8 @@ class Pixerex_Grid extends Widget_Base {
                     </div>
                     <?php if( 'style2' !== $skin ) :
                         if( 'default' === $skin || 'style1' === $skin ) : ?>
-                            <div class="pa-gallery-icons-wrapper">
-                                <div class="pa-gallery-icons-inner-container">
+                            <div class="pr-gallery-icons-wrapper">
+                                <div class="pr-gallery-icons-inner-container">
                                     <?php $this->render_icons( $image, $index ); ?>
                                 </div>
                             </div>
@@ -2273,8 +2273,8 @@ class Pixerex_Grid extends Widget_Base {
                         endif;
                         $this->render_image_caption( $image );
                     else: ?>
-                        <div class="pa-gallery-icons-caption-container">
-                            <div class="pa-gallery-icons-caption-cell">
+                        <div class="pr-gallery-icons-caption-container">
+                            <div class="pr-gallery-icons-caption-cell">
                                 <?php 
                                         $this->render_icons( $image, $index );
                                         $this->render_image_caption( $image );
@@ -2296,12 +2296,12 @@ class Pixerex_Grid extends Widget_Base {
                                 $no_follow  = $image['pixerex_gallery_img_link']['nofollow'] ? 'rel="nofollow"' : '';
 
                             ?>
-                                <a class="pa-gallery-whole-link" href="<?php echo esc_attr( $icon_link ); ?>" <?php echo $external; ?><?php echo $no_follow; ?>></a>
+                                <a class="pr-gallery-whole-link" href="<?php echo esc_attr( $icon_link ); ?>" <?php echo $external; ?><?php echo $no_follow; ?>></a>
 
                             <?php } elseif( 'link' === $image['pixerex_gallery_img_link_type'] ) {
                                 $icon_link = get_permalink( $image['pixerex_gallery_img_existing'] );
                             ?>
-                                <a class="pa-gallery-whole-link" href="<?php echo esc_attr( $icon_link ); ?>"></a>
+                                <a class="pr-gallery-whole-link" href="<?php echo esc_attr( $icon_link ); ?>"></a>
                             <?php }
 
                         } elseif ( 'yes' === $lightbox ) {
@@ -2311,7 +2311,7 @@ class Pixerex_Grid extends Widget_Base {
                                 $lightbox_key   = 'image_lightbox_' . $index;
 
                                 $this->add_render_attribute( $lightbox_key, [
-                                    'class'     => 'pa-gallery-whole-link',
+                                    'class'     => 'pr-gallery-whole-link',
                                     'href'      => $image['pixerex_gallery_img']['url'],
                                 ]);
 
@@ -2434,7 +2434,7 @@ class Pixerex_Grid extends Widget_Base {
         }
         
         $this->add_render_attribute( $key, [
-            'class' => 'pa-gallery-image',
+            'class' => 'pr-gallery-image',
             'src'   => $image_src,
             'alt'   => $alt
         ]);
@@ -2493,8 +2493,8 @@ class Pixerex_Grid extends Widget_Base {
             
             $this->add_render_attribute( $lightbox_key, [
                 'class'     => [
-                    'pa-gallery-lightbox-wrap',
-                    'pa-gallery-video-icon'
+                    'pr-gallery-lightbox-wrap',
+                    'pr-gallery-video-icon'
                 ]
             ]);
             
@@ -2524,7 +2524,7 @@ class Pixerex_Grid extends Widget_Base {
             
         ?>
             <div <?php echo $this->get_render_attribute_string( $lightbox_key ); ?>>
-                <a class="pa-gallery-magnific-image pa-gallery-video-icon">
+                <a class="pr-gallery-magnific-image pr-gallery-video-icon">
                     <span>
                         <?php Icons_Manager::render_icon( $settings['pixerex_gallery_videos_icon'], [ 'aria-hidden' => 'true' ] );
                             ?>
@@ -2541,7 +2541,7 @@ class Pixerex_Grid extends Widget_Base {
             if( 'yes' !== $item['pixerex_gallery_lightbox_whole'] ) {
                 
                 $this->add_render_attribute( $lightbox_key, [
-                    'class'     => 'pa-gallery-magnific-image',
+                    'class'     => 'pr-gallery-magnific-image',
                     'href'      => $href,
                 ]);
 
@@ -2589,7 +2589,7 @@ class Pixerex_Grid extends Widget_Base {
                 $icon_link = '';
                 
                 $this->add_render_attribute( $link_key, [
-                    'class'     => 'pa-gallery-img-link',
+                    'class'     => 'pr-gallery-img-link',
                 ]);
 
                 if( 'url' === $item['pixerex_gallery_img_link_type'] && ! empty( $item['pixerex_gallery_img_link']['url'] ) ) {
@@ -2719,7 +2719,7 @@ class Pixerex_Grid extends Widget_Base {
 			[
                 'type'          => Controls_Manager::DIMENSIONS,
                 'selectors'     => [
-                    '{{WRAPPER}} .pa-gallery-img-container, {{WRAPPER}} .pa-gallery-img:not(.style2) .pa-gallery-icons-wrapper, {{WRAPPER}} .pa-gallery-img.style2 .pa-gallery-icons-caption-container' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}}',
+                    '{{WRAPPER}} .pr-gallery-img-container, {{WRAPPER}} .pr-gallery-img:not(.style2) .pr-gallery-icons-wrapper, {{WRAPPER}} .pr-gallery-img.style2 .pr-gallery-icons-caption-container' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}}',
                 ]
 				
 			]

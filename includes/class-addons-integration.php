@@ -70,7 +70,7 @@ class Addons_Integration {
         
         $badge_text = Helper_Functions::get_badge();
         
-        $dynamic_css = sprintf( '[class^="pa-"]::after, [class*=" pa-"]::after { content: "%s"; }', $badge_text ) ;
+        $dynamic_css = sprintf( '[class^="pr-"]::after, [class*=" pr-"]::after { content: "%s"; }', $badge_text ) ;
 
         wp_add_inline_style( 'pixerex-addons-font',  $dynamic_css );
         
@@ -89,7 +89,7 @@ class Addons_Integration {
         $is_rtl = is_rtl() ? '-rtl' : '';
         
         wp_register_style(
-            'pa-prettyphoto',
+            'pr-prettyphoto',
             PIXEREX_ADDONS_URL . 'assets/frontend/' . $dir . '/prettyphoto' . $is_rtl . $suffix . '.css',
             array(),
             PIXEREX_ADDONS_VERSION,
@@ -115,7 +115,7 @@ class Addons_Integration {
      */
     public function enqueue_preview_styles() {
         
-        wp_enqueue_style( 'pa-prettyphoto' );
+        wp_enqueue_style( 'pr-prettyphoto' );
         
         wp_enqueue_style( 'pixerex-addons' );
 
@@ -334,8 +334,8 @@ class Addons_Integration {
         	}
 
 			wp_enqueue_script(
-				'pa-maps-finder',
-				PIXEREX_ADDONS_URL . 'assets/editor/js/pa-maps-finder.js',
+				'pr-maps-finder',
+				PIXEREX_ADDONS_URL . 'assets/editor/js/pr-maps-finder.js',
 				array( 'jquery' ),
 				PIXEREX_ADDONS_VERSION,
 				true

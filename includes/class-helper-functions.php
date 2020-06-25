@@ -46,8 +46,8 @@ class Helper_Functions {
     public static function is_hide_rate() {
         
         if( defined('PIXEREX_PRO_ADDONS_VERSION') ) {
-            if( isset(get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-rate'] ) ) {
-                $hide_rate = get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-rate'];
+            if( isset(get_option('pr_wht_lbl_save_settings')['pixerex-wht-lbl-rate'] ) ) {
+                $hide_rate = get_option('pr_wht_lbl_save_settings')['pixerex-wht-lbl-rate'];
             }
         }
         
@@ -64,8 +64,8 @@ class Helper_Functions {
     public static function is_hide_about() {
         
         if( defined('PIXEREX_PRO_ADDONS_VERSION') ) {
-            if(isset(get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-about'])){
-                $hide_about = get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-about'];
+            if(isset(get_option('pr_wht_lbl_save_settings')['pixerex-wht-lbl-about'])){
+                $hide_about = get_option('pr_wht_lbl_save_settings')['pixerex-wht-lbl-about'];
             }
         }
         
@@ -82,8 +82,8 @@ class Helper_Functions {
     public static function is_hide_version_control() {
         
         if( defined('PIXEREX_PRO_ADDONS_VERSION') ) {
-                if(isset(get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-version'])){
-                    $hide_version_tab = get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-version'];
+                if(isset(get_option('pr_wht_lbl_save_settings')['pixerex-wht-lbl-version'])){
+                    $hide_version_tab = get_option('pr_wht_lbl_save_settings')['pixerex-wht-lbl-version'];
             }
         }
         
@@ -100,8 +100,8 @@ class Helper_Functions {
     public static function author() {
         
         if( defined('PIXEREX_PRO_ADDONS_VERSION') ) {
-            if(isset(get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-name'])){
-                $author_free = get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-name'];
+            if(isset(get_option('pr_wht_lbl_save_settings')['pixerex-wht-lbl-name'])){
+                $author_free = get_option('pr_wht_lbl_save_settings')['pixerex-wht-lbl-name'];
             }
         }
         
@@ -118,8 +118,8 @@ class Helper_Functions {
     public static function name() {
         
         if( defined('PIXEREX_PRO_ADDONS_VERSION') ) {
-            if(isset(get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-plugin-name'])){
-                $name_free = get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-plugin-name'];
+            if(isset(get_option('pr_wht_lbl_save_settings')['pixerex-wht-lbl-plugin-name'])){
+                $name_free = get_option('pr_wht_lbl_save_settings')['pixerex-wht-lbl-plugin-name'];
             }
         }
         
@@ -136,8 +136,8 @@ class Helper_Functions {
     public static function is_hide_row_meta() {
         
         if( defined('PIXEREX_PRO_ADDONS_VERSION') ) {
-            if( isset( get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-row'] ) ){
-                $hide_meta = get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-row'];
+            if( isset( get_option('pr_wht_lbl_save_settings')['pixerex-wht-lbl-row'] ) ){
+                $hide_meta = get_option('pr_wht_lbl_save_settings')['pixerex-wht-lbl-row'];
             }
         }
         
@@ -154,8 +154,8 @@ class Helper_Functions {
     public static function is_hide_logo() {
         
         if( defined('PIXEREX_PRO_ADDONS_VERSION') ) {
-            if(isset(get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-logo'])){
-                $hide_logo = get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-logo'];
+            if(isset(get_option('pr_wht_lbl_save_settings')['pixerex-wht-lbl-logo'])){
+                $hide_logo = get_option('pr_wht_lbl_save_settings')['pixerex-wht-lbl-logo'];
             }
         }
         
@@ -172,8 +172,8 @@ class Helper_Functions {
     public static function get_category() {
         
         if( defined('PIXEREX_PRO_ADDONS_VERSION') ) {
-            if(isset(get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-short-name'])){
-                $category = get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-short-name'];
+            if(isset(get_option('pr_wht_lbl_save_settings')['pixerex-wht-lbl-short-name'])){
+                $category = get_option('pr_wht_lbl_save_settings')['pixerex-wht-lbl-short-name'];
             }
         }
         
@@ -191,8 +191,8 @@ class Helper_Functions {
     public static function get_prefix() {
         
         if( defined('PIXEREX_PRO_ADDONS_VERSION') ) {
-            if(isset(get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-prefix'])){
-                $prefix = get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-prefix'];
+            if(isset(get_option('pr_wht_lbl_save_settings')['pixerex-wht-lbl-prefix'])){
+                $prefix = get_option('pr_wht_lbl_save_settings')['pixerex-wht-lbl-prefix'];
             }
         }
         
@@ -209,8 +209,8 @@ class Helper_Functions {
     public static function get_badge() {
         
         if( defined('PIXEREX_PRO_ADDONS_VERSION') ) {
-            if(isset(get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-badge'])){
-                $badge = get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-badge'];
+            if(isset(get_option('pr_wht_lbl_save_settings')['pixerex-wht-lbl-badge'])){
+                $badge = get_option('pr_wht_lbl_save_settings')['pixerex-wht-lbl-badge'];
             }
         }
         

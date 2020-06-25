@@ -40,7 +40,7 @@ class Pixerex_Image_Scroll extends Widget_Base {
     }
 
     public function get_icon() {
-        return 'pa-image-scroll';
+        return 'pr-image-scroll';
     }
 
     public function get_categories() {
@@ -523,7 +523,7 @@ class Pixerex_Image_Scroll extends Widget_Base {
         }
        
         if ( $settings['icon_switcher'] ) {
-            $icon_type = sprintf('pa-%s-mouse-scroll', $settings['direction_type'] );
+            $icon_type = sprintf('pr-%s-mouse-scroll', $settings['direction_type'] );
         }
         
 
@@ -597,7 +597,7 @@ class Pixerex_Image_Scroll extends Widget_Base {
             
             if ( 'yes' == settings.icon_switcher ) {
             
-                var iconClass = 'pa-' + direction + '-mouse-scroll';
+                var iconClass = 'pr-' + direction + '-mouse-scroll';
             
             }
             

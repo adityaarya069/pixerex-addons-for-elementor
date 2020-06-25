@@ -1,19 +1,19 @@
 @font-face {
-  font-family: "pa-elements";
-  src: url("../fonts/pa-elements.eot?p2y7wv");
-  src: url("../fonts/pa-elements.eot?p2y7wv#iefix") format("embedded-opentype"),
-    url("../fonts/pa-elements.ttf?p2y7wv") format("truetype"), url("../fonts/pa-elements.woff?p2y7wv") format("woff"),
-    url("../fonts/pa-elements.svg?p2y7wv#pa-elements") format("svg");
+  font-family: "pr-elements";
+  src: url("../fonts/pr-elements.eot?p2y7wv");
+  src: url("../fonts/pr-elements.eot?p2y7wv#iefix") format("embedded-opentype"),
+    url("../fonts/pr-elements.ttf?p2y7wv") format("truetype"), url("../fonts/pr-elements.woff?p2y7wv") format("woff"),
+    url("../fonts/pr-elements.svg?p2y7wv#pr-elements") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 .elementor-element .icon {
   position: relative;
 }
-[class^="pa-"],
-[class*=" pa-"] {
+[class^="pr-"],
+[class*=" pr-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "pa-elements" !important;
+  font-family: "pr-elements" !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -27,8 +27,8 @@
 /*
 * Icons Badge
 */
-[class^="pa-"]::after,
-[class*=" pa-"]::after {
+[class^="pr-"]::after,
+[class*=" pr-"]::after {
   content: "PA";
   font-family: "Montserrat", Sans-serif;
   font-weight: 700;
@@ -38,85 +38,85 @@
   right: 0.6em;
   top: 0.6em;
 }
-.pa-banner:before {
+.pr-banner:before {
   content: "\e903";
 }
-.pa-blog:before {
+.pr-blog:before {
   content: "\e904";
 }
-.pa-button:before {
+.pr-button:before {
   content: "\e905";
 }
-.pa-carousel:before {
+.pr-carousel:before {
   content: "\e906";
 }
-.pa-contact-form:before {
+.pr-contact-form:before {
   content: "\e907";
 }
-.pa-countdown:before {
+.pr-countdown:before {
   content: "\e908";
 }
-.pa-counter:before {
+.pr-counter:before {
   content: "\e909";
 }
-.pa-dual-header:before {
+.pr-dual-header:before {
   content: "\e90a";
 }
-.pa-fancy-text:before {
+.pr-fancy-text:before {
   content: "\e90b";
 }
-.pa-maps:before {
+.pr-maps:before {
   content: "\e90c";
 }
-.pa-grid-icon:before {
+.pr-grid-icon:before {
   content: "\e90d";
 }
-.pa-image-button:before {
+.pr-image-button:before {
   content: "\e90e";
 }
-.pa-image-scroll:before {
+.pr-image-scroll:before {
   content: "\e901";
 }
-.pa-image-separator:before {
+.pr-image-separator:before {
   content: "\e90f";
 }
-.pa-lottie-animations:before {
+.pr-lottie-animations:before {
   content: "\e900";
 }
-.pa-modal-box:before {
+.pr-modal-box:before {
   content: "\e910";
 }
-.pa-person:before {
+.pr-person:before {
   content: "\e911";
 }
-.pa-pricing-table:before {
+.pr-pricing-table:before {
   content: "\e912";
 }
-.pa-progress-bar:before {
+.pr-progress-bar:before {
   content: "\e913";
 }
-.pa-testimonials:before {
+.pr-testimonials:before {
   content: "\e914";
 }
-.pa-title:before {
+.pr-title:before {
   content: "\e915";
 }
-.pa-vscroll:before {
+.pr-vscroll:before {
   content: "\e916";
 }
-.pa-video-box:before {
+.pr-video-box:before {
   content: "\e917";
 }
-.editor-pa-doc {
+.editor-pr-doc {
   font-style: italic;
   line-height: 1.2;
   font-size: 12px;
 }
-.editor-pa-spacer {
+.editor-pr-spacer {
   margin-top: 1.5em;
 }
-.elementor-panel .elementor-control-section_pa_docs .elementor-panel-heading-title.elementor-panel-heading-title,
-.elementor-control-raw-html.editor-pa-doc a {
+.elementor-panel .elementor-control-section_pr_docs .elementor-panel-heading-title.elementor-panel-heading-title,
+.elementor-control-raw-html.editor-pr-doc a {
   color: #0f6aa7;
 }
 .elementor-control-raw-html .pixerex-notice-bold {

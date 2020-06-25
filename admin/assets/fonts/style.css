@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'pa-icon';
-  src:  url('pa-icon.eot?uo4nkm');
-  src:  url('pa-icon.eot?uo4nkm#iefix') format('embedded-opentype'),
-    url('pa-icon.ttf?uo4nkm') format('truetype'),
-    url('pa-icon.woff?uo4nkm') format('woff'),
-    url('pa-icon.svg?uo4nkm#pa-elements') format('svg');
+  font-family: 'pr-icon';
+  src:  url('pr-icon.eot?uo4nkm');
+  src:  url('pr-icon.eot?uo4nkm#iefix') format('embedded-opentype'),
+    url('pr-icon.ttf?uo4nkm') format('truetype'),
+    url('pr-icon.woff?uo4nkm') format('woff'),
+    url('pr-icon.svg?uo4nkm#pr-elements') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -13,7 +13,7 @@
     top: 5px;
     content: "\e900";
     /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'pa-icon' !important;
+    font-family: 'pr-icon' !important;
     speak: none;
     font-style: normal;
     font-variant: normal;

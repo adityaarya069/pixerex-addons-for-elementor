@@ -53,7 +53,7 @@ class Pixerex_Button extends Widget_Base {
 	}
 
     public function get_icon() {
-        return 'pa-button';
+        return 'pr-button';
     }
 
     public function get_categories() {
@@ -612,7 +612,7 @@ class Pixerex_Button extends Widget_Base {
         
         $this->end_controls_section();
 
-        $this->start_controls_section('section_pa_docs',
+        $this->start_controls_section('section_pr_docs',
             [
                 'label'         => __('Helpful Documentations', 'pixerex-addons-for-elementor'),
             ]
@@ -621,24 +621,24 @@ class Pixerex_Button extends Widget_Base {
         $this->add_control('doc_1',
             [
                 'type'            => Controls_Manager::RAW_HTML,
-                'raw'             => sprintf( __( '%1$s Getting started » %2$s', 'pixerex-addons-for-elementor' ), '<a href="https://pixerexaddons.com/docs/button-widget-tutorial/?utm_source=pa-dashboard&utm_medium=pa-editor&utm_campaign=pa-plugin" target="_blank" rel="noopener">', '</a>' ),
-                'content_classes' => 'editor-pa-doc',
+                'raw'             => sprintf( __( '%1$s Getting started » %2$s', 'pixerex-addons-for-elementor' ), '<a href="https://pixerexaddons.com/docs/button-widget-tutorial/?utm_source=pr-dashboard&utm_medium=pr-editor&utm_campaign=pr-plugin" target="_blank" rel="noopener">', '</a>' ),
+                'content_classes' => 'editor-pr-doc',
             ]
         );
 
         $this->add_control('doc_2',
             [
                 'type'            => Controls_Manager::RAW_HTML,
-                'raw'             => sprintf( __( '%1$s How to open an Elementor popup using button widget » %2$s', 'pixerex-addons-for-elementor' ), '<a href="https://pixerexaddons.com/docs/how-can-i-open-an-elementor-popup-using-pixerex-button/?utm_source=pa-dashboard&utm_medium=pa-editor&utm_campaign=pa-plugin" target="_blank" rel="noopener">', '</a>' ),
-                'content_classes' => 'editor-pa-doc',
+                'raw'             => sprintf( __( '%1$s How to open an Elementor popup using button widget » %2$s', 'pixerex-addons-for-elementor' ), '<a href="https://pixerexaddons.com/docs/how-can-i-open-an-elementor-popup-using-pixerex-button/?utm_source=pr-dashboard&utm_medium=pr-editor&utm_campaign=pr-plugin" target="_blank" rel="noopener">', '</a>' ),
+                'content_classes' => 'editor-pr-doc',
             ]
         );
         
         $this->add_control('doc_3',
             [
                 'type'            => Controls_Manager::RAW_HTML,
-                'raw'             => sprintf( __( '%1$s How to play/pause a soundtrack using button widget » %2$s', 'pixerex-addons-for-elementor' ), '<a href="https://pixerexaddons.com/docs/how-to-play-pause-a-soundtrack-using-pixerex-button-widget/?utm_source=pa-dashboard&utm_medium=pa-editor&utm_campaign=pa-plugin" target="_blank" rel="noopener">', '</a>' ),
-                'content_classes' => 'editor-pa-doc',
+                'raw'             => sprintf( __( '%1$s How to play/pause a soundtrack using button widget » %2$s', 'pixerex-addons-for-elementor' ), '<a href="https://pixerexaddons.com/docs/how-to-play-pause-a-soundtrack-using-pixerex-button-widget/?utm_source=pr-dashboard&utm_medium=pr-editor&utm_campaign=pr-plugin" target="_blank" rel="noopener">', '</a>' ),
+                'content_classes' => 'editor-pr-doc',
             ]
         );
 

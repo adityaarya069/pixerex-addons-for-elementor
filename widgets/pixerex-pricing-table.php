@@ -41,7 +41,7 @@ class Pixerex_Pricing_Table extends Widget_Base {
     }
 
     public function get_icon() {
-        return 'pa-pricing-table';
+        return 'pr-pricing-table';
     }
     
     public function get_style_depends() {

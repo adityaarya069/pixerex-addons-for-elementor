@@ -845,7 +845,7 @@
 
 			window.elementor.$previewContents.on(
 				'click.addPixerexTemplate',
-				'.pa-add-section-btn',
+				'.pr-add-section-btn',
 				_.bind(this.showTemplatesModal, this)
 			);
 
@@ -864,7 +864,7 @@
 
 			setTimeout(function () {
 				var $addNewSection = window.elementor.$previewContents.find('.elementor-add-new-section'),
-					addPixerexTemplate = "<div class='elementor-add-section-area-button pa-add-section-btn' title='Add Pixerex Template'><i class='eicon-star'></i></div>",
+					addPixerexTemplate = "<div class='elementor-add-section-area-button pr-add-section-btn' title='Add Pixerex Template'><i class='eicon-star'></i></div>",
 					$addPixerexTemplate;
 
 				if ($addNewSection.length && PixerexTempsData.PixerexTemplatesBtn) {

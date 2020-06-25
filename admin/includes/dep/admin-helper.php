@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 class Admin_Helper {
     
-    const DUPLICATE_ACTION = 'pa_duplicator';
+    const DUPLICATE_ACTION = 'pr_duplicator';
     
     protected $page_slug = 'pixerex-addons';
     

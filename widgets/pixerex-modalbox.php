@@ -51,7 +51,7 @@ class Pixerex_Modalbox extends Widget_Base
 
     public function get_icon()
     {
-        return 'pa-modal-box';
+        return 'pr-modal-box';
     }
 
     public function get_style_depends()

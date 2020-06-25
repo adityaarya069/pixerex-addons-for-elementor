@@ -25,9 +25,9 @@ class Admin_Notices {
         
         add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_scripts' ) );
         
-        add_action( 'wp_ajax_pa_reset_admin_notice', array( $this, 'reset_admin_notice' ) );
+        add_action( 'wp_ajax_pr_reset_admin_notice', array( $this, 'reset_admin_notice' ) );
         
-        add_action( 'wp_ajax_pa_dismiss_admin_notice', array( $this, 'dismiss_admin_notice' ) );
+        add_action( 'wp_ajax_pr_dismiss_admin_notice', array( $this, 'dismiss_admin_notice' ) );
         
     }
     
@@ -71,17 +71,17 @@ class Admin_Notices {
      */
     public function handle_review_notice() {
 
-        if ( ! isset( $_GET['pa_review'] ) ) {
+        if ( ! isset( $_GET['pr_review'] ) ) {
             return;
         }
 
-        if ( 'opt_out' === $_GET['pa_review'] ) {
+        if ( 'opt_out' === $_GET['pr_review'] ) {
             check_admin_referer( 'opt_out' );
 
-            update_option( 'pa_review_notice', '1' );
+            update_option( 'pr_review_notice', '1' );
         }
 
-        wp_redirect( remove_query_arg( 'pa_review' ) );
+        wp_redirect( remove_query_arg( 'pr_review' ) );
         
         exit;
     }
@@ -164,7 +164,7 @@ class Admin_Notices {
             '<p>' . __('Did you like','pixerex-elementor-elements') . '<strong>&nbspPixerex Addons for Elementor&nbsp</strong>' . __('Plugin?','pixerex-elementor-elements') . '</p>
              <p>' . __('Could you please do us a BIG favor ? if you could take 2 min of your time, we\'d really appreciate if you give Pixerex Addons for Elementor 5-star rating on WordPress. By spreading the love, we can create even greater free stuff in the future!','pixerex-elementor-elements') . '</p>
             <p><a class="button button-primary" href="%s" target="_blank"><span><i class="dashicons dashicons-external"></i>' . __('Leave a Review','pixerex-elementor-elements') . '</span></a>
-                <a class="button button-secondary pa-notice-reset"><span><i class="dashicons dashicons-calendar-alt"></i>' . __('Maybe Later','pixerex-elementor-elements') . '</span></a>
+                <a class="button button-secondary pr-notice-reset"><span><i class="dashicons dashicons-calendar-alt"></i>' . __('Maybe Later','pixerex-elementor-elements') . '</span></a>
                 <a class="button button-secondary" href="%2$s"><span><i class="dashicons dashicons-smiley"></i>' . __('I Already did','pixerex-elementor-elements') . '</span></a>
             </p>',
         $review_url, $optout_url );
@@ -181,24 +181,24 @@ class Admin_Notices {
      */
     public function get_review_notice() {
 
-        $review = get_option( 'pa_review_notice' );
+        $review = get_option( 'pr_review_notice' );
 
         $review_url = 'https://wordpress.org/support/plugin/pixerex-elementor-elements/reviews/?filter=5';
 
         if ( '1' === $review ) {
             return;
         } else if ( '1' !== $review ) {
-            $optout_url = wp_nonce_url( add_query_arg( 'pa_review', 'opt_out' ), 'opt_out' );
+            $optout_url = wp_nonce_url( add_query_arg( 'pr_review', 'opt_out' ), 'opt_out' );
         ?>
 
-        <div class="error pa-notice-wrap" data-notice="pa-review">
-            <div class="pa-img-wrap">
+        <div class="error pr-notice-wrap" data-notice="pr-review">
+            <div class="pr-img-wrap">
                 <img src="<?php echo PIXEREX_ADDONS_URL .'admin/images/pixerex-addons-logo.png'; ?>">
             </div>
-            <div class="pa-text-wrap">
+            <div class="pr-text-wrap">
                 <?php echo $this->get_review_text( $review_url, $optout_url ); ?>
             </div>
-            <div class="pa-notice-close">
+            <div class="pr-notice-close">
                 <a href="<?php echo esc_url( $optout_url ); ?>"><span class="dashicons dashicons-dismiss"></span></a>
             </div>
         </div>
@@ -228,13 +228,13 @@ class Admin_Notices {
     
         $notice_url = sprintf( 'https://pixerexaddons.com/elementor-lottie-animations-widget/?utm_source=lottie-notification&utm_medium=wp-dash&utm_campaign=get-pro&utm_term=%s', $theme );
     
-        $templates_message = '<div class="pa-text-wrap">';
+        $templates_message = '<div class="pr-text-wrap">';
 
-        $templates_message .= '<img class="pa-notice-logo" src="' . PIXEREX_ADDONS_URL .'admin/images/Pixerex-addons-logo.png' . '">';
+        $templates_message .= '<img class="pr-notice-logo" src="' . PIXEREX_ADDONS_URL .'admin/images/Pixerex-addons-logo.png' . '">';
 
         $templates_message .= '<strong>' . __('Pixerex Lottie Animations','pixerex-elementor-elements') . '&nbsp</strong><span>' . __('widget is now available.', 'pixerex-elementor-elements') . '&nbsp</span><a href="' . esc_url( $notice_url ) . '" target="_blank">' . __('Check it out now', 'pixerex-elementor-elements') . '</a>';
 
-        $templates_message .= '<div class="pa-notice-close" data-notice="lottie"><span class="dashicons dashicons-dismiss"></span></div>';
+        $templates_message .= '<div class="pr-notice-close" data-notice="lottie"><span class="dashicons dashicons-dismiss"></span></div>';
 
         $templates_message .= '</div>';
 
@@ -265,7 +265,7 @@ class Admin_Notices {
      */
     private function render_admin_notices( $message, $class = '', $handle = '' ) {
         ?>
-            <div class="error pa-new-feature-notice <?php echo $class; ?>" data-notice="<?php echo $handle; ?>">
+            <div class="error pr-new-feature-notice <?php echo $class; ?>" data-notice="<?php echo $handle; ?>">
                 <?php echo $message; ?>
             </div>
         <?php
@@ -281,8 +281,8 @@ class Admin_Notices {
     public function admin_enqueue_scripts() {
         
         wp_enqueue_script(
-            'pa-notice',
-            PIXEREX_ADDONS_URL . 'admin/assets/js/pa-notice.js',
+            'pr-notice',
+            PIXEREX_ADDONS_URL . 'admin/assets/js/pr-notice.js',
             array( 'jquery' ),
             PIXEREX_ADDONS_VERSION,
             true

@@ -17,13 +17,13 @@ class Plugin_Info {
                 __('About','pixerex-elementor-elements'),
                 'manage_options',
                 'pixerex-addons-about',
-                [ $this, 'pa_about_page' ]
+                [ $this, 'pr_about_page' ]
             );
         }
         
     }
 
-	public function pa_about_page() {
+	public function pr_about_page() {
         
         $theme_name = Helper_Functions::get_installed_theme();
         
@@ -34,26 +34,26 @@ class Plugin_Info {
         ?>
         <div class="wrap">
            <div class="response-wrap"></div>
-           <div class="pa-header-wrapper">
-              <div class="pa-title-left">
-                 <h1 class="pa-title-main"><?php echo Helper_Functions::name(); ?></h1>
-                 <h3 class="pa-title-sub"><?php echo sprintf(__('Thank you for using %s. This plugin has been developed by %s and we hope you enjoy using it.','pixerex-elementor-elements'), Helper_Functions::name(),Helper_Functions::author()); ?></h3>
+           <div class="pr-header-wrapper">
+              <div class="pr-title-left">
+                 <h1 class="pr-title-main"><?php echo Helper_Functions::name(); ?></h1>
+                 <h3 class="pr-title-sub"><?php echo sprintf(__('Thank you for using %s. This plugin has been developed by %s and we hope you enjoy using it.','pixerex-elementor-elements'), Helper_Functions::name(),Helper_Functions::author()); ?></h3>
               </div>
               <?php if( ! Helper_Functions::is_hide_logo() ) : ?>
-                <div class="pa-title-right">
-                    <img class="pa-logo" src="<?php echo PIXEREX_ADDONS_URL . 'admin/images/pixerex-addons-logo.png';?>">
+                <div class="pr-title-right">
+                    <img class="pr-logo" src="<?php echo PIXEREX_ADDONS_URL . 'admin/images/pixerex-addons-logo.png';?>">
                 </div>
                 <?php endif; ?>
            </div>
-           <div class="pa-settings-tabs">
-              <div id="pa-about" class="pa-settings-tab">
-                 <div class="pa-row">
-                    <div class="pa-col-half">
-                       <div class="pa-about-panel">
-                          <div class="pa-icon-container">
+           <div class="pr-settings-tabs">
+              <div id="pr-about" class="pr-settings-tab">
+                 <div class="pr-row">
+                    <div class="pr-col-half">
+                       <div class="pr-about-panel">
+                          <div class="pr-icon-container">
                              <i class="dashicons dashicons-info abt-icon-style"></i>
                           </div>
-                          <div class="pa-text-container">
+                          <div class="pr-text-container">
                              <h4><?php echo __('What is Pixerex Addons?', 'pixerex-elementor-elements'); ?></h4>
                              <p><?php echo __('Pixerex Addons for Elementor extends Elementor Page Builder capabilities with many fully customizable widgets and addons that help you to build impressive websites with no coding required.', 'pixerex-elementor-elements'); ?></p>
                              <?php if( ! defined('PIXEREX_PRO_ADDONS_VERSION') ) : ?>
@@ -62,12 +62,12 @@ class Plugin_Info {
                           </div>
                        </div>
                     </div>
-                    <div class="pa-col-half">
-                       <div class="pa-about-panel">
-                          <div class="pa-icon-container">
+                    <div class="pr-col-half">
+                       <div class="pr-about-panel">
+                          <div class="pr-icon-container">
                              <i class="dashicons dashicons-universal-access-alt abt-icon-style"></i>
                           </div>
-                          <div class="pa-text-container">
+                          <div class="pr-text-container">
                              <h4><?php echo __('Docs and Support', 'pixerex-elementor-elements'); ?></h4>
                              <p><?php echo __('It’s highly recommended to check out documentation and FAQ before using this plugin. ', 'pixerex-elementor-elements'); ?><a target="_blank" href="<?php echo esc_url( $support_url ); ?>"><?php echo __('Click Here', 'pixerex-elementor-elements'); ?></a><?php echo __(' for more details. You can also join our ', 'pixerex-elementor-elements'); ?><a href="https://www.facebook.com/groups/pixerexAddons" target="_blank"><?php echo __('Facebook Group', 'pixerex-elementor-elements'); ?></a><?php echo __(' and Our ', 'pixerex-elementor-elements'); ?><a href="https://my.leap13.com/forums/" target="_blank"><?php echo __('Community Forums', 'pixerex-elementor-elements'); ?></a></p>
                           </div>

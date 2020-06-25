@@ -27,7 +27,7 @@ class Pixerex_Progressbar extends Widget_Base {
 	}
     
     public function get_icon() {
-        return 'pa-progress-bar';
+        return 'pr-progress-bar';
     }
 
     public function get_categories() {

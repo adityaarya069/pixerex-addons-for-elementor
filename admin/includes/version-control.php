@@ -8,19 +8,19 @@ if( ! defined( 'ABSPATH' ) ) exit;
 
 class Version_Control {
     
-    public $pa_beta_keys = [ 'is-beta-tester' ];
+    public $pr_beta_keys = [ 'is-beta-tester' ];
     
-    private $pa_beta_default_settings;
+    private $pr_beta_default_settings;
     
-    private $pa_beta_settings;
+    private $pr_beta_settings;
     
-    private $pa_beta_get_settings;
+    private $pr_beta_get_settings;
     
     public function __construct() {
         
        // add_action( 'admin_menu', array ($this,'create_version_control_menu' ), 100 );
         
-        add_action( 'wp_ajax_pa_beta_save_settings', array( $this, 'pa_beta_save_settings' ) );
+        add_action( 'wp_ajax_pr_beta_save_settings', array( $this, 'pr_beta_save_settings' ) );
         
     }
     
@@ -35,84 +35,84 @@ class Version_Control {
                 __('Version Control','pixerex-elementor-elements'),
                 'manage_options',
                 'pixerex-addons-version',
-                [$this, 'pa_version_page']
+                [$this, 'pr_version_page']
             );
         }
         
     }
     
-    public function pa_version_page() {
+    public function pr_version_page() {
         
         $js_info = array(
             'ajaxurl'   => admin_url( 'admin-ajax.php' ),
-            'nonce' 	=> wp_create_nonce( 'pa-version-control' ),
+            'nonce' 	=> wp_create_nonce( 'pr-version-control' ),
 	);
         
-        wp_localize_script( 'pa-admin-js', 'settings', $js_info );
+        wp_localize_script( 'pr-admin-js', 'settings', $js_info );
         
-        $this->pa_beta_default_settings = array_fill_keys( $this->pa_beta_keys, true );
+        $this->pr_beta_default_settings = array_fill_keys( $this->pr_beta_keys, true );
        
-        $this->pa_beta_get_settings = get_option( 'pa_beta_save_settings', $this->pa_beta_default_settings );
+        $this->pr_beta_get_settings = get_option( 'pr_beta_save_settings', $this->pr_beta_default_settings );
         
-        $pa_beta_new_settings = array_diff_key( $this->pa_beta_default_settings, $this->pa_beta_get_settings );
+        $pr_beta_new_settings = array_diff_key( $this->pr_beta_default_settings, $this->pr_beta_get_settings );
         
-        if( ! empty( $pa_beta_new_settings ) ) {
-            $pa_beta_updated_settings = array_merge( $this->pa_beta_get_settings, $pa_beta_new_settings );
-            update_option( 'pa_beta_save_settings', $pa_beta_updated_settings );
+        if( ! empty( $pr_beta_new_settings ) ) {
+            $pr_beta_updated_settings = array_merge( $this->pr_beta_get_settings, $pr_beta_new_settings );
+            update_option( 'pr_beta_save_settings', $pr_beta_updated_settings );
         }
         
-        $this->pa_beta_get_settings = get_option( 'pa_beta_save_settings', $this->pa_beta_default_settings );
+        $this->pr_beta_get_settings = get_option( 'pr_beta_save_settings', $this->pr_beta_default_settings );
         
     ?>
       
     <div class="wrap">
         <div class="response-wrap"></div>
-        <form action="" method="POST" id="pa-beta-form" name="pa-beta-form">
-       <div class="pa-header-wrapper">
-          <div class="pa-title-left">
-             <h1 class="pa-title-main"><?php echo Helper_Functions::name(); ?></h1>
-             <h3 class="pa-title-sub"><?php echo sprintf(__('Thank you for using %s. This plugin has been developed by %s and we hope you enjoy using it.','pixerex-elementor-elements'), Helper_Functions::name(), Helper_Functions::author() ); ?></h3>
+        <form action="" method="POST" id="pr-beta-form" name="pr-beta-form">
+       <div class="pr-header-wrapper">
+          <div class="pr-title-left">
+             <h1 class="pr-title-main"><?php echo Helper_Functions::name(); ?></h1>
+             <h3 class="pr-title-sub"><?php echo sprintf(__('Thank you for using %s. This plugin has been developed by %s and we hope you enjoy using it.','pixerex-elementor-elements'), Helper_Functions::name(), Helper_Functions::author() ); ?></h3>
           </div>
           <?php if( ! Helper_Functions::is_hide_logo() ) : ?>
-                <div class="pa-title-right">
-                    <img class="pa-logo" src="<?php echo PIXEREX_ADDONS_URL . 'admin/images/pixerex-addons-logo.png'; ?>">
+                <div class="pr-title-right">
+                    <img class="pr-logo" src="<?php echo PIXEREX_ADDONS_URL . 'admin/images/pixerex-addons-logo.png'; ?>">
                 </div>
             <?php endif; ?>
        </div> 
-      <div class="pa-settings-tabs">
-          <div id="pa-maintenance" class="pa-settings-tab">
-             <div class="pa-row">
-                <table class="pa-beta-table">
+      <div class="pr-settings-tabs">
+          <div id="pr-maintenance" class="pr-settings-tab">
+             <div class="pr-row">
+                <table class="pr-beta-table">
                    <tr>
                       <th>
-                         <h4 class="pa-roll-back"><?php echo __('Rollback to Previous Version', 'pixerex-elementor-elements'); ?></h4>
-                         <span class="pa-roll-back-span"><?php echo sprintf( __('Experiencing an issue with pixerex Addons for Elementor version %s? Rollback to a previous version before the issue appeared.', 'pixerex-elementor-elements'), PIXEREX_ADDONS_VERSION ); ?></span>
+                         <h4 class="pr-roll-back"><?php echo __('Rollback to Previous Version', 'pixerex-elementor-elements'); ?></h4>
+                         <span class="pr-roll-back-span"><?php echo sprintf( __('Experiencing an issue with pixerex Addons for Elementor version %s? Rollback to a previous version before the issue appeared.', 'pixerex-elementor-elements'), PIXEREX_ADDONS_VERSION ); ?></span>
                       </th>
                    </tr>
-                   <tr class="pa-roll-row">
+                   <tr class="pr-roll-row">
                       <th><?php echo __('Rollback Version', 'pixerex-elementor-elements'); ?></th>
                       <td>
-                         <div><?php echo  sprintf( '<a target="_blank" href="%1$s" class="button pa-btn pa-rollback-button elementor-button-spinner">%2$s</a>', wp_nonce_url( admin_url( 'admin-post.php?action=pixerex_addons_rollback' ), 'pixerex_addons_rollback' ), __('Rollback to Version ' . PIXEREX_ADDONS_STABLE_VERSION, 'pixerex-elementor-elements') ); ?></div>
-                         <p class="pa-roll-desc">
+                         <div><?php echo  sprintf( '<a target="_blank" href="%1$s" class="button pr-btn pr-rollback-button elementor-button-spinner">%2$s</a>', wp_nonce_url( admin_url( 'admin-post.php?action=pixerex_addons_rollback' ), 'pixerex_addons_rollback' ), __('Rollback to Version ' . PIXEREX_ADDONS_STABLE_VERSION, 'pixerex-elementor-elements') ); ?></div>
+                         <p class="pr-roll-desc">
                              <span><?php echo __('Warning: Please backup your database before making the rollback.', 'pixerex-elementor-elements'); ?></span>
                          </p>
                       </td>
                    </tr>
                    <tr>
                       <th>
-                         <h4 class="pa-beta-test"><?php echo __('Become a Beta Tester', 'pixerex-elementor-elements'); ?></h4>
-                         <span class="pa-beta-test-span"><?php echo __('Turn-on Beta Tester, to get notified when a new beta version of pixerex Addons for Elementor. The Beta version will not install automatically. You always have the option to ignore it.', 'pixerex-elementor-elements'); ?></span>
+                         <h4 class="pr-beta-test"><?php echo __('Become a Beta Tester', 'pixerex-elementor-elements'); ?></h4>
+                         <span class="pr-beta-test-span"><?php echo __('Turn-on Beta Tester, to get notified when a new beta version of pixerex Addons for Elementor. The Beta version will not install automatically. You always have the option to ignore it.', 'pixerex-elementor-elements'); ?></span>
                       </th>
                    </tr>
-                   <tr class="pa-beta-row">
+                   <tr class="pr-beta-row">
                       <th><?php echo __('Beta Tester','pixerex-elementor-elements'); ?></th>
                       <td>
-                         <div><input name="is-beta-tester" id="is-beta-tester" type="checkbox" <?php checked(1, $this->pa_beta_get_settings['is-beta-tester'], true) ?>><span><?php echo __('Check this box to get updates for beta versions','pixerex-elementor-elements'); ?></span></div>
-                         <p class="pa-beta-desc"><span><?php echo __('Please Note: We do not recommend updating to a beta version on production sites.', 'pixerex-elementor-elements'); ?></span></p>
+                         <div><input name="is-beta-tester" id="is-beta-tester" type="checkbox" <?php checked(1, $this->pr_beta_get_settings['is-beta-tester'], true) ?>><span><?php echo __('Check this box to get updates for beta versions','pixerex-elementor-elements'); ?></span></div>
+                         <p class="pr-beta-desc"><span><?php echo __('Please Note: We do not recommend updating to a beta version on production sites.', 'pixerex-elementor-elements'); ?></span></p>
                       </td>
                    </tr>
                 </table>
-                <input type="submit" value="<?php echo __('Save Settings', 'pixerex-elementor-elements'); ?>" class="button pa-btn pa-save-button">
+                <input type="submit" value="<?php echo __('Save Settings', 'pixerex-elementor-elements'); ?>" class="button pr-btn pr-save-button">
              </div>
           </div>
        </div>
@@ -121,9 +121,9 @@ class Version_Control {
 
     <?php }
     
-    public function pa_beta_save_settings() {
+    public function pr_beta_save_settings() {
         
-        check_ajax_referer('pa-version-control', 'security');
+        check_ajax_referer('pr-version-control', 'security');
 
         if( isset( $_POST['fields'] ) ) {
             parse_str( $_POST['fields'], $settings );
@@ -131,11 +131,11 @@ class Version_Control {
             return;
         }
         
-        $this->pa_beta_settings = array(
+        $this->pr_beta_settings = array(
             'is-beta-tester'            => intval( $settings['is-beta-tester'] ? 1 : 0 ),
         );
         
-        update_option( 'pa_beta_save_settings', $this->pa_beta_settings );
+        update_option( 'pr_beta_save_settings', $this->pr_beta_settings );
         
         return true;
     }
