@@ -436,7 +436,7 @@ class Pixerex_Carousel extends Widget_Base {
 		$this->add_control('doc_2',
             [
                 'type'            => Controls_Manager::RAW_HTML,
-                'raw'             => sprintf( __( '%1$s I\'m not able to see Font Awesome icons in the widget » %2$s', 'pixerex-addons-pro' ), '<a href="https://pixerexaddons.com/docs/why-im-not-able-to-see-elementor-font-awesome-5-icons-in-pixerex-add-ons/?utm_source=papro-dashboard&utm_medium=papro-editor&utm_campaign=papro-plugin" target="_blank" rel="noopener">', '</a>' ),
+                'raw'             => sprintf( __( '%1$s I\'m not able to see Font Awesome icons in the widget » %2$s', 'pixerex-addons-pro' ), '<a href="https://pixerexaddons.com/docs/why-im-not-able-to-see-elementor-font-awesome-5-icons-in-pixerex-add-ons/?utm_source=prpro-dashboard&utm_medium=prpro-editor&utm_campaign=prpro-plugin" target="_blank" rel="noopener">', '</a>' ),
                 'content_classes' => 'editor-pr-doc',
             ]
         );

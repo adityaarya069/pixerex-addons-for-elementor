@@ -80,7 +80,7 @@ msgstr ""
 msgid "Check it out now"
 msgstr ""
 
-#: admin/includes/dep/admin-helper.php:57 admin/includes/papro-actions.php:49
+#: admin/includes/dep/admin-helper.php:57 admin/includes/prpro-actions.php:49
 msgid "Settings"
 msgstr ""
 
@@ -126,7 +126,7 @@ msgstr ""
 msgid "Rolling Back to Version "
 msgstr ""
 
-#: admin/includes/papro-actions.php:16
+#: admin/includes/prpro-actions.php:16
 msgid "Get PRO Widgets & Addons"
 msgstr ""
 

@@ -50,9 +50,9 @@ class Admin_Helper {
 	 */
    public function insert_action_links( $links ) {
 
-       $papro_path = 'pixerex-addons-pro/pixerex-addons-pro-for-elementor.php';
+       $prpro_path = 'pixerex-addons-pro/pixerex-addons-pro-for-elementor.php';
        
-       $is_papro_installed = Helper_Functions::is_plugin_installed( $papro_path );
+       $is_prpro_installed = Helper_Functions::is_plugin_installed( $prpro_path );
        
        $settings_link = sprintf( '<a href="%1$s">%2$s</a>', admin_url( 'admin.php?page=' . $this->page_slug ), __( 'Settings', 'pixerex-elementor-elements' ) );
        
@@ -60,7 +60,7 @@ class Admin_Helper {
        
        $new_links = array( $settings_link, $rollback_link );
        
-       if( ! $is_papro_installed ) {
+       if( ! $is_prpro_installed ) {
            
            $theme = Helper_Functions::get_installed_theme();
                     
