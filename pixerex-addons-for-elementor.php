@@ -105,11 +105,7 @@ if( ! class_exists('Pixerex_Addons_Elementor') ) {
             require_once ( PIXEREX_ADDONS_PATH . 'admin/settings/modules-setting.php' );
             require_once ( PIXEREX_ADDONS_PATH . 'includes/elementor-helper.php' );
             
-            if ( is_admin() ) {
-                
-                require_once ( PIXEREX_ADDONS_PATH . 'admin/includes/dep/maintenance.php');
-                require_once ( PIXEREX_ADDONS_PATH . 'admin/includes/dep/rollback.php');
-                
+            if ( is_admin() ) {                         
                 require_once ( PIXEREX_ADDONS_PATH . 'admin/includes/dep/admin-helper.php');
                 require_once ( PIXEREX_ADDONS_PATH . 'includes/class-beta-testers.php');
                 require_once ( PIXEREX_ADDONS_PATH . 'includes/plugin.php');

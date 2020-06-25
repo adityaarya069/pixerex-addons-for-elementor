@@ -148,74 +148,6 @@
         });
     };
 
-    /****** Pixerex Video Box Handler ******/
-    var PixerexVideoBoxWidgetHandler = function ($scope, $) {
-
-        var $videoBoxElement = $scope.find(".pixerex-video-box-container"),
-            $videoContainer = $videoBoxElement.find(".pixerex-video-box-video-container"),
-            type = $videoBoxElement.data("type"),
-            thumbnail = $videoBoxElement.data("thumbnail"),
-            video, vidSrc;
-
-        if ("self" === type) {
-
-            video = $videoContainer.find("video");
-            vidSrc = video.attr("src");
-
-        } else {
-
-            vidSrc = $videoContainer.data("src");
-
-            if (!thumbnail || -1 !== vidSrc.indexOf("autoplay=1")) {
-                playVideo();
-            } else {
-                vidSrc = vidSrc + "&autoplay=1";
-            }
-
-        }
-
-
-        function playVideo() {
-
-            if ($videoBoxElement.hasClass("playing")) return;
-
-            $videoBoxElement.addClass("playing");
-
-            if ("self" === type) {
-
-                $(video).get(0).play();
-
-                $videoContainer.css({
-                    opacity: "1",
-                    visibility: "visible"
-                });
-
-            } else {
-
-                var $iframe = $("<iframe/>");
-
-                checkRel = vidSrc.indexOf("rel=0");
-                $iframe.attr("src", vidSrc);
-                $iframe.attr("frameborder", "0");
-                $iframe.attr("allowfullscreen", "1");
-                $iframe.attr("allow", "autoplay;encrypted-media;");
-                $videoContainer.css("background", "#000");
-                $videoContainer.html($iframe);
-            }
-
-            $videoBoxElement.find(
-                ".pixerex-video-box-image-container, .pixerex-video-box-play-icon-container, .pixerex-video-box-description-container"
-            ).remove();
-
-            if ("vimeo" === type)
-                $videoBoxElement.find(".pixerex-video-box-vimeo-wrap").remove();
-        }
-
-
-        $videoBoxElement.on("click", function () {
-            playVideo();
-        });
-    };
 
     /****** Pixerex Media Grid Handler ******/
     var PixerexGridWidgetHandler = function ($scope, $) {
@@ -459,74 +391,7 @@
 
     };
 
-    /****** Pixerex Fancy Text Handler ******/
-    var PixerexFancyTextHandler = function ($scope, $) {
-        var $elem = $scope.find(".pixerex-fancy-text-wrapper");
-        var settings = $elem.data("settings");
-
-        function escapeHtml(unsafe) {
-            return unsafe.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(
-                /"/g, "&quot;").replace(/'/g, "&#039;");
-        }
-
-        if (settings["effect"] === "typing") {
-            var fancyStrings = [];
-            settings["strings"].forEach(function (item) {
-                fancyStrings.push(escapeHtml(item));
-            });
-
-            $elem.find(".pixerex-fancy-text").typed({
-                strings: fancyStrings,
-                typeSpeed: settings["typeSpeed"],
-                backSpeed: settings["backSpeed"],
-                startDelay: settings["startDelay"],
-                backDelay: settings["backDelay"],
-                showCursor: settings["showCursor"],
-                cursorChar: settings["cursorChar"],
-                loop: settings["loop"]
-            });
-        } else if (settings["effect"] === "slide") {
-
-            $elem.find(".pixerex-fancy-text").vTicker({
-                speed: settings["speed"],
-                showItems: settings["showItems"],
-                pause: settings["pause"],
-                mousePause: settings["mousePause"],
-                direction: "up"
-            });
-        } else {
-            setFancyAnimation();
-
-            function setFancyAnimation() {
-                var effect = settings.effect,
-                    $item = $elem.find(".pixerex-fancy-list-items"),
-                    current = 0;
-                var delay = (settings.delay || 2.5) * 1000;
-                if ("bar" === effect) $elem.find(".pixerex-fancy-text-items-wrapper").addClass(
-                    "active");
-                setInterval(function () {
-                    //                    $elem.find( ".pixerex-fancy-text-items-wrapper" ).css("width", $item.eq( current ).outerWidth() );
-                    if ("bar" === effect) $elem.find(".pixerex-fancy-text-items-wrapper")
-                        .addClass("active");
-                    $item.eq(current).addClass("pixerex-fancy-item-visible").removeClass(
-                        "pixerex-fancy-item-hidden");
-                    var $inactiveItems = $item.filter(function (index) {
-                        return index !== current;
-                    });
-                    $inactiveItems.addClass("pixerex-fancy-item-hidden").removeClass(
-                        "pixerex-fancy-item-visible");
-                    current++;
-                    if ($item.length === current) current = 0;
-                    if ("bar" === effect) {
-                        setTimeout(function () {
-                            $elem.find(".pixerex-fancy-text-items-wrapper")
-                                .removeClass("active");
-                        }, delay - 100);
-                    }
-                }, delay);
-            }
-        }
-    };
+  
 
     /****** Pixerex Countdown Handler ******/
     var PixerexCountDownHandler = function ($scope, $) {
@@ -1060,68 +925,7 @@
         });
     };
 
-    /****** Pixerex Team Members Handler ******/
-    var PixerexTeamMembersHandler = function ($scope, $) {
-        var $persons = $scope.find(".multiple-persons");
-        if (!$persons.length) return;
-        var carousel = $persons.data("carousel");
-        if (carousel) {
-            var autoPlay = $persons.data("play"),
-                speed = $persons.data("speed"),
-                rtl = $persons.data("rtl"),
-                colsNumber = $persons.data("col"),
-                prevArrow =
-                    '<a type="button" data-role="none" class="carousel-arrow carousel-prev" aria-label="Next" role="button" style=""><i class="fas fa-angle-left" aria-hidden="true"></i></a>',
-                nextArrow =
-                    '<a type="button" data-role="none" class="carousel-arrow carousel-next" aria-label="Next" role="button" style=""><i class="fas fa-angle-right" aria-hidden="true"></i></a>';
-            $persons.slick({
-                infinite: true,
-                slidesToShow: colsNumber,
-                slidesToScroll: colsNumber,
-                responsive: [{
-                    breakpoint: 769,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 481,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
-                ],
-                autoplay: autoPlay,
-                autoplaySpeed: speed,
-                rtl: rtl,
-                nextArrow: nextArrow,
-                prevArrow: prevArrow,
-                draggable: true,
-                pauseOnHover: true
-            });
-        }
-        if ($persons.hasClass("pixerex-person-style1")) return;
-
-        if ("yes" !== $persons.data("persons-equal")) return;
-
-        var heights = new Array();
-
-        $persons.find(".pixerex-person-container").each(function (index, person) {
-            $(person).imagesLoaded(function () { }).done(function () {
-                var imageHeight = $(person).find(".pixerex-person-image-container")
-                    .outerHeight();
-                heights.push(imageHeight);
-            });
-        });
-
-        $persons.imagesLoaded(function () { }).done(function () {
-            var maxHeight = Math.max.apply(null, heights);
-            $persons.find(".pixerex-person-image-wrap").css("height", maxHeight + "px");
-        });
-    };
-
+   
     //Elementor JS Hooks
     $(window).on("elementor/frontend/init", function () {
 
