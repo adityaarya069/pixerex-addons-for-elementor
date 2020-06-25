@@ -411,8 +411,24 @@ class Addons_Integration {
         if ( class_exists( $class ) ) {
             $widget_manager->register_widget_type( new $class );
         }
+		$this->pixerex_deregister_widgets();
     }
     
+	
+	 public function pixerex_deregister_widgets(  ) {
+		 global $elementor_widget_blacklist;
+			$elementor_widget_blacklist = [
+				
+				//array of Widgets names to be Removed
+			];
+			add_action('elementor/widgets/widgets_registered', function($widgets_manager){
+			  global $elementor_widget_blacklist;
+
+			  foreach($elementor_widget_blacklist as $widget_name){
+				$widgets_manager->unregister_widget_type($widget_name);
+			  }
+			}, 15);
+	 }
     /**
      * 
      * Creates and returns an instance of the class

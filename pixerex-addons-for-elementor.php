@@ -219,6 +219,7 @@ if ( ! function_exists( 'pixerex_addons' ) ) {
 	 * @return object
 	 */
 	function pixerex_addons() {
+		
 		return Pixerex_Addons_Elementor::get_instance();
 	}
 }

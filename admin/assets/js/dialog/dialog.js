@@ -38,7 +38,7 @@
 
 				return DialogsManager.createWidgetType(typeName, properties, WidgetType);
 			};
-
+			
 			return WidgetType;
 		},
 		addWidgetType: function (typeName, properties, Parent) {
