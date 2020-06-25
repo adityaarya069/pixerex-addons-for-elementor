@@ -114,10 +114,6 @@ if( ! class_exists('Pixerex_Addons_Elementor') ) {
                 require_once ( PIXEREX_ADDONS_PATH . 'includes/class-beta-testers.php');
                 require_once ( PIXEREX_ADDONS_PATH . 'includes/plugin.php');
                 require_once ( PIXEREX_ADDONS_PATH . 'admin/includes/admin-notices.php' );
-                require_once ( PIXEREX_ADDONS_PATH . 'admin/includes/plugin-info.php');
-                require_once ( PIXEREX_ADDONS_PATH . 'admin/includes/version-control.php');
-                require_once ( PIXEREX_ADDONS_PATH . 'admin/includes/reports.php');
-                require_once ( PIXEREX_ADDONS_PATH . 'admin/includes/papro-actions.php');
                 $beta_testers = new Pixerex_Beta_Testers();
                 
             }

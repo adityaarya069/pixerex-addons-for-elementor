@@ -30,12 +30,8 @@ class Plugin {
     
     private function init_components() {
         
-        new Includes\Plugin_Info();
         new Settings\Maps();
-        new Includes\Version_Control();
-        new Includes\Config_Data();
     	new Settings\Modules_Settings();
-		$this->settings = new Includes\Papro_Actions();
 	}
     
     private function __construct() {

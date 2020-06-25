@@ -45,7 +45,7 @@ class Helper_Functions {
      */
     public static function is_hide_rate() {
         
-        if( defined('PREMIUM_PRO_ADDONS_VERSION') ) {
+        if( defined('PIXEREX_PRO_ADDONS_VERSION') ) {
             if( isset(get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-rate'] ) ) {
                 $hide_rate = get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-rate'];
             }
@@ -63,7 +63,7 @@ class Helper_Functions {
      */
     public static function is_hide_about() {
         
-        if( defined('PREMIUM_PRO_ADDONS_VERSION') ) {
+        if( defined('PIXEREX_PRO_ADDONS_VERSION') ) {
             if(isset(get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-about'])){
                 $hide_about = get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-about'];
             }
@@ -81,7 +81,7 @@ class Helper_Functions {
      */
     public static function is_hide_version_control() {
         
-        if( defined('PREMIUM_PRO_ADDONS_VERSION') ) {
+        if( defined('PIXEREX_PRO_ADDONS_VERSION') ) {
                 if(isset(get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-version'])){
                     $hide_version_tab = get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-version'];
             }
@@ -99,7 +99,7 @@ class Helper_Functions {
      */
     public static function author() {
         
-        if( defined('PREMIUM_PRO_ADDONS_VERSION') ) {
+        if( defined('PIXEREX_PRO_ADDONS_VERSION') ) {
             if(isset(get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-name'])){
                 $author_free = get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-name'];
             }
@@ -117,7 +117,7 @@ class Helper_Functions {
      */
     public static function name() {
         
-        if( defined('PREMIUM_PRO_ADDONS_VERSION') ) {
+        if( defined('PIXEREX_PRO_ADDONS_VERSION') ) {
             if(isset(get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-plugin-name'])){
                 $name_free = get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-plugin-name'];
             }
@@ -135,7 +135,7 @@ class Helper_Functions {
      */
     public static function is_hide_row_meta() {
         
-        if( defined('PREMIUM_PRO_ADDONS_VERSION') ) {
+        if( defined('PIXEREX_PRO_ADDONS_VERSION') ) {
             if( isset( get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-row'] ) ){
                 $hide_meta = get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-row'];
             }
@@ -153,7 +153,7 @@ class Helper_Functions {
      */
     public static function is_hide_logo() {
         
-        if( defined('PREMIUM_PRO_ADDONS_VERSION') ) {
+        if( defined('PIXEREX_PRO_ADDONS_VERSION') ) {
             if(isset(get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-logo'])){
                 $hide_logo = get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-logo'];
             }
@@ -171,7 +171,7 @@ class Helper_Functions {
      */
     public static function get_category() {
         
-        if( defined('PREMIUM_PRO_ADDONS_VERSION') ) {
+        if( defined('PIXEREX_PRO_ADDONS_VERSION') ) {
             if(isset(get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-short-name'])){
                 $category = get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-short-name'];
             }
@@ -190,7 +190,7 @@ class Helper_Functions {
      */
     public static function get_prefix() {
         
-        if( defined('PREMIUM_PRO_ADDONS_VERSION') ) {
+        if( defined('PIXEREX_PRO_ADDONS_VERSION') ) {
             if(isset(get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-prefix'])){
                 $prefix = get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-prefix'];
             }
@@ -208,7 +208,7 @@ class Helper_Functions {
      */
     public static function get_badge() {
         
-        if( defined('PREMIUM_PRO_ADDONS_VERSION') ) {
+        if( defined('PIXEREX_PRO_ADDONS_VERSION') ) {
             if(isset(get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-badge'])){
                 $badge = get_option('pa_wht_lbl_save_settings')['pixerex-wht-lbl-badge'];
             }

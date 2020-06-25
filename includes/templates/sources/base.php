@@ -188,7 +188,7 @@ abstract class Pixerex_Templates_Source_Base {
 	 */
 	public function is_debug_active() {
 
-		if ( defined( 'PREMIUM_API_DEBUG' ) && true === PREMIUM_API_DEBUG ) {
+		if ( defined( 'PIXEREX_API_DEBUG' ) && true === PIXEREX_API_DEBUG ) {
 			return true;
 		} else {
 			return false;

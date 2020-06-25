@@ -226,7 +226,7 @@ input:checked + .slider:before{
     width: 100%;
      max-width: 100%;
 }
-.pa-maps-table #premium-map-api{
+.pa-maps-table #pixerex-map-api{
      width: 100%;
 }
 .pa-maps-table tr td:first-of-type{

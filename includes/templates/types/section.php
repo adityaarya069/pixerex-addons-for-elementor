@@ -30,7 +30,7 @@ if ( ! class_exists( 'Pixerex_Structure_Section' ) ) {
 		public function get_document_type() {
 			return array(
 				'class' => 'Pixerex_Section_Document',
-				'file'  => PREMIUM_ADDONS_PATH . 'includes/templates/documents/section.php',
+				'file'  => PIXEREX_ADDONS_PATH . 'includes/templates/documents/section.php',
 			);
 		}
 

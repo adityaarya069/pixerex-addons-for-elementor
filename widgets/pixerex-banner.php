@@ -1020,6 +1020,7 @@ class Pixerex_Banner extends Widget_Base {
 	}
 
 	protected function _content_template() {
+	
         ?>
         <#
 

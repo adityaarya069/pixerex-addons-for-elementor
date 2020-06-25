@@ -93,7 +93,7 @@ if( ! class_exists('Pixerex_Templates_Core_Config') ) {
          */
         public function get_license_key() {
             
-            if( ! defined ('PREMIUM_PRO_ADDONS_VERSION') ) {
+            if( ! defined ('PIXEREX_PRO_ADDONS_VERSION') ) {
                 return;
             }
             
@@ -115,7 +115,7 @@ if( ! class_exists('Pixerex_Templates_Core_Config') ) {
          */
         public function get_license_status() {
             
-            if( ! defined ('PREMIUM_PRO_ADDONS_VERSION') ) {
+            if( ! defined ('PIXEREX_PRO_ADDONS_VERSION') ) {
                 return;
             }
             
@@ -137,7 +137,7 @@ if( ! class_exists('Pixerex_Templates_Core_Config') ) {
          */
         public function get_license_page() {
             
-            if( defined ('PREMIUM_PRO_ADDONS_VERSION') ) {
+            if( defined ('PIXEREX_PRO_ADDONS_VERSION') ) {
                 
                 return add_query_arg(
                     array(
@@ -169,7 +169,7 @@ if( ! class_exists('Pixerex_Templates_Core_Config') ) {
          */
         public function get_pro_message() {
             
-            if( defined ('PREMIUM_PRO_ADDONS_VERSION') ) {
+            if( defined ('PIXEREX_PRO_ADDONS_VERSION') ) {
                 return __('Activate License', 'pixerex-elementor-elements');
             } else {
                 return __('Get Pro', 'pixerex-elementor-elements');

@@ -62,9 +62,9 @@ if( ! class_exists('Pixerex_Templates_Assets') ) {
             
             wp_enqueue_style(
                 'pixerex-editor-style',
-                PREMIUM_ADDONS_URL . 'assets/editor/templates/css/editor' . $is_rtl . '.css',
+                PIXEREX_ADDONS_URL . 'assets/editor/templates/css/editor' . $is_rtl . '.css',
                 array(),
-                PREMIUM_ADDONS_VERSION,
+                PIXEREX_ADDONS_VERSION,
                 'all'
             );
             
@@ -84,9 +84,9 @@ if( ! class_exists('Pixerex_Templates_Assets') ) {
             
             wp_enqueue_style(
                 'pa-preview',
-                PREMIUM_ADDONS_URL . 'assets/editor/templates/css/preview' . $is_rtl . '.css', 
+                PIXEREX_ADDONS_URL . 'assets/editor/templates/css/preview' . $is_rtl . '.css', 
                 array(),
-                PREMIUM_ADDONS_VERSION,
+                PIXEREX_ADDONS_VERSION,
                 'all'
             );
             
@@ -104,13 +104,13 @@ if( ! class_exists('Pixerex_Templates_Assets') ) {
             
             wp_enqueue_script(
 				'pixerex-temps-editor',
-				PREMIUM_ADDONS_URL . 'assets/editor/templates/js/editor.js',
+				PIXEREX_ADDONS_URL . 'assets/editor/templates/js/editor.js',
 				array(
                     'jquery',
                     'underscore',
                     'backbone-marionette'
                 ),
-				PREMIUM_ADDONS_VERSION,
+				PIXEREX_ADDONS_VERSION,
 				true
 			);
             
@@ -158,7 +158,7 @@ if( ! class_exists('Pixerex_Templates_Assets') ) {
          */
         public function load_footer_scripts() {
             
-            $scripts = glob( PREMIUM_ADDONS_PATH . 'includes/templates/scripts/*.php' );
+            $scripts = glob( PIXEREX_ADDONS_PATH . 'includes/templates/scripts/*.php' );
             
             array_map( function( $file ) {
                 
