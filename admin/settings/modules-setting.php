@@ -54,12 +54,7 @@ class Modules_Settings {
             'pixerexRollBackConfirm',
             [
                 'home_url'  => home_url(),
-                'i18n' => [
-					'rollback_confirm' => __( 'Are you sure you want to reinstall version ' . PIXEREX_ADDONS_STABLE_VERSION . ' ?', 'pixerex-elementor-elements' ),
-					'rollback_to_previous_version' => __( 'Rollback to Previous Version', 'pixerex-elementor-elements' ),
-					'yes' => __( 'Yes', 'pixerex-elementor-elements' ),
-					'cancel' => __( 'Cancel', 'pixerex-elementor-elements' ),
-				],
+                'i18n' => [],
             ]
             );
     }

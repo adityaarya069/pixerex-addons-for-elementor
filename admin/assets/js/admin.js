@@ -11,23 +11,6 @@
        }
     });
    
-   $(".pro-slider").on('click', function(){
-
-        swal({
-            title: '<span class="pr-swal-head">Get PRO Widgets & Addons<span>',
-            html: 'Supercharge your Elementor with PRO widgets and addons that you won’t find anywhere else.',
-            type: 'warning',
-            showCloseButton: true,
-	  		showCancelButton: true,
-            cancelButtonText: "More Info",
-	  		focusConfirm: true
-        }).then(function(json_data) {}, function(dismiss) {
-            if (dismiss === 'cancel') { 
-                window.open( redirectionLink + settings.theme, '_blank' );
-            } 
-        });
-    });
-
     $( 'form#pr-settings' ).on( 'submit', function(e) {
 		e.preventDefault();
 		$.ajax( {
@@ -81,54 +64,6 @@
         });
     });
     
-    
-     $('form#pr-beta-form').on('submit',function(e){
-       e.preventDefault();
-       $.ajax( {
-            url: settings.ajaxurl,
-            type: 'post',
-            data: {
-                action: 'pr_beta_save_settings',
-                security: settings.nonce,
-                fields: $('form#pr-beta-form').serialize(),
-            },
-            success: function (response){
-                swal(
-				  'Settings Saved!',
-				  'Click OK to continue',
-				  'success'
-                );
-            },
-            error: function(){
-                swal(
-                    'Oops...',
-                    'Something Wrong!',
-                );
-            }
-        });
-    });
 
-
-
-    $( '.pr-rollback-button' ).on( 'click', function( event ) {
-				event.preventDefault();
-
-				var $this = $( this ),
-					dialogsManager = new DialogsManager.Instance();
-
-				dialogsManager.createWidget( 'confirm', {
-					headerMessage: pixerexRollBackConfirm.i18n.rollback_to_previous_version,
-					message: pixerexRollBackConfirm.i18n.rollback_confirm,
-					strings: {
-						cancel: pixerexRollBackConfirm.i18n.cancel,
-                        confirm: pixerexRollBackConfirm.i18n.yes,
-					},
-					onConfirm: function() {
-						$this.addClass( 'loading' );
-
-						location.href = $this.attr( 'href' );
-					}
-				} ).show();
-			} );
     
 } )(jQuery);

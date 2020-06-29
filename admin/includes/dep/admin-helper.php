@@ -23,9 +23,7 @@ class Admin_Helper {
     public function __construct() {
         
         add_action( 'current_screen', array( $this, 'get_current_screen' ) );
-        
-        add_filter( 'plugin_action_links_' . PIXEREX_ADDONS_BASENAME, array( $this, 'insert_action_links' ) );
-        
+                
         add_filter( 'plugin_row_meta', array( $this, 'plugin_row_meta' ), 10, 2 );
         
         if( ! Modules_Settings::check_pixerex_duplicator() )
@@ -36,44 +34,7 @@ class Admin_Helper {
         add_filter( 'page_row_actions', array( $this, 'add_duplicator_actions' ), 10, 2 );
         
     }
-    
-    /**
-	 * Insert action links.
-	 *
-	 * Adds action links to the plugin list table
-	 *
-	 * Fired by `plugin_action_links` filter.
-	 *
-	 * @since 1.0.0
-	 * @access public
-	 *
-	 */
-   public function insert_action_links( $links ) {
 
-       $prpro_path = 'pixerex-addons-pro/pixerex-addons-pro-for-elementor.php';
-       
-       $is_prpro_installed = Helper_Functions::is_plugin_installed( $prpro_path );
-       
-       $settings_link = sprintf( '<a href="%1$s">%2$s</a>', admin_url( 'admin.php?page=' . $this->page_slug ), __( 'Settings', 'pixerex-elementor-elements' ) );
-       
-       $rollback_link = sprintf( '<a href="%1$s">%2$s</a>', wp_nonce_url( admin_url( 'admin-post.php?action=pixerex_addons_rollback' ), 'pixerex_addons_rollback' ), __( 'Rollback to Version ' . PIXEREX_ADDONS_STABLE_VERSION, 'pixerex-elementor-elements' ) );
-       
-       $new_links = array( $settings_link, $rollback_link );
-       
-       if( ! $is_prpro_installed ) {
-           
-           $theme = Helper_Functions::get_installed_theme();
-                    
-           $link = sprintf( 'https://pixerexAddons.com/pro/?utm_source=plugins-page&utm_medium=wp-dash&utm_campaign=get-pro&utm_term=%s', $theme );
-           
-           $pro_link = sprintf( '<a href="%s" target="_blank" style="color: #39b54a; font-weight: bold;">%s</a>', $link, __( 'Go Pro', 'pixerex-elementor-elements' ) );
-           array_push ( $new_links, $pro_link );
-       }
-       
-       $new_links = array_merge( $links, $new_links );
-
-       return $new_links;
-   }
    
    /**
 	 * Plugin row meta.
