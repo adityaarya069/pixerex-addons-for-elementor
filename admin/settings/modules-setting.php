@@ -158,7 +158,7 @@ class Modules_Settings {
         <form action="" method="POST" id="pr-settings" name="pr-settings">
             <div class="pr-header-wrapper">
                 <div class="pr-title-left">
-                    
+                    <h1 class="pr-title-main"><?php echo Helper_Functions::name(); ?></h1>
                 </div>
                 <?php if( ! Helper_Functions::is_hide_logo() ) : ?>
                 <div class="pr-title-right">

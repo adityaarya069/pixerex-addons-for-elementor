@@ -69,6 +69,7 @@ class Maps {
            <form action="" method="POST" id="pr-maps" name="pr-maps">
            <div class="pr-header-wrapper">
               <div class="pr-title-left">
+                  <h1 class="pr-title-main"><?php echo Helper_Functions::name(); ?></h1>
               </div>
               <?php if( ! Helper_Functions::is_hide_logo()) : ?>
                     <div class="pr-title-right">

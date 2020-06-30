@@ -43,16 +43,8 @@ class Helper_Functions {
      * @return boolean
      * 
      */
-   
-   
-    /**
-     * Check if white labeling - hide version control page is checked
-     * 
-     * @since 1.0.0
-     * @return boolean
-     * 
-     */
-
+  
+    
   
     
     /**
