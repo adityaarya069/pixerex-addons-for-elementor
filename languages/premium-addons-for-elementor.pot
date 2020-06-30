@@ -182,8 +182,6 @@ msgstr ""
 
 #: admin/includes/plugin-info.php:79 admin/includes/reports.php:56
 #: admin/settings/maps.php:137 admin/settings/modules-setting.php:699
-msgid "Did you like Pixerex Addons for Elementor Plugin? Please "
-msgstr ""
 
 #: admin/includes/plugin-info.php:79 admin/includes/reports.php:56
 #: admin/settings/maps.php:137 admin/settings/modules-setting.php:699

@@ -132,11 +132,7 @@ class Maps {
                        </tr>
                     </table>
                     <input type="submit" value="<?php echo __('Save Settings', 'pixerex-elementor-elements'); ?>" class="button pr-btn pr-save-button">
-                    <?php if( ! Helper_Functions::is_hide_rate() ) : ?>
-                        <div>
-                                <p><?php echo __('Did you like pixerex Addons for Elementor Plugin? Please ', 'pixerex-elementor-elements'); ?><a href="https://wordpress.org/support/plugin/pixerex-elementor-elements/reviews/#new-post" target="_blank"><?php echo __('Click Here to Rate it ★★★★★', 'pixerex-elementor-elements'); ?></a></p>
-                        </div>
-                    <?php endif; ?>
+                   
                  </div>
               </div>
            </div>
