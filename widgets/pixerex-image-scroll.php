@@ -59,10 +59,7 @@ class Pixerex_Image_Scroll extends Widget_Base {
             'pixerex-addons-js'
         ];
     }
-    
-    public function get_custom_help_url() {
-		return 'https://pixerexaddons.com/support/';
-	}
+ 
 
     protected function _register_controls() {
 

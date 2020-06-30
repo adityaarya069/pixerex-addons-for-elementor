@@ -49,11 +49,7 @@ if( ! class_exists('Pixerex_Addons_Elementor') ) {
             
             add_action( 'elementor/init', array( $this, 'elementor_init' ) );
             
-            add_action( 'init', array( $this, 'init' ), -999 );
- 
-            add_action( 'admin_post_pixerex_addons_rollback', 'post_pixerex_addons_rollback' );
-            
-            register_activation_hook( PIXEREX_ADDONS_FILE, array( $this, 'set_transient' ) );
+            add_action( 'init', array( $this, 'init' ), -999 );          
             
         }
         
@@ -72,24 +68,7 @@ if( ! class_exists('Pixerex_Addons_Elementor') ) {
             $this->init_files(); 
         }
         
-        /**
-         * Set transient for admin review notice
-         * 
-         * @since 3.1.7
-         * @access public
-         * 
-         * @return void
-         */
-        public function set_transient() {
-            
-            $cache_key = 'pixerex_notice_' . PIXEREX_ADDONS_VERSION;
-            
-            $expiration = 3600 * 72;
-            
-            set_transient( $cache_key, true, $expiration );
-        }
-        
-        
+    
         /**
          * Require initial necessary files
          * 
@@ -105,8 +84,7 @@ if( ! class_exists('Pixerex_Addons_Elementor') ) {
             require_once ( PIXEREX_ADDONS_PATH . 'admin/settings/modules-setting.php' );
             require_once ( PIXEREX_ADDONS_PATH . 'includes/elementor-helper.php' );
             
-            if ( is_admin() ) {                         
-                require_once ( PIXEREX_ADDONS_PATH . 'admin/includes/dep/admin-helper.php');
+            if ( is_admin() ) {                                     
                 require_once ( PIXEREX_ADDONS_PATH . 'includes/plugin.php');
 
                 

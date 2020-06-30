@@ -84,10 +84,6 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: admin/includes/dep/admin-helper.php:59 admin/includes/version-control.php:95
-msgid "Rollback to Version "
-msgstr ""
-
 #: admin/includes/dep/admin-helper.php:69
 msgid "Go Pro"
 msgstr ""
@@ -117,24 +113,12 @@ msgstr ""
 msgid "Duplicated: %s - [#%d]"
 msgstr ""
 
-#: admin/includes/dep/maintenance.php:28 admin/includes/version-control.php:88
-#: admin/settings/modules-setting.php:41
-msgid "Rollback to Previous Version"
-msgstr ""
 
-#: admin/includes/dep/rollback.php:82
-msgid "Rolling Back to Version "
-msgstr ""
-
-#: admin/includes/prpro-actions.php:16
-msgid "Get PRO Widgets & Addons"
-msgstr ""
 
 #: admin/includes/plugin-info.php:17
 msgid "About"
 msgstr ""
 
-#: admin/includes/plugin-info.php:40 admin/includes/reports.php:34
 #: admin/includes/version-control.php:74 admin/settings/maps.php:73
 #: admin/settings/modules-setting.php:166
 #, php-format
@@ -220,22 +204,7 @@ msgstr ""
 
 #: admin/includes/version-control.php:89
 #, php-format
-msgid ""
-"Experiencing an issue with Pixerex Addons for Elementor version %s? Rollback "
-"to a previous version before the issue appeared."
-msgstr ""
 
-#: admin/includes/version-control.php:93
-msgid "Rollback Version"
-msgstr ""
-
-#: admin/includes/version-control.php:97
-msgid "Warning: Please backup your database before making the rollback."
-msgstr ""
-
-#: admin/includes/version-control.php:103
-msgid "Become a Beta Tester"
-msgstr ""
 
 #: admin/includes/version-control.php:104
 msgid ""
@@ -338,9 +307,6 @@ msgstr ""
 
 #: admin/settings/modules-setting.php:208 widgets/pixerex-blog.php:757
 #: widgets/pixerex-carousel.php:28 widgets/pixerex-carousel.php:65
-#: widgets/pixerex-person.php:769 widgets/pixerex-person.php:1220
-msgid "Carousel"
-msgstr ""
 
 #: admin/settings/modules-setting.php:218 widgets/pixerex-contactform.php:23
 msgid "Contact Form7"
@@ -361,11 +327,6 @@ msgstr ""
 msgid "Dual Heading"
 msgstr ""
 
-#: admin/settings/modules-setting.php:252 widgets/pixerex-fancytext.php:23
-#: widgets/pixerex-fancytext.php:59 widgets/pixerex-fancytext.php:89
-#: widgets/pixerex-fancytext.php:366
-msgid "Fancy Text"
-msgstr ""
 
 #: admin/settings/modules-setting.php:260 widgets/pixerex-grid.php:38
 msgid "Media Grid"
@@ -379,10 +340,7 @@ msgstr ""
 msgid "Image Scroll"
 msgstr ""
 
-#: admin/settings/modules-setting.php:288
-#: widgets/pixerex-image-separator.php:31
-msgid "Image Separator"
-msgstr ""
+
 
 #: admin/settings/modules-setting.php:295
 msgid "Maps"
@@ -393,10 +351,7 @@ msgstr ""
 msgid "Modal Box"
 msgstr ""
 
-#: admin/settings/modules-setting.php:313 widgets/pixerex-person.php:29
-#: widgets/pixerex-person.php:748
-msgid "Persons"
-msgstr ""
+
 
 #: admin/settings/modules-setting.php:323 widgets/pixerex-progressbar.php:23
 #: widgets/pixerex-progressbar.php:242
@@ -408,9 +363,7 @@ msgstr ""
 msgid "Pricing Table"
 msgstr ""
 
-#: admin/settings/modules-setting.php:341
-msgid "Testimonials"
-msgstr ""
+
 
 #: admin/settings/modules-setting.php:349 widgets/pixerex-banner.php:282
 #: widgets/pixerex-banner.php:595 widgets/pixerex-blog.php:280
@@ -418,23 +371,13 @@ msgstr ""
 #: widgets/pixerex-counter.php:390 widgets/pixerex-grid.php:549
 #: widgets/pixerex-grid.php:1153 widgets/pixerex-maps.php:206
 #: widgets/pixerex-maps.php:415 widgets/pixerex-modalbox.php:151
-#: widgets/pixerex-person.php:328 widgets/pixerex-person.php:556
 #: widgets/pixerex-pricing-table.php:84 widgets/pixerex-pricing-table.php:617
 #: widgets/pixerex-pricing-table.php:833 widgets/pixerex-progressbar.php:77
-#: widgets/pixerex-progressbar.php:346 widgets/pixerex-title.php:25
-#: widgets/pixerex-title.php:53 widgets/pixerex-title.php:60
 #: widgets/pixerex-title.php:284
 msgid "Title"
 msgstr ""
 
-#: admin/settings/modules-setting.php:361 widgets/pixerex-videobox.php:28
-#: widgets/pixerex-videobox.php:65 widgets/pixerex-videobox.php:489
-msgid "Video Box"
-msgstr ""
 
-#: admin/settings/modules-setting.php:369 widgets/pixerex-vscroll.php:29
-msgid "Vertical Scroll"
-msgstr ""
 
 #: admin/settings/modules-setting.php:381
 msgid "Duplicator"
@@ -972,17 +915,6 @@ msgstr ""
 msgid "Modal Box: Trigger Text"
 msgstr ""
 
-#: includes/compatibility/class-pixerex-addons-wpml.php:414
-msgid "Person: Name"
-msgstr ""
-
-#: includes/compatibility/class-pixerex-addons-wpml.php:419
-msgid "Person: Title"
-msgstr ""
-
-#: includes/compatibility/class-pixerex-addons-wpml.php:424
-msgid "Person: Description"
-msgstr ""
 
 #: includes/compatibility/class-pixerex-addons-wpml.php:435
 msgid "Pricing Table: Title"
@@ -1048,13 +980,6 @@ msgstr ""
 msgid "Title: Text"
 msgstr ""
 
-#: includes/compatibility/class-pixerex-addons-wpml.php:541
-msgid "Video Box: Link"
-msgstr ""
-
-#: includes/compatibility/class-pixerex-addons-wpml.php:546
-msgid "Video Box: Description"
-msgstr ""
 
 #: includes/compatibility/class-pixerex-addons-wpml.php:557
 msgid "Vertical Scroll: Tooltips"
@@ -1166,11 +1091,9 @@ msgstr ""
 #: widgets/pixerex-blog.php:953 widgets/pixerex-grid.php:1059
 #: widgets/pixerex-image-scroll.php:77 widgets/pixerex-image-scroll.php:286
 #: widgets/pixerex-image-separator.php:68
-#: widgets/pixerex-image-separator.php:77 widgets/pixerex-modalbox.php:256
-#: widgets/pixerex-modalbox.php:438 widgets/pixerex-person.php:305
-#: widgets/pixerex-person.php:534 widgets/pixerex-person.php:827
-#: widgets/pixerex-testimonials.php:61 widgets/pixerex-testimonials.php:239
-#: widgets/pixerex-videobox.php:361
+#: widgets/pixerex-image-separator.php:77 
+#: widgets/pixerex-modalbox.php:256
+#: widgets/pixerex-modalbox.php:438
 msgid "Image"
 msgstr ""
 
@@ -1719,9 +1642,6 @@ msgstr ""
 #: widgets/pixerex-pricing-table.php:1757
 #: widgets/pixerex-pricing-table.php:1927
 #: widgets/pixerex-pricing-table.php:2001 widgets/pixerex-title.php:472
-#: widgets/pixerex-videobox.php:517 widgets/pixerex-videobox.php:716
-#: widgets/pixerex-vscroll.php:628 widgets/pixerex-vscroll.php:711
-#: widgets/pixerex-vscroll.php:770
 msgid "Shadow"
 msgstr ""
 
@@ -1766,8 +1686,6 @@ msgstr ""
 #: widgets/pixerex-blog.php:1172 widgets/pixerex-blog.php:1217
 #: widgets/pixerex-blog.php:1262 widgets/pixerex-blog.php:1749
 #: widgets/pixerex-image-separator.php:300 widgets/pixerex-modalbox.php:536
-#: widgets/pixerex-person.php:1059 widgets/pixerex-videobox.php:551
-#: widgets/pixerex-videobox.php:667
 msgid "Hover Color"
 msgstr ""
 
@@ -1804,8 +1722,6 @@ msgstr ""
 #: widgets/pixerex-pricing-table.php:1946
 #: widgets/pixerex-pricing-table.php:2020 widgets/pixerex-testimonials.php:570
 #: widgets/pixerex-title.php:566 widgets/pixerex-videobox.php:612
-#: widgets/pixerex-videobox.php:704 widgets/pixerex-vscroll.php:519
-#: widgets/pixerex-vscroll.php:811
 msgid "Padding"
 msgstr ""
 
@@ -1981,7 +1897,6 @@ msgstr ""
 msgid "Order By"
 msgstr ""
 
-#: widgets/pixerex-blog.php:278 widgets/pixerex-videobox.php:88
 msgid "ID"
 msgstr ""
 
@@ -2331,7 +2246,6 @@ msgstr ""
 #: widgets/pixerex-pricing-table.php:690 widgets/pixerex-pricing-table.php:1301
 #: widgets/pixerex-progressbar.php:531 widgets/pixerex-progressbar.php:572
 #: widgets/pixerex-testimonials.php:247 widgets/pixerex-testimonials.php:469
-#: widgets/pixerex-videobox.php:565
 msgid "Size"
 msgstr ""
 
@@ -2354,8 +2268,6 @@ msgstr ""
 #: widgets/pixerex-grid.php:1581 widgets/pixerex-grid.php:1628
 #: widgets/pixerex-grid.php:1734 widgets/pixerex-image-button.php:417
 #: widgets/pixerex-image-button.php:536 widgets/pixerex-pricing-table.php:1811
-#: widgets/pixerex-videobox.php:653 widgets/pixerex-vscroll.php:668
-#: widgets/pixerex-vscroll.php:727
 msgid "Text Color"
 msgstr ""
 
@@ -3441,7 +3353,6 @@ msgid ""
 "5 seconds before backspace effect."
 msgstr ""
 
-#: widgets/pixerex-fancytext.php:246 widgets/pixerex-videobox.php:209
 msgid "Loop"
 msgstr ""
 
@@ -3604,11 +3515,9 @@ msgstr ""
 msgid "YouTube"
 msgstr ""
 
-#: widgets/pixerex-grid.php:459 widgets/pixerex-videobox.php:76
 msgid "Vimeo"
 msgstr ""
 
-#: widgets/pixerex-grid.php:460 widgets/pixerex-videobox.php:77
 msgid "Self Hosted"
 msgstr ""
 

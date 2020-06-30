@@ -56,9 +56,6 @@ class Pixerex_Banner extends Widget_Base {
         ];
     }
     
-    public function get_custom_help_url() {
-		return 'https://pixerexaddons.com/support/';
-	}
 
 	// Adding the controls fields for the pixerex banner
 	// This will controls the animation, colors and background, dimensions etc

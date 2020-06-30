@@ -69,10 +69,7 @@ class Pixerex_Grid extends Widget_Base {
         return ['layout', 'gallery', 'images', 'videos', 'portfolio', 'visual', 'masonry'];
     }
     
-    public function get_custom_help_url() {
-		return 'https://pixerexaddons.com/support/';
-	}
-    
+ 
     protected function _register_controls() {
         
         $this->start_controls_section('pixerex_gallery_general',

@@ -45,9 +45,6 @@ class Pixerex_Dual_Header extends Widget_Base {
         return [ 'pixerex-elements' ];
     }
     
-    public function get_custom_help_url() {
-		return 'https://pixerexaddons.com/support/';
-	}
 
     // Adding the controls fields for the pixerex dual header
     // This will controls the animation, colors and background, dimensions etc

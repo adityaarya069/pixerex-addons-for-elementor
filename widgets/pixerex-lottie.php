@@ -52,10 +52,7 @@ class Pixerex_Lottie extends Widget_Base {
         return [ 'pixerex-elements' ];
     }
     
-    public function get_custom_help_url() {
-		return 'https://pixerexaddons.com/support/';
-	}
-
+ 
     protected function _register_controls() {
 
         $this->start_controls_section('section_general_settings',

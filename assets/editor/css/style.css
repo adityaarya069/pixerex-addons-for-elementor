@@ -62,9 +62,7 @@
 .pr-dual-header:before {
   content: "\e90a";
 }
-.pr-fancy-text:before {
-  content: "\e90b";
-}
+
 .pr-maps:before {
   content: "\e90c";
 }
@@ -77,17 +75,12 @@
 .pr-image-scroll:before {
   content: "\e901";
 }
-.pr-image-separator:before {
-  content: "\e90f";
-}
+
 .pr-lottie-animations:before {
   content: "\e900";
 }
 .pr-modal-box:before {
   content: "\e910";
-}
-.pr-person:before {
-  content: "\e911";
 }
 .pr-pricing-table:before {
   content: "\e912";
@@ -98,15 +91,7 @@
 .pr-testimonials:before {
   content: "\e914";
 }
-.pr-title:before {
-  content: "\e915";
-}
-.pr-vscroll:before {
-  content: "\e916";
-}
-.pr-video-box:before {
-  content: "\e917";
-}
+
 .editor-pr-doc {
   font-style: italic;
   line-height: 1.2;

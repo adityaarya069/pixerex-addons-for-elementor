@@ -293,20 +293,7 @@ input:checked + .slider:before{
 .pr-beta-row td{
     padding:22px 10px
 }
-.pr-roll-row .pr-rollback-button{
-    box-shadow:0 1px 0 #ccc;
-    color:#555;
-    border:1px solid #ccc;
-    background:#f7f7f7;
-    vertical-align:top;
-    margin:0;
-    padding:0 10px 1px
-}
-.pr-roll-row .pr-rollback-button:hover{
-    background:#fafafa;
-    border-color:#999;
-    color:#23282d
-}
+
 .pr-roll-row .pr-roll-desc{
     font-style:italic;
     color:red;

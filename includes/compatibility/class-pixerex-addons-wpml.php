@@ -68,12 +68,10 @@ if ( ! class_exists ('Pixerex_Addons_Wpml') ) {
        public function includes() {
     
             include_once( 'widgets/carousel.php' );
-            include_once( 'widgets/fancy-text.php' );
             include_once( 'widgets/grid.php' );
             include_once( 'widgets/maps.php' );
             include_once( 'widgets/pricing-table.php' );
             include_once( 'widgets/progress-bar.php' );
-            include_once( 'widgets/vertical-scroll.php' );
     
        }
 
@@ -275,28 +273,7 @@ if ( ! class_exists ('Pixerex_Addons_Wpml') ) {
                'conditions' => [ 'widgetType' => 'pixerex-carousel-widget' ],
                'integration-class' => 'PixerexAddons\Compatibility\WPML\Widgets\Carousel',
            ];
-           
-           $widgets['pixerex-addon-fancy-text'] = [
-               'conditions' => [ 'widgetType' => 'pixerex-addon-fancy-text' ],
-               'fields'     => [
-                   [
-                       'field'       => 'pixerex_fancy_prefix_text',
-                       'type'        => __( 'Fancy Text: Prefix', 'pixerex-elementor-elements' ),
-                       'editor_type' => 'LINE',
-                   ],
-                   [
-                       'field'       => 'pixerex_fancy_suffix_text',
-                       'type'        => __( 'Fancy Text: Suffix', 'pixerex-elementor-elements' ),
-                       'editor_type' => 'LINE',
-                   ],
-                   [
-                       'field'       => 'pixerex_fancy_text_cursor_text',
-                       'type'        => __( 'Fancy Text: Cursor Text', 'pixerex-elementor-elements' ),
-                       'editor_type' => 'LINE',
-                   ],
-               ],
-               'integration-class' => 'PixerexAddons\Compatibility\WPML\Widgets\FancyText',
-           ];
+         
            
            $widgets['pixerex-img-gallery'] = [
                'conditions' => [ 'widgetType' => 'pixerex-img-gallery' ],
@@ -342,21 +319,6 @@ if ( ! class_exists ('Pixerex_Addons_Wpml') ) {
                ]
            ];
            
-           $widgets['pixerex-addon-image-separator'] = [
-               'conditions' => [ 'widgetType' => 'pixerex-addon-image-separator' ],
-               'fields'     => [
-                   [
-                       'field'       => 'pixerex_image_separator_image_link_text',
-                       'type'        => __( 'Image Separator: Link Title', 'pixerex-elementor-elements' ),
-                       'editor_type' => 'LINE',
-                   ],
-                   'link' => [
-                       'field'       => 'pixerex_image_separator_image_link',
-                       'type'        => __( 'Image Separator: URL', 'pixerex-elementor-elements' ),
-                       'editor_type' => 'LINK',
-                   ]
-               ]
-           ];
            
            $widgets['pixerex-addon-maps'] = [
                'conditions' => [ 'widgetType' => 'pixerex-addon-maps' ],
@@ -406,27 +368,7 @@ if ( ! class_exists ('Pixerex_Addons_Wpml') ) {
                ],
            ];
            
-           $widgets['pixerex-addon-person'] = [
-               'conditions' => [ 'widgetType' => 'pixerex-addon-person' ],
-               'fields'     => [
-                   [
-                       'field'       => 'pixerex_person_name',
-                       'type'        => __( 'Person: Name', 'pixerex-elementor-elements' ),
-                       'editor_type' => 'LINE',
-                   ],
-                   [
-                       'field'       => 'pixerex_person_title',
-                       'type'        => __( 'Person: Title', 'pixerex-elementor-elements' ),
-                       'editor_type' => 'LINE',
-                   ],
-                   [
-                       'field'       => 'pixerex_person_content',
-                       'type'        => __( 'Person: Description', 'pixerex-elementor-elements' ),
-                       'editor_type' => 'AREA',
-                   ],
-               ],
-           ];
-           
+       
            $widgets['pixerex-addon-pricing-table'] = [
                'conditions' => [ 'widgetType' => 'pixerex-addon-pricing-table' ],
                'fields'     => [
@@ -496,71 +438,6 @@ if ( ! class_exists ('Pixerex_Addons_Wpml') ) {
                'integration-class' => 'PixerexAddons\Compatibility\WPML\Widgets\Progress_Bar',
            ];
            
-           $widgets['pixerex-addon-testimonials'] = [
-               'conditions' => [ 'widgetType' => 'pixerex-addon-testimonials' ],
-               'fields'     => [
-                   [
-                       'field'       => 'pixerex_testimonial_person_name',
-                       'type'        => __( 'Testimonial: Name', 'pixerex-elementor-elements' ),
-                       'editor_type' => 'LINE',
-                   ],
-                   [
-                       'field'       => 'pixerex_testimonial_company_name',
-                       'type'        => __( 'Testimonial: Company', 'pixerex-elementor-elements' ),
-                       'editor_type' => 'LINE',
-                   ],
-                   [
-                       'field'       => 'pixerex_testimonial_company_link',
-                       'type'        => __( 'Testimonial: Company Link', 'pixerex-elementor-elements' ),
-                       'editor_type' => 'LINK',
-                   ],
-                   [
-                       'field'       => 'pixerex_testimonial_content',
-                       'type'        => __( 'Testimonial: Content', 'pixerex-elementor-elements' ),
-                       'editor_type' => 'AREA',
-                   ],
-               ],
-           ];
-           
-           $widgets['pixerex-addon-title'] = [
-               'conditions' => [ 'widgetType' => 'pixerex-addon-title' ],
-               'fields'     => [
-                   [
-                       'field'       => 'pixerex_title_text',
-                       'type'        => __( 'Title: Text', 'pixerex-elementor-elements' ),
-                       'editor_type' => 'LINE',
-                   ]
-               ],
-           ];
-           
-           $widgets['pixerex-addon-video-box'] = [
-               'conditions' => [ 'widgetType' => 'pixerex-addon-video-box' ],
-               'fields'     => [
-                   [
-                       'field'       => 'pixerex_video_box_link',
-                       'type'        => __( 'Video Box: Link', 'pixerex-elementor-elements' ),
-                       'editor_type' => 'LINK',
-                   ],
-                   [
-                       'field'       => 'pixerex_video_box_description_text',
-                       'type'        => __( 'Video Box: Description', 'pixerex-elementor-elements' ),
-                       'editor_type' => 'AREA',
-                   ]
-               ]
-           ];
-           
-           $widgets['pixerex-vscroll'] = [
-               'conditions' => [ 'widgetType' => 'pixerex-vscroll' ],
-               'fields'     => [
-                   [
-                       'field'       => 'dots_tooltips',
-                       'type'        => __( 'Vertical Scroll: Tooltips', 'pixerex-elementor-elements' ),
-                       'editor_type' => 'LINE',
-                   ]
-               ],
-               'integration-class' => 'PixerexAddons\Compatibility\WPML\Widgets\Vertical_Scroll',
-           ];
-
            return $widgets;
        }
        

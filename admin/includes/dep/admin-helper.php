@@ -23,9 +23,7 @@ class Admin_Helper {
     public function __construct() {
         
         add_action( 'current_screen', array( $this, 'get_current_screen' ) );
-                
-        add_filter( 'plugin_row_meta', array( $this, 'plugin_row_meta' ), 10, 2 );
-        
+                 
         if( ! Modules_Settings::check_pixerex_duplicator() )
             return;
         
@@ -36,40 +34,7 @@ class Admin_Helper {
     }
 
    
-   /**
-	 * Plugin row meta.
-	 *
-	 * Extends plugin row meta links
-	 *
-	 * Fired by `plugin_row_meta` filter.
-	 *
-	 * @since 3.8.4
-	 * @access public
-	 *
-     *  @return array An array of plugin row meta links.
-	 */
-    public function plugin_row_meta( $meta, $file ) {
-        
-        if( Helper_Functions::is_hide_row_meta() )
-            return $meta;
-        
-        if ( PIXEREX_ADDONS_BASENAME == $file ) {
-            
-            $theme = Helper_Functions::get_installed_theme();
-                    
-            $link = sprintf( 'https://pixerexAddons.com/support/?utm_source=plugins-page&utm_medium=wp-dash&utm_campaign=get-support&utm_term=%s', $theme );
-            
-            $row_meta = [
-				'docs' => '<a href="' . esc_attr( $link ) . '" aria-label="' . esc_attr( __( 'View Pixerex Addons for Elementor Documentation', 'pixerex-elementor-elements' ) ) . '" target="_blank">' . __( 'Docs & FAQs', 'pixerex-elementor-elements' ) . '</a>',
-				'videos' => '<a href="https://www.youtube.com/watch?v=D3INxWw_jKI&list=PLLpZVOYpMtTArB4hrlpSnDJB36D2sdoTv" aria-label="' . esc_attr( __( 'View Pixerex Addons Video Tutorials', 'pixerex-elementor-elements' ) ) . '" target="_blank">' . __( 'Video Tutorials', 'pixerex-elementor-elements' ) . '</a>',
-			];
 
-			$meta = array_merge( $meta, $row_meta );
-        }
-
-        return $meta;
-       
-    }
     
     /**
      * Add Duplicator Actions

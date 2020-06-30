@@ -52,10 +52,7 @@ class Pixerex_Progressbar extends Widget_Base {
         return ['circle', 'chart', 'line'];
     }
     
-    public function get_custom_help_url() {
-		return 'https://pixerexaddons.com/support/';
-	}
-
+   
     // Adding the controls fields for the pixerex progress bar
     // This will controls the animation, colors and background, dimensions etc
     protected function _register_controls() {

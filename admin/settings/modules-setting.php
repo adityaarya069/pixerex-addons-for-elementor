@@ -43,21 +43,9 @@ class Modules_Settings {
         add_action( 'admin_enqueue_scripts', array( $this, 'pr_admin_page_scripts' ) );
         
         add_action( 'wp_ajax_pr_save_admin_addons_settings', array( $this, 'pr_save_settings' ) );
-        
-        add_action( 'admin_enqueue_scripts',array( $this, 'localize_js_script' ) );
-        
+          
     }
     
-    public function localize_js_script(){
-        wp_localize_script(
-            'pr-admin-js',
-            'pixerexRollBackConfirm',
-            [
-                'home_url'  => home_url(),
-                'i18n' => [],
-            ]
-            );
-    }
 
     public function pr_admin_page_scripts () {
         
@@ -66,12 +54,7 @@ class Modules_Settings {
         $suffix = is_rtl() ? '-rtl' : '';
         
         $current_screen = get_current_screen();
-        
-        wp_enqueue_style(
-            'pr-notice-css',
-            PIXEREX_ADDONS_URL . 'admin/assets/css/notice' . $suffix . '.css'
-        );
-        
+ 
         if( strpos( $current_screen->id , $this->page_slug ) !== false ) {
             
             wp_enqueue_style(
@@ -464,15 +447,10 @@ class Modules_Settings {
             'pixerex-countdown'         => intval( $settings['pixerex-countdown'] ? 1 : 0 ),
             'pixerex-counter'           => intval( $settings['pixerex-counter'] ? 1 : 0 ),
             'pixerex-dual-header'       => intval( $settings['pixerex-dual-header'] ? 1 : 0 ),
-            'pixerex-fancytext'         => intval( $settings['pixerex-fancytext'] ? 1 : 0 ),
-            'pixerex-image-separator'   => intval( $settings['pixerex-image-separator'] ? 1 : 0 ),
             'pixerex-lottie'            => intval( $settings['pixerex-lottie'] ? 1 : 0 ),
             'pixerex-maps'              => intval( $settings['pixerex-maps'] ? 1 : 0 ),
             'pixerex-modalbox' 			=> intval( $settings['pixerex-modalbox'] ? 1 : 0 ),
-            'pixerex-person' 			=> intval( $settings['pixerex-person'] ? 1 : 0 ),
             'pixerex-progressbar' 		=> intval( $settings['pixerex-progressbar'] ? 1 : 0 ),
-            'pixerex-testimonials' 		=> intval( $settings['pixerex-testimonials'] ? 1 : 0 ),
-            'pixerex-title'             => intval( $settings['pixerex-title'] ? 1 : 0 ),
             'pixerex-pricing-table'     => intval( $settings['pixerex-pricing-table'] ? 1 : 0 ),
             'pixerex-button'            => intval( $settings['pixerex-button'] ? 1 : 0 ),
             'pixerex-contactform'       => intval( $settings['pixerex-contactform'] ? 1 : 0 ),
