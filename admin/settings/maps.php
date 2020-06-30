@@ -69,8 +69,6 @@ class Maps {
            <form action="" method="POST" id="pr-maps" name="pr-maps">
            <div class="pr-header-wrapper">
               <div class="pr-title-left">
-                  <h1 class="pr-title-main"><?php echo Helper_Functions::name(); ?></h1>
-                 <h3 class="pr-title-sub"><?php echo sprintf(__('Thank you for using %s. This plugin has been developed by %s and we hope you enjoy using it.','pixerex-elementor-elements'), Helper_Functions::name(), Helper_Functions::author()); ?></h3>
               </div>
               <?php if( ! Helper_Functions::is_hide_logo()) : ?>
                     <div class="pr-title-right">
