@@ -43,35 +43,8 @@ class Helper_Functions {
      * @return boolean
      * 
      */
-    public static function is_hide_rate() {
-        
-        if( defined('PIXEREX_PRO_ADDONS_VERSION') ) {
-            if( isset(get_option('pr_wht_lbl_save_settings')['pixerex-wht-lbl-rate'] ) ) {
-                $hide_rate = get_option('pr_wht_lbl_save_settings')['pixerex-wht-lbl-rate'];
-            }
-        }
-        
-        return isset( $hide_rate ) ? $hide_rate : false;
-    }
-    
-    /**
-     * Check if white labeling - hide about page is checked
-     * 
-     * @since 1.0.0
-     * @return boolean
-     * 
-     */
-    public static function is_hide_about() {
-        
-        if( defined('PIXEREX_PRO_ADDONS_VERSION') ) {
-            if(isset(get_option('pr_wht_lbl_save_settings')['pixerex-wht-lbl-about'])){
-                $hide_about = get_option('pr_wht_lbl_save_settings')['pixerex-wht-lbl-about'];
-            }
-        }
-        
-        return isset( $hide_about ) ? $hide_about : false;
-    }
-    
+   
+   
     /**
      * Check if white labeling - hide version control page is checked
      * 
@@ -79,34 +52,8 @@ class Helper_Functions {
      * @return boolean
      * 
      */
-    public static function is_hide_version_control() {
-        
-        if( defined('PIXEREX_PRO_ADDONS_VERSION') ) {
-                if(isset(get_option('pr_wht_lbl_save_settings')['pixerex-wht-lbl-version'])){
-                    $hide_version_tab = get_option('pr_wht_lbl_save_settings')['pixerex-wht-lbl-version'];
-            }
-        }
-        
-        return isset( $hide_version_tab ) ? $hide_version_tab : false;
-    }
-    
-    /**
-     * Check if white labeling - Free version author field is set
-     * 
-     * @since 1.0.0
-     * @return string
-     * 
-     */
-    public static function author() {
-        
-        if( defined('PIXEREX_PRO_ADDONS_VERSION') ) {
-            if(isset(get_option('pr_wht_lbl_save_settings')['pixerex-wht-lbl-name'])){
-                $author_free = get_option('pr_wht_lbl_save_settings')['pixerex-wht-lbl-name'];
-            }
-        }
-        
-        return ( isset( $author_free ) && '' != $author_free ) ? $author_free : 'Team Pixerex';
-    }
+
+  
     
     /**
      * Check if white labeling - Free version name field is set
