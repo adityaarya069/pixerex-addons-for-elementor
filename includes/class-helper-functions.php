@@ -65,25 +65,7 @@ class Helper_Functions {
         return ( isset( $name_free ) && '' != $name_free ) ? $name_free : 'Pixerex Addons for Elementor';
     }
     
-    /**
-     * Check if white labeling - Hide row meta option is checked
-     * 
-     * @since 1.0.0
-     * @return string
-     * 
-     */
-    public static function is_hide_row_meta() {
-        
-        if( defined('PIXEREX_PRO_ADDONS_VERSION') ) {
-            if( isset( get_option('pr_wht_lbl_save_settings')['pixerex-wht-lbl-row'] ) ){
-                $hide_meta = get_option('pr_wht_lbl_save_settings')['pixerex-wht-lbl-row'];
-            }
-        }
-        
-        return isset( $hide_meta ) ? $hide_meta : false;
-    }
-   
-    /**
+  /**
      * Check if white labeling - Hide plugin logo option is checked
      * 
      * @since 1.0.0
