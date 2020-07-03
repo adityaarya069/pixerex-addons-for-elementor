@@ -928,7 +928,6 @@
    
     //Elementor JS Hooks
     $(window).on("elementor/frontend/init", function () {
-
         elementorFrontend.hooks.addAction("frontend/element_ready/pixerex-img-gallery.default", PixerexGridWidgetHandler);
         elementorFrontend.hooks.addAction("frontend/element_ready/pixerex-counter.default", PixerexCounterHandler);
         elementorFrontend.hooks.addAction("frontend/element_ready/pixerex-countdown-timer.default", PixerexCountDownHandler);
@@ -938,7 +937,6 @@
         elementorFrontend.hooks.addAction("frontend/element_ready/pixerex-addon-blog.default", pixerexBlogHandler);
         elementorFrontend.hooks.addAction("frontend/element_ready/pixerex-image-scroll.default", PixerexImageScrollHandler);
         elementorFrontend.hooks.addAction("frontend/element_ready/pixerex-contact-form.default", PixerexContactFormHandler);
-
 
         if (elementorFrontend.isEditMode()) {
             elementorFrontend.hooks.addAction(
